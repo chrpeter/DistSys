@@ -10,13 +10,11 @@ import java.util.List;
  * This class contains the board data represented as a two dimensional
  * array of Cell. Each Cell can contain a single char (e.g. X or O).
  */
-final class BoardModel implements TableModel
-{
+final class BoardModel implements TableModel{
 	private final Cell boardCells[][];
 	private final List<TableModelListener> listeners = new ArrayList<TableModelListener>();
 
-	BoardModel(int boardSize)
-	{
+	BoardModel(int boardSize){
 		boardCells = new Cell[boardSize][];
 		for (int x = 0; x < boardSize; x++) {
 			boardCells[x] = new Cell[boardSize];
@@ -33,8 +31,7 @@ final class BoardModel implements TableModel
 	 * @param y Y coordinate of cell to check
 	 * @return true if the cell is empty, otherwise false.
 	 */
-	boolean isEmpty(int x, int y)
-	{
+	boolean isEmpty(int x, int y){
 		return boardCells[x][y].isEmpty();
 	}
 
@@ -46,8 +43,7 @@ final class BoardModel implements TableModel
 	 * @param mark Mark to assign to (x,y)
 	 * @return true if the new mark resulted in 5 in a row, false otherwise.
 	 */
-	boolean setCell(int x, int y, char mark)
-	{
+	boolean setCell(int x, int y, char mark){
 		boardCells[x][y].setContents(mark);
 		TableModelEvent event = new TableModelEvent(this, y, y, x);
 		for (TableModelListener listener : listeners)
@@ -64,8 +60,7 @@ final class BoardModel implements TableModel
 	 * @param y Y coordinate of cell to check
 	 * @return true if there are 5 in a row including (x,y)
 	 */
-	private boolean checkHorizontal(int x, int y)
-	{
+	private boolean checkHorizontal(int x, int y){
 		// Find the minimum and maximum x values for this y which have the same mark
 		int minX = x;
 		while (minX > 0 && boardCells[minX - 1][y].equals(boardCells[x][y]))
@@ -84,8 +79,7 @@ final class BoardModel implements TableModel
 	 * @param y Y coordinate of cell to check
 	 * @return true if there are 5 in a row including (x,y)
 	 */
-	private boolean checkVertical(int x, int y)
-	{
+	private boolean checkVertical(int x, int y){
 		// Find the minimum and maximum y values for this x which have the same mark
 		int minY = y;
 		while (minY > 0 && boardCells[x][minY - 1].equals(boardCells[x][y]))
@@ -106,8 +100,7 @@ final class BoardModel implements TableModel
 	 * @param y Y coordinate of cell to check
 	 * @return true if there are 5 in a row including (x,y)
 	 */
-	private boolean checkDiagonalUp(int x, int y)
-	{
+	private boolean checkDiagonalUp(int x, int y){
 		// Find the minimum and maximum x and y values which have the same mark
 		int minX = x;
 		int minY = y;
@@ -135,8 +128,7 @@ final class BoardModel implements TableModel
 	 * @param y Y coordinate of cell to check
 	 * @return true if there are 5 in a row including (x,y)
 	 */
-	private boolean checkDiagonalDown(int x, int y)
-	{
+	private boolean checkDiagonalDown(int x, int y){
 		// Find the minimum and maximum x and y values which have the same mark
 		int minX = x;
 		int maxY = y;
@@ -159,74 +151,61 @@ final class BoardModel implements TableModel
 
 	// Below is the implementation of the TableModel interface.
 
-	public int getRowCount()
-	{
+	public int getRowCount(){
 		return boardCells.length;
 	}
 
-	public int getColumnCount()
-	{
+	public int getColumnCount(){
 		return boardCells.length;
 	}
 
-	public String getColumnName(int columnIndex)
-	{
+	public String getColumnName(int columnIndex){
 		return String.valueOf(columnIndex + 1);
 	}
 
-	public Class<?> getColumnClass(int columnIndex)
-	{
+	public Class<?> getColumnClass(int columnIndex){
 		return Object.class;
 	}
 
-	public boolean isCellEditable(int rowIndex, int columnIndex)
-	{
+	public boolean isCellEditable(int rowIndex, int columnIndex){
 		return false;
 	}
 
-	public Object getValueAt(int rowIndex, int columnIndex)
-	{
+	public Object getValueAt(int rowIndex, int columnIndex){
 		return boardCells[columnIndex][rowIndex];
 	}
 
-	public void setValueAt(Object aValue, int rowIndex, int columnIndex)
-	{
+	public void setValueAt(Object aValue, int rowIndex, int columnIndex){
+		//empty?
 	}
 
-	public void addTableModelListener(TableModelListener l)
-	{
+	public void addTableModelListener(TableModelListener l){
 		listeners.add(l);
 	}
 
-	public void removeTableModelListener(TableModelListener l)
-	{
+	public void removeTableModelListener(TableModelListener l){
 		listeners.remove(l);
 	}
 
 	/**
 	 * Class representing a single cell in the board.
 	 */
-	private final class Cell
-	{
+	private final class Cell{
 		private char contents = ' ';
 
-		void setContents(char contents)
-		{
+		void setContents(char contents){
 			this.contents = contents;
 		}
 
-		boolean isEmpty()
-		{
+		boolean isEmpty(){
 			return contents == ' ';
 		}
 
-		public String toString()
-		{
+		public String toString(){
 			return String.valueOf(contents);
 		}
 
-		public boolean equals(Object obj)
-		{
+		public boolean equals(Object obj){
 			return obj instanceof Cell &&
 					contents == ((Cell)obj).contents;
 		}
