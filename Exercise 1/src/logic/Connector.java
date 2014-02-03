@@ -33,13 +33,9 @@ public class Connector implements ConnectorInterface {
 			isServer = true;
 			Connector obj = new Connector(boardModel, tacToe);
 			serverSide = (ConnectorInterface) UnicastRemoteObject.exportObject(obj, 0); 
-			serverSide.sendMessage("x er dum");
-			
-			System.out.println("TEST: " + Naming.list("Hello").length);
+			serverSide.sendMessage("x er dum");			
 			Registry reg = LocateRegistry.createRegistry(3050);
-			System.out.println(reg.list().length + " rff");
 			reg.rebind("Hello", serverSide);
-			System.out.println(reg.list().length + " frff");
 
 			
 			System.out.println("Server ready");
@@ -94,7 +90,12 @@ public class Connector implements ConnectorInterface {
 	public boolean setMark(int x, int y, char mark) throws RemoteException {
 		// TODO Auto-generated method stub
 		
-		return boardModel.setCell(x, y, mark);
+		
+		boolean won = boardModel.setCell(x, y, mark);
+		if(won){
+			tacToe.setStatusMessage("Player " + mark + " won!");
+		}
+		return won;
 	}
 
 

@@ -112,7 +112,7 @@ public class TicTacToe extends JFrame implements ListSelectionListener{
 				boardModel.setCell(x, y, mark);
 	
 				if (player.setMark(x, y, mark)){
-					setStatusMessage("Player " + playerMarks[currentPlayer] + " won!");
+					setStatusMessage("Player " + mark + " won!");
 				}
 			} catch (RemoteException e1) {
 				// TODO Auto-generated catch block
