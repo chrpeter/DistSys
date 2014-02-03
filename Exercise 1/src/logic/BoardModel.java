@@ -23,6 +23,14 @@ final class BoardModel implements TableModel{
 		}
 
 	}
+	
+	public void cleanBoard(int boardSize){
+		for (int x = 0; x < boardSize; x++) {
+			boardCells[x] = new Cell[boardSize];
+			for (int y = 0; y < boardSize; y++)
+				boardCells[x][y] = new Cell();
+		}
+	}
 
 	/**
 	 * Does (x,y) have a mark already?
@@ -186,6 +194,8 @@ final class BoardModel implements TableModel{
 	public void removeTableModelListener(TableModelListener l){
 		listeners.remove(l);
 	}
+	
+
 
 	/**
 	 * Class representing a single cell in the board.

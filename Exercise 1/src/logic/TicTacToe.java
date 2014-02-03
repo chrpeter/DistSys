@@ -6,6 +6,8 @@ import javax.swing.event.ListSelectionListener;
 import javax.swing.table.DefaultTableCellRenderer;
 
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.rmi.RemoteException;
 
 /**
@@ -16,7 +18,7 @@ import java.rmi.RemoteException;
  * The task is to transform it to a networking application using RMI.
  */
 @SuppressWarnings("serial")
-public class TicTacToe extends JFrame implements ListSelectionListener{
+public class TicTacToe extends JFrame implements ListSelectionListener, ActionListener{
 	private static final int BOARD_SIZE = 15;
 	private final BoardModel boardModel;
 	private final JTable board;
@@ -27,6 +29,8 @@ public class TicTacToe extends JFrame implements ListSelectionListener{
 	private ConnectorInterface player;
 	private char mark;
 	private boolean playerTurn;
+	private boolean gameIsWon = false;
+	private JButton newGameButton;
 	public static void main(String args[]){
 		new TicTacToe();
 		System.setSecurityManager(new LiberalSecurityManager());
@@ -69,14 +73,21 @@ public class TicTacToe extends JFrame implements ListSelectionListener{
 
 		statusLabel.setPreferredSize(new Dimension(statusLabel.getPreferredSize().width, 40));
 		statusLabel.setHorizontalAlignment(SwingConstants.CENTER);
+	    newGameButton = new JButton("Start new game");
 
+		
+		
 		Container contentPane = getContentPane();
 		contentPane.setLayout(new BorderLayout());
 		contentPane.add(board, BorderLayout.CENTER);
 		contentPane.add(statusLabel, BorderLayout.SOUTH);
+		contentPane.add(newGameButton, BorderLayout.NORTH);
+		
+		
 		pack();
 
 		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+		newGameButton.addActionListener(this);
 
 		int centerX = (int)(Toolkit.getDefaultToolkit().getScreenSize().getWidth() - getSize().width) / 2;
 		int centerY = (int)(Toolkit.getDefaultToolkit().getScreenSize().getHeight() - getSize().height) / 2;
@@ -98,7 +109,7 @@ public class TicTacToe extends JFrame implements ListSelectionListener{
 	 */
 	public void valueChanged(ListSelectionEvent e){
 		System.out.println(playerTurn);
-		if(player != null && playerTurn){
+		if(player != null && playerTurn && !gameIsWon){
 			//if(connector.myTurn()){
 
 			if (e.getValueIsAdjusting())
@@ -112,6 +123,7 @@ public class TicTacToe extends JFrame implements ListSelectionListener{
 				boardModel.setCell(x, y, mark);
 	
 				if (player.setMark(x, y, mark)){
+					gameIsWon = true;
 					setStatusMessage("Player " + mark + " won!");
 				}
 			} catch (RemoteException e1) {
@@ -137,5 +149,41 @@ public class TicTacToe extends JFrame implements ListSelectionListener{
 	}
 	public void playerTurn(boolean playerTurn){
 		this.playerTurn = playerTurn;
+	}
+	public void setGameIsWon(boolean gameIsWon){
+		this.gameIsWon = gameIsWon;
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if(connector.isServer()){
+			try {
+				playerTurn = true;
+				player.serverTurn(true);
+			} catch (RemoteException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+		}
+		else{
+			try {
+				playerTurn = false;
+				player.serverTurn(false);
+			} catch (RemoteException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+		}
+		boardModel.cleanBoard(BOARD_SIZE);
+		this.gameIsWon = false;
+		try {
+			player.setGameIsWon(false);
+			player.resetGame(BOARD_SIZE);
+		} catch (RemoteException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		setStatusMessage("");
+		this.repaint();
 	}
 }

@@ -94,6 +94,7 @@ public class Connector implements ConnectorInterface {
 		boolean won = boardModel.setCell(x, y, mark);
 		if(won){
 			tacToe.setStatusMessage("Player " + mark + " won!");
+			tacToe.setGameIsWon(true);
 		}
 		return won;
 	}
@@ -122,6 +123,20 @@ public class Connector implements ConnectorInterface {
 	public ConnectorInterface getOpponent(){
 		System.out.println("RR: " + this.opponentForServer);
 		return this.opponentForServer;
+	}
+
+
+	@Override
+	public void setGameIsWon(boolean gameIsWon) throws RemoteException {
+		tacToe.setGameIsWon(false);
+	}
+
+
+	@Override
+	public void resetGame(int boardSize) throws RemoteException {
+		boardModel.cleanBoard(boardSize);
+		tacToe.setStatusMessage("");
+		tacToe.repaint();
 	}
 
 }

@@ -10,7 +10,8 @@ public interface ConnectorInterface extends Remote {
     boolean setMark(int x, int y, char mark) throws RemoteException;
     boolean serverTurn(boolean server) throws RemoteException;
     void setOpponent(ConnectorInterface opponent) throws RemoteException;
-    
+    void setGameIsWon(boolean gameIsWon) throws RemoteException;
+    void resetGame(int boardSize) throws RemoteException;
 
 
 
