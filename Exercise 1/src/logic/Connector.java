@@ -29,23 +29,14 @@ public class Connector implements ConnectorInterface {
 	
 	public void serverConnect(){
 		try{
+			isServer = true;
 			Connector obj = new Connector(boardModel, tacToe);
-			serverSide = (ConnectorInterface) UnicastRemoteObject.exportObject(obj, 0);
-			if(LocateRegistry.getRegistry(3050) == null){
-				System.out.println("HEHE");
-			}
+			serverSide = (ConnectorInterface) UnicastRemoteObject.exportObject(obj, 0); 
+			serverSide.sendMessage("x er dum");
 			
 			Registry reg = LocateRegistry.createRegistry(3050);
-			System.out.println(reg.list().length);
-			if(reg.list().length == 1){
-				throw new Exception("Server exists");
-			}
-			serverSide.sendMessage("x er dum");
-			isServer = true;
-
-			//Naming.rebind();
+System.out.println(reg.list().length);
 			reg.rebind("Hello", serverSide);
-			
 			
 			System.out.println("Server ready");
 		}catch(Exception e) {
@@ -67,12 +58,11 @@ public class Connector implements ConnectorInterface {
 		serverConnect();
 
 		try {		
-			Registry reg = LocateRegistry.getRegistry(host, 3050);
-			clientSide = (ConnectorInterface) reg.lookup("Hello");
+			Registry registry = LocateRegistry.getRegistry(host, 3050);
 			
+			clientSide = (ConnectorInterface) registry.lookup("Hello");
 			ConnectorInterface obj = new Connector(boardModel, tacToe);
 			System.out.println("YE" + serverSide);
-			
 			clientSide.setOpponent(serverSide);
 			String response = clientSide.sendMessage("y er dum");
 
