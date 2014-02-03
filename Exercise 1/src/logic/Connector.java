@@ -29,14 +29,18 @@ public class Connector implements ConnectorInterface {
 	
 	public void serverConnect(){
 		try{
+
 			isServer = true;
 			Connector obj = new Connector(boardModel, tacToe);
 			serverSide = (ConnectorInterface) UnicastRemoteObject.exportObject(obj, 0); 
 			serverSide.sendMessage("x er dum");
 			
+			System.out.println("TEST: " + Naming.list("Hello").length);
 			Registry reg = LocateRegistry.createRegistry(3050);
-System.out.println(reg.list().length);
+			System.out.println(reg.list().length + " rff");
 			reg.rebind("Hello", serverSide);
+			System.out.println(reg.list().length + " frff");
+
 			
 			System.out.println("Server ready");
 		}catch(Exception e) {
@@ -59,7 +63,7 @@ System.out.println(reg.list().length);
 
 		try {		
 			Registry registry = LocateRegistry.getRegistry(host, 3050);
-			
+
 			clientSide = (ConnectorInterface) registry.lookup("Hello");
 			ConnectorInterface obj = new Connector(boardModel, tacToe);
 			System.out.println("YE" + serverSide);
