@@ -58,7 +58,7 @@ public class Connector implements ConnectorInterface {
 		serverConnect();
 
 		try {		
-			Registry registry = LocateRegistry.getRegistry(host, 3050);
+			Registry registry = LocateRegistry.getRegistry(host, 49756);
 			
 			clientSide = (ConnectorInterface) Naming.lookup("Hello");
 			ConnectorInterface obj = new Connector(boardModel, tacToe);
