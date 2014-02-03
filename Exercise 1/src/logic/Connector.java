@@ -36,6 +36,7 @@ public class Connector implements ConnectorInterface {
 			}
 			
 			Registry reg = LocateRegistry.createRegistry(3050);
+			System.out.println(reg.list().length);
 			if(reg.list().length == 1){
 				throw new Exception("Server exists");
 			}
