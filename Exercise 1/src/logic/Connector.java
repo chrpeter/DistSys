@@ -36,7 +36,9 @@ public class Connector implements ConnectorInterface {
 			
 			Registry reg = LocateRegistry.createRegistry(3050);
 
+			//Naming.rebind();
 			Naming.rebind("Hello", serverSide);
+			
 			
 			System.out.println("Server ready");
 		}catch(Exception e) {
@@ -58,11 +60,13 @@ public class Connector implements ConnectorInterface {
 		serverConnect();
 
 		try {		
-			Registry registry = LocateRegistry.getRegistry(host, 49756);
+			Registry reg = LocateRegistry.getRegistry(host, 3050);
 			
 			clientSide = (ConnectorInterface) Naming.lookup("Hello");
+			
 			ConnectorInterface obj = new Connector(boardModel, tacToe);
 			System.out.println("YE" + serverSide);
+			
 			clientSide.setOpponent(serverSide);
 			String response = clientSide.sendMessage("y er dum");
 
