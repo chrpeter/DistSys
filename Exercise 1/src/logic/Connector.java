@@ -34,7 +34,11 @@ public class Connector implements ConnectorInterface {
 			if(LocateRegistry.getRegistry(3050) == null){
 				System.out.println("HEHE");
 			}
+			
 			Registry reg = LocateRegistry.createRegistry(3050);
+			if(reg.list().length == 1){
+				throw new Exception("Server exists");
+			}
 			serverSide.sendMessage("x er dum");
 			isServer = true;
 
@@ -62,8 +66,7 @@ public class Connector implements ConnectorInterface {
 		serverConnect();
 
 		try {		
-			Registry reg = LocateRegistry.getRegistry(3050);
-			
+			Registry reg = LocateRegistry.getRegistry(host, 3050);
 			clientSide = (ConnectorInterface) reg.lookup("Hello");
 			
 			ConnectorInterface obj = new Connector(boardModel, tacToe);
