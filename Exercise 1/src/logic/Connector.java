@@ -29,15 +29,15 @@ public class Connector implements ConnectorInterface {
 	
 	public void serverConnect(){
 		try{
+			Registry reg = LocateRegistry.createRegistry(3050);
 			isServer = true;
 			Connector obj = new Connector(boardModel, tacToe);
 			serverSide = (ConnectorInterface) UnicastRemoteObject.exportObject(obj, 0); 
 			serverSide.sendMessage("x er dum");
 			
-			Registry reg = LocateRegistry.createRegistry(3050);
 
 			//Naming.rebind();
-			Naming.rebind("Hello", serverSide);
+			reg.rebind("Hello", serverSide);
 			
 			
 			System.out.println("Server ready");
@@ -62,7 +62,7 @@ public class Connector implements ConnectorInterface {
 		try {		
 			Registry reg = LocateRegistry.getRegistry(host, 3050);
 			
-			clientSide = (ConnectorInterface) Naming.lookup("Hello");
+			clientSide = (ConnectorInterface) reg.lookup("Hello");
 			
 			ConnectorInterface obj = new Connector(boardModel, tacToe);
 			System.out.println("YE" + serverSide);
