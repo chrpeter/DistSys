@@ -54,17 +54,13 @@ public class Connector implements ConnectorInterface {
 		return message;
 	}
 	public ConnectorInterface clientConnect(){
-		String host = "78.91.83.100";
+		String host = "127.0.0.1";
 		serverConnect();
 
 		try {		
 			Registry registry = LocateRegistry.getRegistry(host, 3050);
-
 			clientSide = (ConnectorInterface) registry.lookup("Hello");
-			ConnectorInterface obj = new Connector(boardModel, tacToe);
-			System.out.println("YE" + serverSide);
 			clientSide.setOpponent(serverSide);
-			String response = clientSide.sendMessage("y er dum");
 
 		}
 		catch (NotBoundException nbe) {
@@ -102,8 +98,6 @@ public class Connector implements ConnectorInterface {
 
 	@Override
 	public boolean serverTurn(boolean server) throws RemoteException {
-		// TODO Auto-generated method stub
-		//myTurn = server;
 		tacToe.playerTurn(server);
 		return server;
 	}
