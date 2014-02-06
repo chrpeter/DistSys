@@ -38,7 +38,13 @@
 \end{titlepage}
 
 \section{Kort beskrivelse}
-Vi har valgt å lage en egen klasse som implementer Java RMI. Hver klasse er beskrevet nedenfor. Når 
+Vi har valgt å lage en egen klasse som implementer Java RMI. Hver klasse er beskrevet nedenfor. Her er et overblikk over det som skjer:
+\begin{center}
+\includegraphics[scale=0.5]{TicTacToe}
+\end{center}
+
+Klienten må ha tak i stub-objektet, for å få tak i dette må klienten da gjøre et lookup. Siden RMI registry allerede har laget stuben som klienten leter etter, trenger klienten bare å spørre om denne stubben finnes. Deretter vil RMI reqgistry returnere stubben, som klienten da vil snakke sammen ved å overføre de metodene som er blitt definert i interfacet. 
+
 
 \section{Connector.java}
 \subsection*{public void serverConnect()}
