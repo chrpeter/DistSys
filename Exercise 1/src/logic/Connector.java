@@ -54,7 +54,7 @@ public class Connector implements ConnectorInterface {
 		return message;
 	}
 	public ConnectorInterface clientConnect(){
-		String host = "127.0.0.1";
+		String host = "78.91.80.41";
 		serverConnect();
 
 		try {		
