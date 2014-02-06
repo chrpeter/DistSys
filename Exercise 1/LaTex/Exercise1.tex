@@ -41,21 +41,35 @@
 Vi har valgt å lage en egen klasse som implementer Java RMI. Hver klasse er beskrevet nedenfor.
 
 \section{Connector.java}
+\subsection*{public void serverConnect()}
+Denne koden vil bli kjørt hvis det ikke finnes noen server. Da vil isServer bli satt til true slik at vi kan bruke dette til å bestemme hvilket merke den skal bruke. Vi benytter oss av Registry der vi åpner det på port 3050 for øyeblikket.
+\subsection*{public ConnectorInterface clientConnect()}
+Hvis det ikke går ann å sette opp en server, vil clientConnect kjøres. Denne metoden vil enten retunere servers grensesnittet eller klient grensesnittet slik at klassen TicTacToe.java kan bruke denne.
+
+
+\subsection*{public boolean setMark(int x, int y, char mark)}
+Metode for å sette merke(O eller X) på motstanderens skjerm.
+\subsection*{public boolean serverTurn(boolean server)}
+Denne metoden setter om det er serveren sin tur til å spille.
+\subsection*{public boolean isServer()}
+En enkel metode for å se om man selv er server eller klient.
+\subsection*{public void setOpponent(ConnectorInterface opponent)}
+Når klienten har koblet seg opp, er det ikke noen automatikk i at serveren vet hvem denne klienten er. Derfor lagde vi denne metoden som setter motstanderen for serveren så den kan sende merker tilbake til klienten når det spilles.
+\subsection*{public void setGameIsWon(boolean gameIsWon)}
+For å hindre at det skal kunne spilles videre når en har vunnet må man si ifra til motstanderen at man har vunnet. Dette gjør denne metoden.
+
+\subsection*{public void resetGame(int boardSize) }
+Dette er en ekstra funksjonalitet som vi har lagt til. Det vi gjør her er å starte spillet på nytt på både server og klient.
 
 \section{ConnectorInterface.java}
-Grunnen til at vi har med denne er at vi trenger et interface som kan brukes av klienten på den andre siden. Dette grensesnittet implementerer 
+Grunnen til at vi har med denne er at vi trenger et interface som kan brukes av klienten på den andre siden. Dette grensesnittet implementerer Remote. Metodene som ligger her er beskrevet i Connector.java seksjonen.
 
 \section{BoardModel.java}
-\subsection*{public void cleanBoard}
+\subsection*{public void cleanBoard()}
 Denne metoden måtte jeg legge til for å fjerne alle kryss og sirkler. Ingenting som har med RMI er gjort her.
 
 \section{TicTacToe.java}
 
 
-\newpage
-\begin{thebibliography}{2}
-
-
-\end{thebibliography}
 
 \end{document}

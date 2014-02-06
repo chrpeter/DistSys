@@ -15,7 +15,6 @@ public class Connector implements ConnectorInterface {
 	
 	private BoardModel boardModel;
 	private ConnectorInterface serverSide = null;
-	private ConnectorInterface opponentForServer = null;
 	private ConnectorInterface clientSide = null;
 	private boolean isServer;
 	private TicTacToe tacToe;
@@ -110,14 +109,9 @@ public class Connector implements ConnectorInterface {
 
 	@Override
 	public void setOpponent(ConnectorInterface opponent) throws RemoteException {
-		this.opponentForServer = opponent;
-		System.out.println(opponent);
 		tacToe.setPlayer(opponent);
 	}
-	public ConnectorInterface getOpponent(){
-		System.out.println("RR: " + this.opponentForServer);
-		return this.opponentForServer;
-	}
+
 
 
 	@Override
