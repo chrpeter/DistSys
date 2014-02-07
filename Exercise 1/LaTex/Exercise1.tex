@@ -75,6 +75,12 @@ Grunnen til at vi har med denne er at vi trenger et interface som kan brukes av 
 Denne metoden måtte jeg legge til for å fjerne alle kryss og sirkler. Ingenting som har med RMI er gjort her.
 
 \section{TicTacToe.java}
+I denne klassen er det også implementert noen hjelpe metoder for sette motstander, om spillet er vunnet og hvem sin tur det er.
+\subsection*{public void valueChanged(ListSelectionEvent e)}
+I denne metoden har vi lagt til en del nye ting. Den største forskjellen nå er at man bare kan gjøre et trekk hvis det er din tur. Det er også i denne metoden at vi sier ifra til motstanderen hva som har skjedd samt at vi oppdaterer vårt eget brett som før. Det er heller mulig å spille videre hvis en spiller har vunnet.
+\subsection*{public void actionPerformed(ActionEvent e)}
+Denne metoden er ikke en del av øvingen. Det som skjer her er at vi starter spillet på nytt igjen. Vi sier ifra til motstanderen om at spillet er startet på nytt.
+
 
 
 
