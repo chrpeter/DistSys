@@ -24,10 +24,10 @@ Hver datamaskin har en \emph{fysisk klokke}, hver klokke kalibrerer anderledes h
 \subsection*{b)}
 \emph{Happend-before} er en relasjon mellom to hendelser. Når to hendelser skjer på samme prosess, vil hendelsen skje i forhold til den ordningen som prosessen ser dem. Ved sending av en melding til en annen prosess, vil sending forekomme som første 
 \begin{itemize}
-	\item a -> j Nei
-	\item j -> c Ja, fordi regelen HB3, s. 623
-	\item k -> u Nei
-	\item a -> e Ja, fordi regelen HB3, s. 623
+	\item $a -> j$ Nei
+	\item $j -> c$ Ja, fordi regelen HB3, s. 623
+	\item $k -> u$ Nei
+	\item $a -> e$ Ja, fordi regelen HB3, s. 623
 \end{itemize}
 \subsection*{c)}
 Nei, når en hendelse \emph{e} på en vilkårlig prosess sender en melding til hendelse \emph{f}, så vet vi at Lamport timestamps for hendelse e er mindre enn hendelse f, altså $L(e) < L(f)$. Så hvis vi vet at $L(e) < L(f)$ så kan vi ikke si at e->f fordi vi ikke sikkert kan si om de henger sammen. Det eneste vi vet er at timestampen til e er mindre enn f. Derfor finnes vektor klokker, fordi å håndtere denne problematikken. 
