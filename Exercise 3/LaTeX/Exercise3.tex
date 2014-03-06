@@ -5,6 +5,8 @@
 \usepackage[margin=30mm]{geometry}
 \usepackage{graphicx}
 \usepackage{mathtools}
+\usepackage{tikz}
+\usepackage{tikz-qtree}
 
 \setlength{\parskip}{\medskipamount}
 \setlength{\parindent}{0pt}
@@ -18,7 +20,6 @@
 \subsection*{a)}
 %Hvorfor kan vi trenge både fysiske og logiske klokker i distribuerte systemer? Gi to eksempler for bruk av fysiske og logiske klokker.
 Hver datamaskin har en \emph{fysisk klokke}, hver klokke kalibrerer anderledes hver for seg. I et distribuert system, så vil ikke dette fungere med henhold til synkronisering. En \emph{logisk klokke} er derfor nødvendig. En logisk klokke fungerer slik at den er uavhengig av den fysiske klokken ved at den oppdaterer en \emph{program teller}. Denne telleren fungerer som en \emph{timestamp} slik at andre prosesser over det distrubuerte systemet synkroniseres mht denne telleren. Hver prosess inkrementerer telleren før hver hendelse(Dette kan være 1 eller et annet positivt nummer).
-
 
 \subsection*{b)}
 \emph{Happend-before} er en relasjon mellom to hendelser. Når to hendelser skjer på samme prosess, vil hendelsen skje i forhold til den ordningen som prosessen ser dem. Ved sending av en melding til en annen prosess, vil sending forekomme som første 
@@ -50,5 +51,42 @@ Tatt fra boken på s. 622 gir oss dette:
 $$O_i = \frac{(T_{i-2} - T_{i-3} + T_{i-1} - T_i)}{2}$$
 $$O_i = \frac{10050-10040}{2} = \frac{10}{2} = 5 ms$$
 \section{Global State}
+\begin{tikzpicture}
+	\node{$S_{00}$}
+	child {node (S10) {$S_{10}$}
+		child {node (S20) {$S_{20}$}
+			child {node (S30) {$S_{30}$}
+				child {node (S31) {$S_{31}$}
+					child {node (S32) {$S_{32}$}
+						child {node (S33) {$S_{33}$}
+							child {node (S43) {$S_{43}$}
+								child {node (S44) {$S_{44}$}}}
+							child {node (S34) {$S_{34}$}}}}}}
+			child {node (S21) {$S_{21}$}
+				child {node (S22) {$S_{22}$}
+					child {node (S23) {$S_{23}$}}}}}
+		child {node (S11) {$S_{11}$}}}
+	child {node (S01) {$S_{01}$}
+	};
+	\draw (S01) -- (S11);
+	\draw (S11) -- (S21);
+	\draw (S21) -- (S31);
+	\draw (S34) -- (S44);
+	\draw (S22) -- (S32);
+	\draw (S23) -- (S33);
+
+\end{tikzpicture}
 \section{Snapshot}
+Det som skjer når A starter snapshot algoritmen er:
+\begin{enumerate}
+	\item A sender en melding med tilstand 21(for C1) til B.
+	\item A lagrer tilstanden sin til 21.
+	\item A sender en markørmelding til B.
+	\item B mottar markørmeldingen.
+	\item B finner ut at den nye tilstanden nå er 22.
+	\item B lagrer tilstanden som skjer når markørmeldingen er motatt.
+	\item B sender en markørmelding til A.
+	\item A mottar B sin markørmelding.
+	\item A lagrer C2 sin tilstand som nå er 22.
+\end{enumerate}
 \end{document}
