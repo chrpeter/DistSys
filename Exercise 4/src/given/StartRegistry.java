@@ -11,8 +11,7 @@ public class StartRegistry
    *
    * @param args Command line parameters, the first parameter specifies the port of the RMI registry.
    */
-  public static void main(String[] args)
-  {
+  public static void main(String[] args){
     if (args.length > 0) {
       try {
         Registry r = LocateRegistry.createRegistry(Integer.parseInt(args[0]));

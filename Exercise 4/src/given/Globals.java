@@ -52,6 +52,12 @@ class Globals
    * The minimum interval between the end of a transaction and the arrival of a new one at a server
    */
   static final long MIN_ARRIVAL_WAIT = 50;
+  
+  
+  /**
+   * The timeout variable for how long an transaction can wait for an resource.
+   */
+  static final long TIMEOUT = 300;
 
   /**
    * Returns a random integer number in the range [min, max].

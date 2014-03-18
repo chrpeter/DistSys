@@ -1,0 +1,966 @@
+==================================================================
+610: Server 4 started.
+4912: Server 4 started its transactions.
+4947: Transaction 4000 arrived.
+4947: TRANS 4000: Starting transaction 4000.
+4947: TRANS 4000: Trying to claim lock of resource 5 at server 2
+4948: TRANS 4000: Lock claimed. Processing...
+5048: TRANS 4000: Trying to claim lock of resource 4 at server 4
+5048: TRANS 4000: Lock claimed. Processing...
+5112: TRANS 4000: Trying to claim lock of resource 8 at server 1
+5114: TRANS 4000: Lock claimed. Processing...
+5205: TRANS 4000: Trying to claim lock of resource 8 at server 2
+5206: TRANS 4000: Lock claimed. Processing...
+5251: TRANS 4000: Trying to claim lock of resource 6 at server 1
+5252: TRANS 4000: Lock claimed. Processing...
+5345: TRANS 4000: Trying to claim lock of resource 9 at server 1
+5346: TRANS 4000: Lock claimed. Processing...
+5388: TRANS 4000: Trying to claim lock of resource 6 at server 4
+5389: TRANS 4000: Lock claimed. Processing...
+5455: TRANS 4000: Trying to claim lock of resource 7 at server 4
+5456: TRANS 4000: Lock claimed. Processing...
+5533: TRANS 4000: Trying to claim lock of resource 2 at server 1
+5534: TRANS 4000: Lock claimed. Processing...
+5614: TRANS 4000: Trying to claim lock of resource 4 at server 3
+5615: TRANS 4000: Lock claimed. Processing...
+5689: TRANS 4000: Committing transaction 4000.
+5691: TRANS 4000: Unlocked resource 5 at server 2
+5691: TRANS 4000: Unlocked resource 4 at server 4
+5693: TRANS 4000: Unlocked resource 8 at server 1
+5694: TRANS 4000: Unlocked resource 8 at server 2
+5696: TRANS 4000: Unlocked resource 6 at server 1
+5698: TRANS 4000: Unlocked resource 9 at server 1
+5698: TRANS 4000: Unlocked resource 6 at server 4
+5699: TRANS 4000: Unlocked resource 7 at server 4
+5700: TRANS 4000: Unlocked resource 2 at server 1
+5700: TRANS 4000: Unlocked resource 4 at server 3
+5700: TRANS 4000: Transaction 4000 committed.
+5701: Transaction 4000 ended.
+5958: Transaction 4001 arrived.
+5959: TRANS 4001: Starting transaction 4001.
+5959: TRANS 4001: Trying to claim lock of resource 4 at server 4
+5959: TRANS 4001: Lock claimed. Processing...
+6002: TRANS 4001: Trying to claim lock of resource 8 at server 4
+6003: TRANS 4001: Lock claimed. Processing...
+6088: TRANS 4001: Trying to claim lock of resource 2 at server 2
+6089: TRANS 4001: Lock claimed. Processing...
+6136: TRANS 4001: Trying to claim lock of resource 0 at server 4
+6137: TRANS 4001: Lock claimed. Processing...
+6175: TRANS 4001: Committing transaction 4001.
+6176: TRANS 4001: Unlocked resource 4 at server 4
+6176: TRANS 4001: Unlocked resource 8 at server 4
+6177: TRANS 4001: Unlocked resource 2 at server 2
+6177: TRANS 4001: Unlocked resource 0 at server 4
+6178: TRANS 4001: Transaction 4001 committed.
+6178: Transaction 4001 ended.
+6287: Transaction 4002 arrived.
+6287: TRANS 4002: Starting transaction 4002.
+6288: TRANS 4002: Trying to claim lock of resource 2 at server 3
+6288: TRANS 4002: Lock claimed. Processing...
+6355: TRANS 4002: Trying to claim lock of resource 4 at server 3
+6356: TRANS 4002: Lock claimed. Processing...
+6386: TRANS 4002: Trying to claim lock of resource 8 at server 4
+6387: TRANS 4002: Lock claimed. Processing...
+6477: TRANS 4002: Trying to claim lock of resource 9 at server 1
+6478: TRANS 4002: Lock claimed. Processing...
+6523: TRANS 4002: Trying to claim lock of resource 3 at server 2
+6524: TRANS 4002: Lock claimed. Processing...
+6604: TRANS 4002: Trying to claim lock of resource 1 at server 2
+6606: TRANS 4002: Lock claimed. Processing...
+6698: TRANS 4002: Committing transaction 4002.
+6699: TRANS 4002: Unlocked resource 2 at server 3
+6700: TRANS 4002: Unlocked resource 4 at server 3
+6700: TRANS 4002: Unlocked resource 8 at server 4
+6701: TRANS 4002: Unlocked resource 9 at server 1
+6702: TRANS 4002: Unlocked resource 3 at server 2
+6703: TRANS 4002: Unlocked resource 1 at server 2
+6703: TRANS 4002: Transaction 4002 committed.
+6703: Transaction 4002 ended.
+6765: Transaction 4003 arrived.
+6765: TRANS 4003: Starting transaction 4003.
+6765: TRANS 4003: Trying to claim lock of resource 8 at server 3
+6766: TRANS 4003: Lock claimed. Processing...
+6867: TRANS 4003: Trying to claim lock of resource 9 at server 2
+6868: TRANS 4003: Lock claimed. Processing...
+6899: TRANS 4003: Trying to claim lock of resource 7 at server 4
+6899: TRANS 4003: Lock claimed. Processing...
+6973: TRANS 4003: Trying to claim lock of resource 8 at server 4
+6973: TRANS 4003: Lock claimed. Processing...
+7053: TRANS 4003: Trying to claim lock of resource 6 at server 4
+7053: TRANS 4003: Lock claimed. Processing...
+7122: TRANS 4003: Trying to claim lock of resource 4 at server 1
+7123: TRANS 4003: Lock claimed. Processing...
+7150: TRANS 4003: Trying to claim lock of resource 9 at server 1
+7151: TRANS 4003: Lock claimed. Processing...
+7250: TRANS 4003: Trying to claim lock of resource 3 at server 1
+7251: TRANS 4003: Lock claimed. Processing...
+7287: TRANS 4003: Trying to claim lock of resource 3 at server 2
+7289: TRANS 4003: Lock claimed. Processing...
+7372: TRANS 4003: Committing transaction 4003.
+7373: TRANS 4003: Unlocked resource 8 at server 3
+7374: TRANS 4003: Unlocked resource 9 at server 2
+7375: TRANS 4003: Unlocked resource 7 at server 4
+7375: TRANS 4003: Unlocked resource 8 at server 4
+7376: TRANS 4003: Unlocked resource 6 at server 4
+7378: TRANS 4003: Unlocked resource 4 at server 1
+7380: TRANS 4003: Unlocked resource 9 at server 1
+7381: TRANS 4003: Unlocked resource 3 at server 1
+7383: TRANS 4003: Unlocked resource 3 at server 2
+7383: TRANS 4003: Transaction 4003 committed.
+7383: Transaction 4003 ended.
+7613: Transaction 4004 arrived.
+7614: TRANS 4004: Starting transaction 4004.
+7614: TRANS 4004: Trying to claim lock of resource 2 at server 2
+7615: TRANS 4004: Lock claimed. Processing...
+7700: TRANS 4004: Trying to claim lock of resource 1 at server 1
+7701: TRANS 4004: Lock claimed. Processing...
+7753: TRANS 4004: Trying to claim lock of resource 8 at server 1
+7754: TRANS 4004: Lock claimed. Processing...
+7778: TRANS 4004: Trying to claim lock of resource 4 at server 3
+7779: TRANS 4004: Lock claimed. Processing...
+7808: TRANS 4004: Trying to claim lock of resource 9 at server 2
+7809: TRANS 4004: Lock claimed. Processing...
+7833: TRANS 4004: Trying to claim lock of resource 6 at server 2
+7834: TRANS 4004: Lock claimed. Processing...
+7912: TRANS 4004: Trying to claim lock of resource 3 at server 1
+7913: TRANS 4004: Lock claimed. Processing...
+7941: TRANS 4004: Committing transaction 4004.
+7942: TRANS 4004: Unlocked resource 2 at server 2
+7942: TRANS 4004: Unlocked resource 1 at server 1
+7944: TRANS 4004: Unlocked resource 8 at server 1
+7944: TRANS 4004: Unlocked resource 4 at server 3
+7946: TRANS 4004: Unlocked resource 9 at server 2
+7947: TRANS 4004: Unlocked resource 6 at server 2
+7947: TRANS 4004: Unlocked resource 3 at server 1
+7948: TRANS 4004: Transaction 4004 committed.
+7948: Transaction 4004 ended.
+8229: Transaction 4005 arrived.
+8229: TRANS 4005: Starting transaction 4005.
+8229: TRANS 4005: Trying to claim lock of resource 2 at server 1
+8230: TRANS 4005: Lock claimed. Processing...
+8251: TRANS 4005: Trying to claim lock of resource 4 at server 4
+8251: TRANS 4005: Lock claimed. Processing...
+8288: TRANS 4005: Trying to claim lock of resource 8 at server 1
+8288: TRANS 4005: Lock claimed. Processing...
+8310: TRANS 4005: Trying to claim lock of resource 6 at server 2
+8311: TRANS 4005: Lock claimed. Processing...
+8385: TRANS 4005: Trying to claim lock of resource 9 at server 4
+8386: TRANS 4005: Lock claimed. Processing...
+8434: TRANS 4005: Trying to claim lock of resource 4 at server 3
+8435: TRANS 4005: Lock claimed. Processing...
+8532: TRANS 4005: Trying to claim lock of resource 7 at server 3
+8533: TRANS 4005: Lock claimed. Processing...
+8623: TRANS 4005: Trying to claim lock of resource 5 at server 3
+8624: TRANS 4005: Lock claimed. Processing...
+8668: TRANS 4005: Committing transaction 4005.
+8669: TRANS 4005: Unlocked resource 2 at server 1
+8669: TRANS 4005: Unlocked resource 4 at server 4
+8670: TRANS 4005: Unlocked resource 8 at server 1
+8671: TRANS 4005: Unlocked resource 6 at server 2
+8671: TRANS 4005: Unlocked resource 9 at server 4
+8672: TRANS 4005: Unlocked resource 4 at server 3
+8673: TRANS 4005: Unlocked resource 7 at server 3
+8674: TRANS 4005: Unlocked resource 5 at server 3
+8674: TRANS 4005: Transaction 4005 committed.
+8674: Transaction 4005 ended.
+8856: Transaction 4006 arrived.
+8856: TRANS 4006: Starting transaction 4006.
+8856: TRANS 4006: Trying to claim lock of resource 9 at server 2
+8857: TRANS 4006: Lock claimed. Processing...
+8903: TRANS 4006: Trying to claim lock of resource 4 at server 4
+8903: TRANS 4006: Lock claimed. Processing...
+8989: TRANS 4006: Trying to claim lock of resource 1 at server 4
+8989: TRANS 4006: Lock claimed. Processing...
+9061: TRANS 4006: Trying to claim lock of resource 3 at server 4
+9196: TRANS 4006: Lock claimed. Processing...
+9269: TRANS 4006: Trying to claim lock of resource 4 at server 1
+9270: TRANS 4006: Lock claimed. Processing...
+9334: TRANS 4006: Trying to claim lock of resource 3 at server 3
+9335: TRANS 4006: Lock claimed. Processing...
+9425: TRANS 4006: Trying to claim lock of resource 0 at server 4
+9425: TRANS 4006: Lock claimed. Processing...
+9447: TRANS 4006: Trying to claim lock of resource 6 at server 3
+9448: TRANS 4006: Lock claimed. Processing...
+9487: TRANS 4006: Trying to claim lock of resource 1 at server 2
+9488: TRANS 4006: Lock claimed. Processing...
+9523: TRANS 4006: Trying to claim lock of resource 8 at server 1
+9523: TRANS 4006: Lock claimed. Processing...
+9562: TRANS 4006: Committing transaction 4006.
+9562: TRANS 4006: Unlocked resource 9 at server 2
+9563: TRANS 4006: Unlocked resource 4 at server 4
+9563: TRANS 4006: Unlocked resource 1 at server 4
+9563: TRANS 4006: Unlocked resource 3 at server 4
+9564: TRANS 4006: Unlocked resource 4 at server 1
+9564: TRANS 4006: Unlocked resource 3 at server 3
+9565: TRANS 4006: Unlocked resource 0 at server 4
+9565: TRANS 4006: Unlocked resource 6 at server 3
+9566: TRANS 4006: Unlocked resource 1 at server 2
+9567: TRANS 4006: Unlocked resource 8 at server 1
+9567: TRANS 4006: Transaction 4006 committed.
+9567: Transaction 4006 ended.
+9656: Transaction 4007 arrived.
+9656: TRANS 4007: Starting transaction 4007.
+9656: TRANS 4007: Trying to claim lock of resource 4 at server 1
+9657: TRANS 4007: Lock claimed. Processing...
+9683: TRANS 4007: Trying to claim lock of resource 5 at server 2
+9974: TRANS 4007: Aborting transaction 4007.
+9974: TRANS 4007: Unlocked resource 4 at server 1
+9975: TRANS 4007: Transaction 4007 aborted.
+9975: Transaction 4007 ended.
+10243: Transaction 4008 arrived.
+10243: TRANS 4008: Starting transaction 4008.
+10243: TRANS 4008: Trying to claim lock of resource 6 at server 4
+10243: TRANS 4008: Lock claimed. Processing...
+10299: TRANS 4008: Trying to claim lock of resource 5 at server 3
+10299: TRANS 4008: Lock claimed. Processing...
+10398: TRANS 4008: Trying to claim lock of resource 8 at server 3
+10399: TRANS 4008: Lock claimed. Processing...
+10445: TRANS 4008: Trying to claim lock of resource 0 at server 1
+10446: TRANS 4008: Lock claimed. Processing...
+10517: TRANS 4008: Trying to claim lock of resource 1 at server 3
+10517: TRANS 4008: Lock claimed. Processing...
+10608: TRANS 4008: Trying to claim lock of resource 3 at server 1
+10609: TRANS 4008: Lock claimed. Processing...
+10693: TRANS 4008: Trying to claim lock of resource 3 at server 3
+10694: TRANS 4008: Lock claimed. Processing...
+10727: TRANS 4008: Trying to claim lock of resource 8 at server 1
+10728: TRANS 4008: Lock claimed. Processing...
+10782: TRANS 4008: Committing transaction 4008.
+10782: TRANS 4008: Unlocked resource 6 at server 4
+10783: TRANS 4008: Unlocked resource 5 at server 3
+10783: TRANS 4008: Unlocked resource 8 at server 3
+10784: TRANS 4008: Unlocked resource 0 at server 1
+10784: TRANS 4008: Unlocked resource 1 at server 3
+10785: TRANS 4008: Unlocked resource 3 at server 1
+10785: TRANS 4008: Unlocked resource 3 at server 3
+10786: TRANS 4008: Unlocked resource 8 at server 1
+10786: TRANS 4008: Transaction 4008 committed.
+10786: Transaction 4008 ended.
+11023: Transaction 4009 arrived.
+11023: TRANS 4009: Starting transaction 4009.
+11024: TRANS 4009: Trying to claim lock of resource 8 at server 2
+11024: TRANS 4009: Lock claimed. Processing...
+11062: TRANS 4009: Trying to claim lock of resource 2 at server 3
+11063: TRANS 4009: Lock claimed. Processing...
+11120: TRANS 4009: Trying to claim lock of resource 9 at server 4
+11120: TRANS 4009: Lock claimed. Processing...
+11199: TRANS 4009: Trying to claim lock of resource 4 at server 3
+11247: TRANS 4009: Lock claimed. Processing...
+11277: TRANS 4009: Trying to claim lock of resource 0 at server 3
+11278: TRANS 4009: Lock claimed. Processing...
+11343: TRANS 4009: Committing transaction 4009.
+11344: TRANS 4009: Unlocked resource 8 at server 2
+11345: TRANS 4009: Unlocked resource 2 at server 3
+11345: TRANS 4009: Unlocked resource 9 at server 4
+11346: TRANS 4009: Unlocked resource 4 at server 3
+11347: TRANS 4009: Unlocked resource 0 at server 3
+11347: TRANS 4009: Transaction 4009 committed.
+11347: Transaction 4009 ended.
+11492: Transaction 4010 arrived.
+11492: TRANS 4010: Starting transaction 4010.
+11492: TRANS 4010: Trying to claim lock of resource 4 at server 1
+11493: TRANS 4010: Lock claimed. Processing...
+11549: TRANS 4010: Trying to claim lock of resource 9 at server 1
+11550: TRANS 4010: Lock claimed. Processing...
+11640: TRANS 4010: Trying to claim lock of resource 4 at server 4
+11640: TRANS 4010: Lock claimed. Processing...
+11672: TRANS 4010: Trying to claim lock of resource 9 at server 3
+11673: TRANS 4010: Lock claimed. Processing...
+11754: TRANS 4010: Trying to claim lock of resource 0 at server 3
+11755: TRANS 4010: Lock claimed. Processing...
+11831: TRANS 4010: Committing transaction 4010.
+11832: TRANS 4010: Unlocked resource 4 at server 1
+11833: TRANS 4010: Unlocked resource 9 at server 1
+11833: TRANS 4010: Unlocked resource 4 at server 4
+11834: TRANS 4010: Unlocked resource 9 at server 3
+11835: TRANS 4010: Unlocked resource 0 at server 3
+11835: TRANS 4010: Transaction 4010 committed.
+11835: Transaction 4010 ended.
+11960: Transaction 4011 arrived.
+11960: TRANS 4011: Starting transaction 4011.
+11960: TRANS 4011: Trying to claim lock of resource 7 at server 4
+11960: TRANS 4011: Lock claimed. Processing...
+12057: TRANS 4011: Trying to claim lock of resource 1 at server 1
+12057: TRANS 4011: Lock claimed. Processing...
+12112: TRANS 4011: Trying to claim lock of resource 5 at server 3
+12114: TRANS 4011: Lock claimed. Processing...
+12196: TRANS 4011: Trying to claim lock of resource 3 at server 2
+12197: TRANS 4011: Lock claimed. Processing...
+12222: TRANS 4011: Committing transaction 4011.
+12222: TRANS 4011: Unlocked resource 7 at server 4
+12223: TRANS 4011: Unlocked resource 1 at server 1
+12224: TRANS 4011: Unlocked resource 5 at server 3
+12225: TRANS 4011: Unlocked resource 3 at server 2
+12225: TRANS 4011: Transaction 4011 committed.
+12225: Transaction 4011 ended.
+12307: Transaction 4012 arrived.
+12308: TRANS 4012: Starting transaction 4012.
+12308: TRANS 4012: Trying to claim lock of resource 3 at server 1
+12309: TRANS 4012: Lock claimed. Processing...
+12337: TRANS 4012: Trying to claim lock of resource 5 at server 3
+12338: TRANS 4012: Lock claimed. Processing...
+12437: TRANS 4012: Trying to claim lock of resource 9 at server 3
+12438: TRANS 4012: Lock claimed. Processing...
+12535: TRANS 4012: Trying to claim lock of resource 4 at server 1
+12536: TRANS 4012: Lock claimed. Processing...
+12603: TRANS 4012: Trying to claim lock of resource 6 at server 3
+12619: TRANS 4012: Lock claimed. Processing...
+12660: TRANS 4012: Committing transaction 4012.
+12661: TRANS 4012: Unlocked resource 3 at server 1
+12661: TRANS 4012: Unlocked resource 5 at server 3
+12662: TRANS 4012: Unlocked resource 9 at server 3
+12662: TRANS 4012: Unlocked resource 4 at server 1
+12663: TRANS 4012: Unlocked resource 6 at server 3
+12663: TRANS 4012: Transaction 4012 committed.
+12663: Transaction 4012 ended.
+12736: Transaction 4013 arrived.
+12736: TRANS 4013: Starting transaction 4013.
+12736: TRANS 4013: Trying to claim lock of resource 7 at server 2
+12737: TRANS 4013: Lock claimed. Processing...
+12836: TRANS 4013: Trying to claim lock of resource 7 at server 4
+12836: TRANS 4013: Lock claimed. Processing...
+12878: TRANS 4013: Trying to claim lock of resource 8 at server 1
+12878: TRANS 4013: Lock claimed. Processing...
+12905: TRANS 4013: Trying to claim lock of resource 1 at server 2
+12906: TRANS 4013: Lock claimed. Processing...
+12984: TRANS 4013: Trying to claim lock of resource 5 at server 3
+12985: TRANS 4013: Lock claimed. Processing...
+13013: TRANS 4013: Trying to claim lock of resource 0 at server 3
+16176: TRANS 4013: Lock claimed. Processing...
+16268: TRANS 4013: Trying to claim lock of resource 4 at server 4
+16269: TRANS 4013: Lock claimed. Processing...
+16328: TRANS 4013: Committing transaction 4013.
+16329: TRANS 4013: Unlocked resource 7 at server 2
+16329: TRANS 4013: Unlocked resource 7 at server 4
+16330: TRANS 4013: Unlocked resource 8 at server 1
+16331: TRANS 4013: Unlocked resource 1 at server 2
+16331: TRANS 4013: Unlocked resource 5 at server 3
+16332: TRANS 4013: Unlocked resource 0 at server 3
+16332: TRANS 4013: Unlocked resource 4 at server 4
+16332: TRANS 4013: Transaction 4013 committed.
+16332: Transaction 4013 ended.
+16534: Transaction 4014 arrived.
+16535: TRANS 4014: Starting transaction 4014.
+16535: TRANS 4014: Trying to claim lock of resource 0 at server 1
+16535: TRANS 4014: Lock claimed. Processing...
+16561: TRANS 4014: Trying to claim lock of resource 5 at server 2
+16561: TRANS 4014: Lock claimed. Processing...
+16630: TRANS 4014: Trying to claim lock of resource 5 at server 4
+16630: TRANS 4014: Lock claimed. Processing...
+16683: TRANS 4014: Trying to claim lock of resource 8 at server 1
+16684: TRANS 4014: Lock claimed. Processing...
+16747: TRANS 4014: Trying to claim lock of resource 3 at server 2
+16748: TRANS 4014: Lock claimed. Processing...
+16796: TRANS 4014: Trying to claim lock of resource 2 at server 3
+16797: TRANS 4014: Lock claimed. Processing...
+16840: TRANS 4014: Trying to claim lock of resource 0 at server 2
+16841: TRANS 4014: Lock claimed. Processing...
+16874: TRANS 4014: Trying to claim lock of resource 6 at server 3
+16874: TRANS 4014: Lock claimed. Processing...
+16923: TRANS 4014: Trying to claim lock of resource 2 at server 1
+16924: TRANS 4014: Lock claimed. Processing...
+17020: TRANS 4014: Trying to claim lock of resource 9 at server 1
+17021: TRANS 4014: Lock claimed. Processing...
+17060: TRANS 4014: Committing transaction 4014.
+17061: TRANS 4014: Unlocked resource 0 at server 1
+17062: TRANS 4014: Unlocked resource 5 at server 2
+17062: TRANS 4014: Unlocked resource 5 at server 4
+17062: TRANS 4014: Unlocked resource 8 at server 1
+17063: TRANS 4014: Unlocked resource 3 at server 2
+17063: TRANS 4014: Unlocked resource 2 at server 3
+17064: TRANS 4014: Unlocked resource 0 at server 2
+17065: TRANS 4014: Unlocked resource 6 at server 3
+17065: TRANS 4014: Unlocked resource 2 at server 1
+17066: TRANS 4014: Unlocked resource 9 at server 1
+17066: TRANS 4014: Transaction 4014 committed.
+17066: Transaction 4014 ended.
+17351: Transaction 4015 arrived.
+17351: TRANS 4015: Starting transaction 4015.
+17351: TRANS 4015: Trying to claim lock of resource 1 at server 2
+17352: TRANS 4015: Lock claimed. Processing...
+17439: TRANS 4015: Trying to claim lock of resource 8 at server 4
+17440: TRANS 4015: Lock claimed. Processing...
+17535: TRANS 4015: Trying to claim lock of resource 9 at server 4
+17535: TRANS 4015: Lock claimed. Processing...
+17558: TRANS 4015: Trying to claim lock of resource 8 at server 2
+17737: TRANS 4015: Aborting transaction 4015.
+17739: TRANS 4015: Unlocked resource 1 at server 2
+17739: TRANS 4015: Unlocked resource 8 at server 4
+17739: TRANS 4015: Unlocked resource 9 at server 4
+17739: TRANS 4015: Transaction 4015 aborted.
+17739: Transaction 4015 ended.
+17996: Transaction 4016 arrived.
+17996: TRANS 4016: Starting transaction 4016.
+17997: TRANS 4016: Trying to claim lock of resource 6 at server 4
+17997: TRANS 4016: Lock claimed. Processing...
+18062: TRANS 4016: Trying to claim lock of resource 1 at server 3
+18063: TRANS 4016: Lock claimed. Processing...
+18121: TRANS 4016: Trying to claim lock of resource 3 at server 4
+18121: TRANS 4016: Lock claimed. Processing...
+18204: TRANS 4016: Trying to claim lock of resource 0 at server 4
+18205: TRANS 4016: Lock claimed. Processing...
+18251: TRANS 4016: Trying to claim lock of resource 4 at server 3
+18252: TRANS 4016: Lock claimed. Processing...
+18337: TRANS 4016: Trying to claim lock of resource 1 at server 4
+18338: TRANS 4016: Lock claimed. Processing...
+18433: TRANS 4016: Trying to claim lock of resource 3 at server 2
+18434: TRANS 4016: Lock claimed. Processing...
+18457: TRANS 4016: Trying to claim lock of resource 1 at server 1
+18458: TRANS 4016: Lock claimed. Processing...
+18499: TRANS 4016: Trying to claim lock of resource 9 at server 4
+18499: TRANS 4016: Lock claimed. Processing...
+18536: TRANS 4016: Trying to claim lock of resource 3 at server 1
+18537: TRANS 4016: Lock claimed. Processing...
+18606: TRANS 4016: Committing transaction 4016.
+18606: TRANS 4016: Unlocked resource 6 at server 4
+18607: TRANS 4016: Unlocked resource 1 at server 3
+18608: TRANS 4016: Unlocked resource 3 at server 4
+18608: TRANS 4016: Unlocked resource 0 at server 4
+18609: TRANS 4016: Unlocked resource 4 at server 3
+18609: TRANS 4016: Unlocked resource 1 at server 4
+18610: TRANS 4016: Unlocked resource 3 at server 2
+18611: TRANS 4016: Unlocked resource 1 at server 1
+18611: TRANS 4016: Unlocked resource 9 at server 4
+18612: TRANS 4016: Unlocked resource 3 at server 1
+18612: TRANS 4016: Transaction 4016 committed.
+18612: Transaction 4016 ended.
+18718: Transaction 4017 arrived.
+18719: TRANS 4017: Starting transaction 4017.
+18719: TRANS 4017: Trying to claim lock of resource 8 at server 4
+18719: TRANS 4017: Lock claimed. Processing...
+18795: TRANS 4017: Trying to claim lock of resource 3 at server 2
+18796: TRANS 4017: Lock claimed. Processing...
+18846: TRANS 4017: Trying to claim lock of resource 5 at server 4
+18847: TRANS 4017: Lock claimed. Processing...
+18944: TRANS 4017: Trying to claim lock of resource 8 at server 2
+18945: TRANS 4017: Lock claimed. Processing...
+19005: TRANS 4017: Trying to claim lock of resource 7 at server 1
+19006: TRANS 4017: Lock claimed. Processing...
+19064: TRANS 4017: Committing transaction 4017.
+19064: TRANS 4017: Unlocked resource 8 at server 4
+19065: TRANS 4017: Unlocked resource 3 at server 2
+19065: TRANS 4017: Unlocked resource 5 at server 4
+19066: TRANS 4017: Unlocked resource 8 at server 2
+19067: TRANS 4017: Unlocked resource 7 at server 1
+19067: TRANS 4017: Transaction 4017 committed.
+19067: Transaction 4017 ended.
+19204: Transaction 4018 arrived.
+19204: TRANS 4018: Starting transaction 4018.
+19204: TRANS 4018: Trying to claim lock of resource 5 at server 2
+19205: TRANS 4018: Lock claimed. Processing...
+19229: TRANS 4018: Trying to claim lock of resource 7 at server 1
+19229: TRANS 4018: Lock claimed. Processing...
+19273: TRANS 4018: Trying to claim lock of resource 0 at server 3
+19274: TRANS 4018: Lock claimed. Processing...
+19357: TRANS 4018: Trying to claim lock of resource 8 at server 4
+19358: TRANS 4018: Lock claimed. Processing...
+19412: TRANS 4018: Trying to claim lock of resource 2 at server 4
+19412: TRANS 4018: Lock claimed. Processing...
+19476: TRANS 4018: Trying to claim lock of resource 9 at server 2
+19477: TRANS 4018: Lock claimed. Processing...
+19576: TRANS 4018: Trying to claim lock of resource 0 at server 4
+19577: TRANS 4018: Lock claimed. Processing...
+19654: TRANS 4018: Trying to claim lock of resource 9 at server 4
+19655: TRANS 4018: Lock claimed. Processing...
+19709: TRANS 4018: Trying to claim lock of resource 3 at server 4
+19709: TRANS 4018: Lock claimed. Processing...
+19759: TRANS 4018: Trying to claim lock of resource 2 at server 1
+19760: TRANS 4018: Lock claimed. Processing...
+19835: TRANS 4018: Committing transaction 4018.
+19836: TRANS 4018: Unlocked resource 5 at server 2
+19836: TRANS 4018: Unlocked resource 7 at server 1
+19837: TRANS 4018: Unlocked resource 0 at server 3
+19837: TRANS 4018: Unlocked resource 8 at server 4
+19837: TRANS 4018: Unlocked resource 2 at server 4
+19838: TRANS 4018: Unlocked resource 9 at server 2
+19838: TRANS 4018: Unlocked resource 0 at server 4
+19838: TRANS 4018: Unlocked resource 9 at server 4
+19838: TRANS 4018: Unlocked resource 3 at server 4
+19839: TRANS 4018: Unlocked resource 2 at server 1
+19839: TRANS 4018: Transaction 4018 committed.
+19839: Transaction 4018 ended.
+20113: Transaction 4019 arrived.
+20113: TRANS 4019: Starting transaction 4019.
+20113: TRANS 4019: Trying to claim lock of resource 9 at server 3
+20114: TRANS 4019: Lock claimed. Processing...
+20199: TRANS 4019: Trying to claim lock of resource 7 at server 1
+20200: TRANS 4019: Lock claimed. Processing...
+20264: TRANS 4019: Trying to claim lock of resource 4 at server 1
+20265: TRANS 4019: Lock claimed. Processing...
+20360: TRANS 4019: Trying to claim lock of resource 6 at server 2
+20361: TRANS 4019: Lock claimed. Processing...
+20436: TRANS 4019: Trying to claim lock of resource 2 at server 3
+20437: TRANS 4019: Lock claimed. Processing...
+20497: TRANS 4019: Trying to claim lock of resource 9 at server 1
+22332: Contact with server 1 was lost.
+24170: TRANS 4019: Contact was lost with a server hosting a resource involved in transaction 4019. Transaction must abort.
+24171: TRANS 4019: Aborting transaction 4019.
+24172: TRANS 4019: Failed to unlock resource 9 at server 3 due to communication failure.
+24172: TRANS 4019: Failed to unlock resource 7 at server 1 due to communication failure.
+24173: TRANS 4019: Failed to unlock resource 4 at server 1 due to communication failure.
+24174: TRANS 4019: Unlocked resource 6 at server 2
+24174: TRANS 4019: Failed to unlock resource 2 at server 3 due to communication failure.
+24174: TRANS 4019: Transaction 4019 aborted.
+24174: Transaction 4019 ended.
+24360: Transaction 4020 arrived.
+24360: TRANS 4020: Starting transaction 4020.
+24360: TRANS 4020: Trying to claim lock of resource 3 at server 3
+24361: Contact with server 3 was lost.
+24363: TRANS 4020: Aborting transaction 4020.
+24363: TRANS 4020: Transaction 4020 aborted.
+24363: Transaction 4020 ended.
+24533: Transaction 4021 arrived.
+24534: TRANS 4021: Starting transaction 4021.
+24534: TRANS 4021: Trying to claim lock of resource 8 at server 4
+24534: TRANS 4021: Lock claimed. Processing...
+24596: TRANS 4021: Trying to claim lock of resource 3 at server 4
+24597: TRANS 4021: Lock claimed. Processing...
+24653: TRANS 4021: Trying to claim lock of resource 4 at server 4
+24653: TRANS 4021: Lock claimed. Processing...
+24710: TRANS 4021: Trying to claim lock of resource 5 at server 4
+24710: TRANS 4021: Lock claimed. Processing...
+24798: TRANS 4021: Committing transaction 4021.
+24799: TRANS 4021: Unlocked resource 8 at server 4
+24799: TRANS 4021: Unlocked resource 3 at server 4
+24799: TRANS 4021: Unlocked resource 4 at server 4
+24799: TRANS 4021: Unlocked resource 5 at server 4
+24799: TRANS 4021: Transaction 4021 committed.
+24800: Transaction 4021 ended.
+25032: Transaction 4022 arrived.
+25032: TRANS 4022: Starting transaction 4022.
+25032: TRANS 4022: Trying to claim lock of resource 7 at server 2
+25033: TRANS 4022: Lock claimed. Processing...
+25063: TRANS 4022: Trying to claim lock of resource 3 at server 4
+25063: TRANS 4022: Lock claimed. Processing...
+25163: TRANS 4022: Trying to claim lock of resource 8 at server 4
+25163: TRANS 4022: Lock claimed. Processing...
+==================================================================
+587: Server 4 started.
+5254: Server 4 started its transactions.
+5327: Transaction 4000 arrived.
+5328: TRANS 4000: Starting transaction 4000.
+5328: TRANS 4000: Trying to claim lock of resource 0 at server 4
+5329: TRANS 4000: Lock claimed. Processing...
+5830: TRANS 4000: Trying to claim lock of resource 9 at server 1
+7282: TRANS 4000: Lock claimed. Processing...
+7293: TRANS 4000: Committing transaction 4000.
+7294: TRANS 4000: Unlocked resource 0 at server 4
+7295: TRANS 4000: Unlocked resource 9 at server 1
+7295: TRANS 4000: Transaction 4000 committed.
+7295: Transaction 4000 ended.
+7349: Transaction 4001 arrived.
+7349: TRANS 4001: Starting transaction 4001.
+7349: TRANS 4001: Trying to claim lock of resource 0 at server 4
+7350: TRANS 4001: Lock claimed. Processing...
+7360: TRANS 4001: Trying to claim lock of resource 1 at server 4
+7361: TRANS 4001: Lock claimed. Processing...
+7372: TRANS 4001: Trying to claim lock of resource 2 at server 4
+7372: TRANS 4001: Lock claimed. Processing...
+7383: TRANS 4001: Trying to claim lock of resource 3 at server 4
+7383: TRANS 4001: Lock claimed. Processing...
+7394: TRANS 4001: Trying to claim lock of resource 4 at server 4
+7394: TRANS 4001: Lock claimed. Processing...
+7405: TRANS 4001: Trying to claim lock of resource 5 at server 4
+7405: TRANS 4001: Lock claimed. Processing...
+7416: TRANS 4001: Trying to claim lock of resource 6 at server 4
+7416: TRANS 4001: Lock claimed. Processing...
+7427: TRANS 4001: Trying to claim lock of resource 7 at server 4
+7427: TRANS 4001: Lock claimed. Processing...
+7438: TRANS 4001: Trying to claim lock of resource 8 at server 4
+7438: TRANS 4001: Lock claimed. Processing...
+7448: TRANS 4001: Trying to claim lock of resource 9 at server 4
+7449: TRANS 4001: Lock claimed. Processing...
+8450: TRANS 4001: Trying to claim lock of resource 5 at server 2
+11441: TRANS 4001: Lock claimed. Processing...
+11452: TRANS 4001: Committing transaction 4001.
+11452: TRANS 4001: Unlocked resource 0 at server 4
+11452: TRANS 4001: Unlocked resource 1 at server 4
+11453: TRANS 4001: Unlocked resource 2 at server 4
+11453: TRANS 4001: Unlocked resource 3 at server 4
+11453: TRANS 4001: Unlocked resource 4 at server 4
+11453: TRANS 4001: Unlocked resource 5 at server 4
+11453: TRANS 4001: Unlocked resource 6 at server 4
+11454: TRANS 4001: Unlocked resource 7 at server 4
+11454: TRANS 4001: Unlocked resource 8 at server 4
+11454: TRANS 4001: Unlocked resource 9 at server 4
+11455: TRANS 4001: Unlocked resource 5 at server 2
+11455: TRANS 4001: Transaction 4001 committed.
+11455: Transaction 4001 ended.
+11456: End of input file reached, no more transactions will be started.
+==================================================================
+611: Server 4 started.
+==================================================================
+627: Server 4 started.
+1801: Server 4 started its transactions.
+1840: Transaction 4000 arrived.
+1840: TRANS 4000: Starting transaction 4000.
+1841: TRANS 4000: Trying to claim lock of resource 7 at server 3
+1842: TRANS 4000: Lock claimed. Processing...
+1904: TRANS 4000: Trying to claim lock of resource 6 at server 1
+1904: TRANS 4000: Lock claimed. Processing...
+1933: TRANS 4000: Trying to claim lock of resource 0 at server 1
+1934: TRANS 4000: Lock claimed. Processing...
+2012: TRANS 4000: Aborting transaction 4000.
+2013: TRANS 4000: Unlocked resource 7 at server 3
+2013: TRANS 4000: Unlocked resource 6 at server 1
+2014: TRANS 4000: Unlocked resource 0 at server 1
+2014: TRANS 4000: Transaction 4000 aborted.
+2028: TRANS 4000: Trying to claim lock of resource 0 at server 1
+2029: TRANS 4000: Lock claimed. Processing...
+2079: TRANS 4000: Committing transaction 4000.
+2080: TRANS 4000: Unlocked resource 0 at server 1
+2080: TRANS 4000: Transaction 4000 committed.
+2080: Transaction 4000 ended.
+2308: Transaction 4001 arrived.
+2308: TRANS 4001: Starting transaction 4001.
+2308: TRANS 4001: Trying to claim lock of resource 0 at server 4
+2311: TRANS 4001: Lock claimed. Processing...
+2402: TRANS 4001: Trying to claim lock of resource 2 at server 3
+2403: TRANS 4001: Lock claimed. Processing...
+2456: TRANS 4001: Trying to claim lock of resource 4 at server 2
+2457: TRANS 4001: Lock claimed. Processing...
+2491: TRANS 4001: Trying to claim lock of resource 2 at server 4
+2492: TRANS 4001: Lock claimed. Processing...
+2578: TRANS 4001: Trying to claim lock of resource 3 at server 3
+2582: TRANS 4001: Lock claimed. Processing...
+2627: TRANS 4001: Trying to claim lock of resource 5 at server 3
+2628: TRANS 4001: Lock claimed. Processing...
+2659: TRANS 4001: Aborting transaction 4001.
+2659: TRANS 4001: Unlocked resource 0 at server 4
+2660: TRANS 4001: Unlocked resource 2 at server 3
+2661: TRANS 4001: Unlocked resource 4 at server 2
+2661: TRANS 4001: Unlocked resource 2 at server 4
+2662: TRANS 4001: Unlocked resource 3 at server 3
+2662: TRANS 4001: Unlocked resource 5 at server 3
+2662: TRANS 4001: Transaction 4001 aborted.
+2667: TRANS 4001: Trying to claim lock of resource 8 at server 3
+2668: TRANS 4001: Lock claimed. Processing...
+2718: TRANS 4001: Trying to claim lock of resource 4 at server 2
+2718: TRANS 4001: Lock claimed. Processing...
+2734: TRANS 4001: Aborting transaction 4001.
+2735: TRANS 4001: Unlocked resource 8 at server 3
+2735: TRANS 4001: Unlocked resource 4 at server 2
+2735: TRANS 4001: Transaction 4001 aborted.
+2786: TRANS 4001: Committing transaction 4001.
+2786: TRANS 4001: Transaction 4001 committed.
+2786: Transaction 4001 ended.
+3055: Transaction 4002 arrived.
+3055: TRANS 4002: Starting transaction 4002.
+3055: TRANS 4002: Trying to claim lock of resource 7 at server 3
+3056: TRANS 4002: Lock claimed. Processing...
+3135: TRANS 4002: Trying to claim lock of resource 9 at server 4
+3135: TRANS 4002: Lock claimed. Processing...
+3224: TRANS 4002: Trying to claim lock of resource 1 at server 3
+3225: TRANS 4002: Lock claimed. Processing...
+3247: TRANS 4002: Committing transaction 4002.
+3248: TRANS 4002: Unlocked resource 7 at server 3
+3248: TRANS 4002: Unlocked resource 9 at server 4
+3249: TRANS 4002: Unlocked resource 1 at server 3
+3249: TRANS 4002: Transaction 4002 committed.
+3249: Transaction 4002 ended.
+3306: Transaction 4003 arrived.
+3306: TRANS 4003: Starting transaction 4003.
+3307: TRANS 4003: Trying to claim lock of resource 8 at server 4
+3307: TRANS 4003: Lock claimed. Processing...
+3375: TRANS 4003: Trying to claim lock of resource 6 at server 4
+3376: TRANS 4003: Lock claimed. Processing...
+3389: TRANS 4003: Aborting transaction 4003.
+3389: TRANS 4003: Unlocked resource 8 at server 4
+3390: TRANS 4003: Unlocked resource 6 at server 4
+3390: TRANS 4003: Transaction 4003 aborted.
+3443: TRANS 4003: Trying to claim lock of resource 2 at server 4
+3443: TRANS 4003: Lock claimed. Processing...
+3468: TRANS 4003: Trying to claim lock of resource 1 at server 2
+3469: TRANS 4003: Lock claimed. Processing...
+3513: TRANS 4003: Trying to claim lock of resource 2 at server 2
+3514: TRANS 4003: Lock claimed. Processing...
+3544: TRANS 4003: Trying to claim lock of resource 1 at server 4
+3544: TRANS 4003: Lock claimed. Processing...
+3590: TRANS 4003: Trying to claim lock of resource 2 at server 3
+3591: TRANS 4003: Lock claimed. Processing...
+3663: TRANS 4003: Trying to claim lock of resource 0 at server 1
+3664: TRANS 4003: Lock claimed. Processing...
+3686: TRANS 4003: Aborting transaction 4003.
+3686: TRANS 4003: Unlocked resource 2 at server 4
+3687: TRANS 4003: Unlocked resource 1 at server 2
+3687: TRANS 4003: Unlocked resource 2 at server 2
+3688: TRANS 4003: Unlocked resource 1 at server 4
+3689: TRANS 4003: Unlocked resource 2 at server 3
+3689: TRANS 4003: Unlocked resource 0 at server 1
+3689: TRANS 4003: Transaction 4003 aborted.
+3733: TRANS 4003: Trying to claim lock of resource 2 at server 2
+3734: TRANS 4003: Lock claimed. Processing...
+3796: TRANS 4003: Trying to claim lock of resource 8 at server 2
+3796: TRANS 4003: Lock claimed. Processing...
+3888: TRANS 4003: Committing transaction 4003.
+3889: TRANS 4003: Unlocked resource 2 at server 2
+3889: TRANS 4003: Unlocked resource 8 at server 2
+3890: TRANS 4003: Transaction 4003 committed.
+3890: Transaction 4003 ended.
+3966: Transaction 4004 arrived.
+3966: TRANS 4004: Starting transaction 4004.
+3966: TRANS 4004: Trying to claim lock of resource 6 at server 1
+3967: TRANS 4004: Lock claimed. Processing...
+4023: TRANS 4004: Trying to claim lock of resource 1 at server 1
+4024: TRANS 4004: Lock claimed. Processing...
+4072: TRANS 4004: Trying to claim lock of resource 1 at server 4
+4072: TRANS 4004: Lock claimed. Processing...
+4149: TRANS 4004: Trying to claim lock of resource 8 at server 1
+4150: TRANS 4004: Lock claimed. Processing...
+4175: TRANS 4004: Committing transaction 4004.
+4175: TRANS 4004: Unlocked resource 6 at server 1
+4176: TRANS 4004: Unlocked resource 1 at server 1
+4176: TRANS 4004: Unlocked resource 1 at server 4
+4177: TRANS 4004: Unlocked resource 8 at server 1
+4177: TRANS 4004: Transaction 4004 committed.
+4177: Transaction 4004 ended.
+4456: Transaction 4005 arrived.
+4456: TRANS 4005: Starting transaction 4005.
+4457: TRANS 4005: Trying to claim lock of resource 6 at server 3
+4457: TRANS 4005: Lock claimed. Processing...
+4554: TRANS 4005: Trying to claim lock of resource 8 at server 2
+4555: TRANS 4005: Lock claimed. Processing...
+4604: TRANS 4005: Trying to claim lock of resource 2 at server 2
+4604: TRANS 4005: Lock claimed. Processing...
+4641: TRANS 4005: Trying to claim lock of resource 0 at server 2
+4642: TRANS 4005: Lock claimed. Processing...
+4694: TRANS 4005: Trying to claim lock of resource 2 at server 4
+4695: TRANS 4005: Lock claimed. Processing...
+4715: TRANS 4005: Trying to claim lock of resource 9 at server 2
+4722: TRANS 4005: Lock claimed. Processing...
+4769: TRANS 4005: Aborting transaction 4005.
+4770: TRANS 4005: Unlocked resource 6 at server 3
+4771: TRANS 4005: Unlocked resource 8 at server 2
+4772: TRANS 4005: Unlocked resource 2 at server 2
+4772: TRANS 4005: Unlocked resource 0 at server 2
+4773: TRANS 4005: Unlocked resource 2 at server 4
+4773: TRANS 4005: Unlocked resource 9 at server 2
+4774: TRANS 4005: Transaction 4005 aborted.
+4797: TRANS 4005: Trying to claim lock of resource 2 at server 4
+4801: TRANS 4005: Lock claimed. Processing...
+4894: TRANS 4005: Committing transaction 4005.
+4895: TRANS 4005: Unlocked resource 2 at server 4
+4895: TRANS 4005: Transaction 4005 committed.
+4895: Transaction 4005 ended.
+5121: Transaction 4006 arrived.
+5122: TRANS 4006: Starting transaction 4006.
+5122: TRANS 4006: Trying to claim lock of resource 0 at server 3
+5122: TRANS 4006: Lock claimed. Processing...
+5181: TRANS 4006: Trying to claim lock of resource 9 at server 2
+5182: TRANS 4006: Lock claimed. Processing...
+5269: TRANS 4006: Trying to claim lock of resource 5 at server 1
+5270: TRANS 4006: Lock claimed. Processing...
+5350: TRANS 4006: Trying to claim lock of resource 7 at server 1
+5358: TRANS 4006: Lock claimed. Processing...
+5405: TRANS 4006: Trying to claim lock of resource 7 at server 3
+5405: TRANS 4006: Lock claimed. Processing...
+5454: TRANS 4006: Trying to claim lock of resource 4 at server 1
+5455: TRANS 4006: Lock claimed. Processing...
+5455: TRANS 4006: Aborting transaction 4006.
+5456: TRANS 4006: Unlocked resource 0 at server 3
+5457: TRANS 4006: Unlocked resource 9 at server 2
+5458: TRANS 4006: Unlocked resource 5 at server 1
+5458: TRANS 4006: Unlocked resource 7 at server 1
+5459: TRANS 4006: Unlocked resource 7 at server 3
+5460: TRANS 4006: Unlocked resource 4 at server 1
+5460: TRANS 4006: Transaction 4006 aborted.
+5546: TRANS 4006: Trying to claim lock of resource 0 at server 2
+5547: TRANS 4006: Lock claimed. Processing...
+5629: TRANS 4006: Trying to claim lock of resource 2 at server 4
+5629: TRANS 4006: Lock claimed. Processing...
+5650: TRANS 4006: Trying to claim lock of resource 7 at server 2
+5651: TRANS 4006: Lock claimed. Processing...
+5693: TRANS 4006: Committing transaction 4006.
+5693: TRANS 4006: Unlocked resource 0 at server 2
+5693: TRANS 4006: Unlocked resource 2 at server 4
+5694: TRANS 4006: Unlocked resource 7 at server 2
+5694: TRANS 4006: Transaction 4006 committed.
+5694: Transaction 4006 ended.
+5797: Transaction 4007 arrived.
+5797: TRANS 4007: Starting transaction 4007.
+5797: TRANS 4007: Trying to claim lock of resource 9 at server 4
+5798: TRANS 4007: Lock claimed. Processing...
+5871: TRANS 4007: Trying to claim lock of resource 6 at server 1
+5872: TRANS 4007: Lock claimed. Processing...
+5959: TRANS 4007: Trying to claim lock of resource 2 at server 1
+5960: TRANS 4007: Lock claimed. Processing...
+6034: TRANS 4007: Trying to claim lock of resource 9 at server 3
+6038: TRANS 4007: Lock claimed. Processing...
+6070: TRANS 4007: Trying to claim lock of resource 3 at server 2
+6071: TRANS 4007: Lock claimed. Processing...
+6167: TRANS 4007: Trying to claim lock of resource 1 at server 1
+6168: TRANS 4007: Lock claimed. Processing...
+6230: TRANS 4007: Trying to claim lock of resource 1 at server 3
+6234: TRANS 4007: Lock claimed. Processing...
+6278: TRANS 4007: Trying to claim lock of resource 4 at server 4
+6278: TRANS 4007: Lock claimed. Processing...
+6329: TRANS 4007: Trying to claim lock of resource 6 at server 4
+6329: TRANS 4007: Lock claimed. Processing...
+6399: TRANS 4007: Trying to claim lock of resource 9 at server 2
+6399: TRANS 4007: Lock claimed. Processing...
+6501: TRANS 4007: Committing transaction 4007.
+6501: TRANS 4007: Unlocked resource 9 at server 4
+6502: TRANS 4007: Unlocked resource 6 at server 1
+6502: TRANS 4007: Unlocked resource 2 at server 1
+6503: TRANS 4007: Unlocked resource 9 at server 3
+6504: TRANS 4007: Unlocked resource 3 at server 2
+6504: TRANS 4007: Unlocked resource 1 at server 1
+6505: TRANS 4007: Unlocked resource 1 at server 3
+6505: TRANS 4007: Unlocked resource 4 at server 4
+6505: TRANS 4007: Unlocked resource 6 at server 4
+6506: TRANS 4007: Unlocked resource 9 at server 2
+6506: TRANS 4007: Transaction 4007 committed.
+6506: Transaction 4007 ended.
+6688: Transaction 4008 arrived.
+6688: TRANS 4008: Starting transaction 4008.
+6688: TRANS 4008: Trying to claim lock of resource 6 at server 3
+6689: TRANS 4008: Lock claimed. Processing...
+6785: TRANS 4008: Trying to claim lock of resource 5 at server 2
+6786: TRANS 4008: Lock claimed. Processing...
+6851: TRANS 4008: Trying to claim lock of resource 0 at server 1
+6852: TRANS 4008: Lock claimed. Processing...
+6911: TRANS 4008: Trying to claim lock of resource 0 at server 2
+6912: TRANS 4008: Lock claimed. Processing...
+6972: TRANS 4008: Trying to claim lock of resource 8 at server 4
+6973: TRANS 4008: Lock claimed. Processing...
+6998: TRANS 4008: Committing transaction 4008.
+6999: TRANS 4008: Unlocked resource 6 at server 3
+7000: TRANS 4008: Unlocked resource 5 at server 2
+7000: TRANS 4008: Unlocked resource 0 at server 1
+7001: TRANS 4008: Unlocked resource 0 at server 2
+7001: TRANS 4008: Unlocked resource 8 at server 4
+7001: TRANS 4008: Transaction 4008 committed.
+7002: Transaction 4008 ended.
+7215: Transaction 4009 arrived.
+7215: TRANS 4009: Starting transaction 4009.
+7216: TRANS 4009: Trying to claim lock of resource 7 at server 2
+7220: TRANS 4009: Lock claimed. Processing...
+7311: TRANS 4009: Trying to claim lock of resource 6 at server 4
+7314: TRANS 4009: Lock claimed. Processing...
+7370: TRANS 4009: Trying to claim lock of resource 2 at server 2
+7371: TRANS 4009: Lock claimed. Processing...
+7462: TRANS 4009: Committing transaction 4009.
+7463: TRANS 4009: Unlocked resource 7 at server 2
+7463: TRANS 4009: Unlocked resource 6 at server 4
+7464: TRANS 4009: Unlocked resource 2 at server 2
+7464: TRANS 4009: Transaction 4009 committed.
+7464: Transaction 4009 ended.
+7771: Transaction 4010 arrived.
+7772: TRANS 4010: Starting transaction 4010.
+7772: TRANS 4010: Trying to claim lock of resource 8 at server 3
+7773: TRANS 4010: Lock claimed. Processing...
+7797: TRANS 4010: Trying to claim lock of resource 6 at server 2
+7798: TRANS 4010: Lock claimed. Processing...
+7858: TRANS 4010: Trying to claim lock of resource 1 at server 3
+7859: TRANS 4010: Lock claimed. Processing...
+7899: TRANS 4010: Trying to claim lock of resource 0 at server 2
+7899: TRANS 4010: Lock claimed. Processing...
+7944: TRANS 4010: Trying to claim lock of resource 6 at server 4
+7946: TRANS 4010: Lock claimed. Processing...
+7967: TRANS 4010: Trying to claim lock of resource 6 at server 1
+7967: TRANS 4010: Lock claimed. Processing...
+7999: TRANS 4010: Aborting transaction 4010.
+8000: TRANS 4010: Unlocked resource 8 at server 3
+8001: TRANS 4010: Unlocked resource 6 at server 2
+8002: TRANS 4010: Unlocked resource 1 at server 3
+8002: TRANS 4010: Unlocked resource 0 at server 2
+8002: TRANS 4010: Unlocked resource 6 at server 4
+8003: TRANS 4010: Unlocked resource 6 at server 1
+8003: TRANS 4010: Transaction 4010 aborted.
+8041: TRANS 4010: Trying to claim lock of resource 6 at server 2
+8042: TRANS 4010: Lock claimed. Processing...
+8103: TRANS 4010: Trying to claim lock of resource 4 at server 3
+8104: TRANS 4010: Lock claimed. Processing...
+8187: TRANS 4010: Committing transaction 4010.
+8187: TRANS 4010: Unlocked resource 6 at server 2
+8188: TRANS 4010: Unlocked resource 4 at server 3
+8188: TRANS 4010: Transaction 4010 committed.
+8188: Transaction 4010 ended.
+8412: Transaction 4011 arrived.
+8412: TRANS 4011: Starting transaction 4011.
+8413: TRANS 4011: Trying to claim lock of resource 4 at server 1
+8421: TRANS 4011: Lock claimed. Processing...
+8500: TRANS 4011: Trying to claim lock of resource 7 at server 2
+8501: TRANS 4011: Lock claimed. Processing...
+8562: TRANS 4011: Trying to claim lock of resource 0 at server 2
+8563: TRANS 4011: Lock claimed. Processing...
+8589: TRANS 4011: Trying to claim lock of resource 4 at server 3
+8589: TRANS 4011: Lock claimed. Processing...
+8616: TRANS 4011: Aborting transaction 4011.
+8617: TRANS 4011: Unlocked resource 4 at server 1
+8617: TRANS 4011: Unlocked resource 7 at server 2
+8618: TRANS 4011: Unlocked resource 0 at server 2
+8619: TRANS 4011: Unlocked resource 4 at server 3
+8619: TRANS 4011: Transaction 4011 aborted.
+8679: TRANS 4011: Trying to claim lock of resource 3 at server 1
+8680: TRANS 4011: Lock claimed. Processing...
+8767: TRANS 4011: Committing transaction 4011.
+8768: TRANS 4011: Unlocked resource 3 at server 1
+8768: TRANS 4011: Transaction 4011 committed.
+8768: Transaction 4011 ended.
+8826: Transaction 4012 arrived.
+8826: TRANS 4012: Starting transaction 4012.
+8826: TRANS 4012: Trying to claim lock of resource 1 at server 4
+8827: TRANS 4012: Lock claimed. Processing...
+8866: TRANS 4012: Trying to claim lock of resource 7 at server 1
+8866: TRANS 4012: Lock claimed. Processing...
+8912: TRANS 4012: Trying to claim lock of resource 1 at server 1
+8913: TRANS 4012: Lock claimed. Processing...
+8944: TRANS 4012: Trying to claim lock of resource 2 at server 3
+8945: TRANS 4012: Lock claimed. Processing...
+9040: TRANS 4012: Trying to claim lock of resource 3 at server 3
+9041: TRANS 4012: Lock claimed. Processing...
+9127: TRANS 4012: Trying to claim lock of resource 8 at server 3
+9127: TRANS 4012: Lock claimed. Processing...
+9151: TRANS 4012: Trying to claim lock of resource 4 at server 2
+9152: TRANS 4012: Lock claimed. Processing...
+9187: TRANS 4012: Trying to claim lock of resource 6 at server 2
+9188: TRANS 4012: Lock claimed. Processing...
+9213: TRANS 4012: Trying to claim lock of resource 6 at server 1
+9214: TRANS 4012: Lock claimed. Processing...
+9267: TRANS 4012: Trying to claim lock of resource 5 at server 4
+9267: TRANS 4012: Lock claimed. Processing...
+9363: TRANS 4012: Committing transaction 4012.
+9363: TRANS 4012: Unlocked resource 1 at server 4
+9364: TRANS 4012: Unlocked resource 7 at server 1
+9365: TRANS 4012: Unlocked resource 1 at server 1
+9366: TRANS 4012: Unlocked resource 2 at server 3
+9367: TRANS 4012: Unlocked resource 3 at server 3
+9367: TRANS 4012: Unlocked resource 8 at server 3
+9368: TRANS 4012: Unlocked resource 4 at server 2
+9369: TRANS 4012: Unlocked resource 6 at server 2
+9370: TRANS 4012: Unlocked resource 6 at server 1
+9370: TRANS 4012: Unlocked resource 5 at server 4
+9370: TRANS 4012: Transaction 4012 committed.
+9371: Transaction 4012 ended.
+9450: Transaction 4013 arrived.
+9450: TRANS 4013: Starting transaction 4013.
+9450: TRANS 4013: Trying to claim lock of resource 7 at server 1
+9454: TRANS 4013: Lock claimed. Processing...
+9554: TRANS 4013: Trying to claim lock of resource 6 at server 3
+9555: TRANS 4013: Lock claimed. Processing...
+9626: TRANS 4013: Trying to claim lock of resource 8 at server 2
+9630: TRANS 4013: Lock claimed. Processing...
+9668: TRANS 4013: Trying to claim lock of resource 0 at server 2
+9669: TRANS 4013: Lock claimed. Processing...
+9699: TRANS 4013: Aborting transaction 4013.
+9700: TRANS 4013: Unlocked resource 7 at server 1
+9700: TRANS 4013: Unlocked resource 6 at server 3
+9701: TRANS 4013: Unlocked resource 8 at server 2
+9701: TRANS 4013: Unlocked resource 0 at server 2
+9701: TRANS 4013: Transaction 4013 aborted.
+9743: TRANS 4013: Committing transaction 4013.
+9743: TRANS 4013: Transaction 4013 committed.
+9743: Transaction 4013 ended.
+10021: Transaction 4014 arrived.
+10021: TRANS 4014: Starting transaction 4014.
+10022: TRANS 4014: Trying to claim lock of resource 8 at server 3
+10022: TRANS 4014: Lock claimed. Processing...
+10097: TRANS 4014: Trying to claim lock of resource 3 at server 3
+10098: TRANS 4014: Lock claimed. Processing...
+10171: TRANS 4014: Trying to claim lock of resource 4 at server 2
+10172: TRANS 4014: Lock claimed. Processing...
+10255: TRANS 4014: Trying to claim lock of resource 2 at server 4
+10255: TRANS 4014: Lock claimed. Processing...
+10326: TRANS 4014: Trying to claim lock of resource 9 at server 1
+44743: Contact with server 1 was lost.
