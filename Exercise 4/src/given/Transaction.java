@@ -191,6 +191,7 @@ class Transaction
 	{
 		owner.println("Aborting transaction " + transactionId + '.', transactionId);
 		releaseLocks();
+		System.out.println("ABORTS");
 		owner.println("Transaction " + transactionId + " aborted.", transactionId);
 	}
 

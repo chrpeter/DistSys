@@ -92,7 +92,9 @@ public class ServerImpl extends UnicastRemoteObject implements Server
 		servers = new HashMap<Integer, Server>();
 		transactionCounter = 0;
 		nofAborts = 0;
+		//inputfile = "src/given/cases/input_test_case_A_server_"+ 4 + ".txt";
 		activeTransaction = null;
+		System.out.println(inputfile);
 		readGlobalParameters(inputfile);
 		resources = new ArrayList<Resource>();
 
@@ -389,7 +391,7 @@ public class ServerImpl extends UnicastRemoteObject implements Server
 		//deadLockResource = resourceId;
 		String tID = transactionId + "";
 		Server s = getServer(Integer.parseInt(tID.charAt(0) + ""));
-		boolean result = r.lock(transactionId, s, resourceId, this);
+		boolean result = r.lock(transactionId, resourceId, this);
 		if (gui != null)
 			gui.updateResourceTable(resources);
 
@@ -618,7 +620,7 @@ public class ServerImpl extends UnicastRemoteObject implements Server
 	}
 
 	@Override
-	public synchronized void sendProbe(ArrayList<Integer> probelist) throws RemoteException {
+	public void  sendProbe(ArrayList<Integer> probelist) throws RemoteException {
 
 		if(activeTransaction == null){
 			return;
@@ -631,6 +633,7 @@ public class ServerImpl extends UnicastRemoteObject implements Server
 			int newServerID = getTransactionOwner(probelist.get(1));
 			Server abortServer = getServer(newServerID);
 			activeTransaction.abort();
+			//notifyAll();
 		}
 		else{
 			ResourceAccess waitingForResource = activeTransaction.getWaitingForResource();
@@ -665,7 +668,7 @@ public class ServerImpl extends UnicastRemoteObject implements Server
 	}
 
 	@Override
-	public synchronized int getResourceOwnerID(int id) throws RemoteException {
+	public int getResourceOwnerID(int id) throws RemoteException {
 		// TODO Auto-generated method stub
 //		System.out.println("rrr");
 //		System.out.println(resources);

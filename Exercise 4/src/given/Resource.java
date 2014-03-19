@@ -29,25 +29,30 @@ class Resource
 	 * @param transactionId The ID of the transaction that wants the lock.
 	 * @return Whether or not the lock could be acquired.
 	 */
-	synchronized boolean lock(int transactionId, Server server, int resourceId, ServerImpl serverimpl)
+	synchronized boolean lock(int transactionId, int resourceId, ServerImpl serverimpl)
 	{
 		if (lockOwner == transactionId) {
 			System.err.println("Error: Transaction " + transactionId + " tried to lock a resource it already has locked!");
 			return false;
 		}
-		long timeout_time = Globals.TIMEOUT + System.currentTimeMillis();
+		boolean started = false;
+		long timeout_time = Globals.TIMEOUT_INTERVAL + System.currentTimeMillis();
 		while (lockOwner != NOT_LOCKED) {
 			try {
 				if (Globals.PROBING_ENABLED) {
-					serverimpl.getServer(ServerImpl.getTransactionOwner(lockOwner));
-					ProbeMessage probeMessage = new ProbeMessage(lockOwner, new ArrayList<Integer>(), server);
-					probeMessage.start();
-					try {
-						wait();
-					} catch (InterruptedException e) {
-						System.out.println("false hehehhehehe");
-						return false;
+					Server server = serverimpl.getServer(ServerImpl.getTransactionOwner(lockOwner));
+					if(!started){
+						ProbeMessage probeMessage = new ProbeMessage(transactionId, new ArrayList<Integer>(), server);
+						probeMessage.start();
+						started = false;
 					}
+
+//					try {
+//						wait();
+//					} catch (InterruptedException e) {
+//						System.out.println("false hehehhehehe");
+//						return false;
+//					}
 				}
 				//If timeout
 				else {
