@@ -92,12 +92,12 @@ public class ServerImpl extends UnicastRemoteObject implements Server
 		servers = new HashMap<Integer, Server>();
 		transactionCounter = 0;
 		nofAborts = 0;
-		//inputfile = "src/given/cases/input_test_case_A_server_"+ 4 + ".txt";
+		inputfile = "src/given/cases/input_test_case_A_server_"+ 4 + ".txt";
 		activeTransaction = null;
 		System.out.println(inputfile);
 		readGlobalParameters(inputfile);
 		resources = new ArrayList<Resource>();
-
+		
 		for (int i = 0; i < Globals.NOF_RESOURCES_PER_SERVER; i++)
 			resources.add(new Resource());
 
@@ -620,45 +620,34 @@ public class ServerImpl extends UnicastRemoteObject implements Server
 	}
 
 	@Override
-	public void  sendProbe(ArrayList<Integer> probelist) throws RemoteException {
+	public void  sendProbe(ArrayList<Integer> probelist, int resID) throws RemoteException {
 
 		if(activeTransaction == null){
 			return;
 		}
-
+		
 		if(probelist.contains(activeTransaction.getTransactionId())){
 			System.out.println("This transaction has gone in a loop: " + activeTransaction.getTransactionId());
 
 			printhehe(probelist, activeTransaction.getTransactionId());
 			int newServerID = getTransactionOwner(probelist.get(1));
 			Server abortServer = getServer(newServerID);
-			activeTransaction.abort();
+			resources.get(resID).doAbort(activeTransaction);
 			//notifyAll();
 		}
 		else{
+			System.out.println("halla");
 			ResourceAccess waitingForResource = activeTransaction.getWaitingForResource();
-			
-			//System.out.println(waitingForResource);
-
 			if(waitingForResource == null){
 				return;
 			}
 			int resourceID = waitingForResource.resourceId;
-//			System.out.println("Resource causing deadlock " + resourceID);
-//			System.out.println("T1");
-//			System.out.println(waitingForResource.server);
-//			System.out.println("T2");
 			int lockowner = waitingForResource.server.getResourceOwnerID(resourceID);
-//			System.out.println("newDLresource.getLockOwner() != -1" + (lockowner != -1));
-//			System.out.println("T3");
+
 			if(lockowner != -1){
 				int newServerID = getTransactionOwner(lockowner);
-//				System.out.println("This  server is " + getID() + " and deadlock transaction is at: " + newServerID);
-//				System.out.println("The owner of the resource is: " + lockowner + " and transaction " + activeTransaction.getTransactionId() + " is trying to get it!");
-
 				Server newServer = getServer(newServerID);
-		
-				ProbeMessage probeMessage = new ProbeMessage(activeTransaction.getTransactionId(), probelist, newServer);
+				ProbeMessage probeMessage = new ProbeMessage(activeTransaction.getTransactionId(), probelist, newServer, resourceID);
 				probeMessage.start();
 			}
 		}

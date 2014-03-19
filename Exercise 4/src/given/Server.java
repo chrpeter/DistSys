@@ -55,7 +55,7 @@ public interface Server extends Remote
    */
   void startTransactions() throws RemoteException;
   
-  void sendProbe(ArrayList<Integer> probelist) throws RemoteException;
+  void sendProbe(ArrayList<Integer> probelist, int resID) throws RemoteException;
   
   int getResourceOwnerID(int id) throws RemoteException;
   

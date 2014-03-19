@@ -41,18 +41,21 @@ class Resource
 			try {
 				if (Globals.PROBING_ENABLED) {
 					Server server = serverimpl.getServer(ServerImpl.getTransactionOwner(lockOwner));
-					if(!started){
-						ProbeMessage probeMessage = new ProbeMessage(transactionId, new ArrayList<Integer>(), server);
-						probeMessage.start();
-						started = false;
-					}
+					
+					ProbeMessage probeMessage = new ProbeMessage(transactionId, new ArrayList<Integer>(),server, resourceId);
+					probeMessage.start();
+					started = false;
 
-//					try {
-//						wait();
-//					} catch (InterruptedException e) {
-//						System.out.println("false hehehhehehe");
-//						return false;
-//					}
+
+					try {
+						wait();
+					} catch (InterruptedException e) {
+						//nothing to see here...
+					}
+					if(lockOwner != NOT_LOCKED){
+						System.out.println("false hehehhehehe");
+						return false;
+					}
 				}
 				//If timeout
 				else {
@@ -127,5 +130,8 @@ class Resource
 	synchronized boolean isLockedByServer(int serverId)
 	{
 		return lockOwner != NOT_LOCKED && ServerImpl.getTransactionOwner(lockOwner) == serverId;
+	}
+	synchronized void doAbort(Transaction trans){
+		notifyAll();
 	}
 }
