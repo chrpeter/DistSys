@@ -18,17 +18,20 @@
 Viktigste endringen i denne klassen er at vi legger til metoden \emph{SendProbe()}. Denne sjekker om probemeldingen har gått igjennom hele nettverket, om den finner igjen sin egen prosess har det oppstått en deadlock.
 \subsection*{Resource.java}
 Viktigste endringen foregår i metoden \emph{lock()}. Vi sjekker globals om test casen bruker enten \emph{probing} eller \emph{timeouts}. Om testen bruker probing vil denne metoden sende en \emph{ProbeMessage} asynkront over en ny tråd. Ved timeouts, så vil metoden gjennomføre en wait.
-\subsection*{Transaction.java}
--------------
+\subsection{ProbeMessage.java}
+ProbMessage gjør det mulig å generere en \emph{wait-for graf} ved bruk av tråder. En transaksjonsID blir lagt til i en liste. Listen fungerer som en lokal wait-for graf ved hver uavhengige tråd. Sammen utgjør trådene den globale wait-for grafen
+\subsection{Server.java}
+La til en metode i interfacet som gjør det mulig for å sende en probemelding til følgende klasser som implementerer grensesnittet
+
 \section{Resultater}
-Vi legger ved resultater for alle test-caser, $final_results.txt$. 
+Vi legger ved resultater for alle test-caser, \emph{final\_result.txt}
 
 Alle test-casene kom til slutten av inputfilen.
 
 Vi hadde mest problemer med test case C, og fikk feil som RemoteException(Communication error). Dette ble løst vht. \emph{notifyAll()} som vekker alle trådene som venter på det gitte objektet.
 
 \section{Implementering}
-Vår implementering fungerer på følgende måte: Sjekker input om hvilke tester som tar i bruk enten \emph{edge chasing} eller \emph{timeouts}. Edge chasing sjekker om prossesen blir blokkert, når en prosess blir blokkert blir det sendt en melding til påfølgende prosesser som er avhengig av den første prosessen. Om denne meldingen kommer tilbake til førstnevnte prosess har det foregått en sirkulær løkke (en probe melding blir sendt en kant av gangen og danner en \emph{"wait-for graph"}), med andre ord en \emph{deadlock} har funnet sted og en transaksjon må aborteres. Ved bruk av edge chasing unngår vi å abortere \emph{phantom deadlocks}(tilsynelatende deadlocks), siden probe meldingen tar seg av en ressurs av gangen og danner en wait-for graph. 
+Vår implementering fungerer på følgende måte: Sjekker input om hvilke tester som tar i bruk enten \emph{edge chasing} eller \emph{timeouts}. Edge chasing sjekker om prossesen blir blokkert, når en prosess blir blokkert blir det sendt en melding til påfølgende prosesser som er avhengig av den første prosessen. Om denne meldingen kommer tilbake til førstnevnte prosess har det foregått en sirkulær løkke (en probemelding blir sendt en kant av gangen og danner en \emph{"wait-for graf"}), med andre ord en \emph{deadlock} har funnet sted og en transaksjon må aborteres. Ved bruk av edge chasing unngår vi å abortere \emph{phantom deadlocks}(tilsynelatende deadlocks), siden probe meldingen tar seg av en ressurs av gangen og danner en wait-for graf. 
 
 Ved timeouts vil den gitte prosessen vente lokalt på følgende ressurs. Om tiden går ut vil transaksjonen abortere. 
 \end{document}
