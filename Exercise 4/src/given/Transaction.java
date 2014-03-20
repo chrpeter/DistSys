@@ -1,3 +1,4 @@
+package given;
 
 import java.rmi.*;
 import java.util.*;
@@ -190,7 +191,7 @@ class Transaction
 	/**
 	 * Aborts this transaction, releasing all the locks held by it.
 	 */
-	public synchronized void abort()
+	private synchronized void abort()
 	{
 		owner.println("Aborting transaction " + transactionId + '.', transactionId);
 		releaseLocks();

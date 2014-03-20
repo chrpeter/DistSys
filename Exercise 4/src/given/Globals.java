@@ -1,3 +1,4 @@
+package given;
 /**
  * A collection of globally available constants
  * and static methods.
@@ -9,11 +10,11 @@ class Globals
   /**
    * The number of milliseconds to wait for a lock before a timeout is declared.
    */
-  static long TIMEOUT_INTERVAL = 300; // Timeouts disabled
+  static long TIMEOUT_INTERVAL = 0; // Timeouts disabled
   /**
    * Whether or not to use edge chasing to detect deadlocks
    */
-  static boolean PROBING_ENABLED = false;
+  static boolean PROBING_ENABLED = true;
   /**
    * The number of local resources on each server
    */

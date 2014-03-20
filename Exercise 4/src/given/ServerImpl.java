@@ -1,3 +1,4 @@
+package given;
 
 import java.net.MalformedURLException;
 import java.rmi.*;
@@ -597,7 +598,7 @@ public class ServerImpl extends UnicastRemoteObject implements Server
 	 */
 	public static void main(String[] args)
 	{
-		String registryAddress = "localhost:1111";
+		String registryAddress = "localhost:35000";
 		String inputfile = null;
 		if (args.length > 0)
 			registryAddress = args[0];
@@ -623,7 +624,7 @@ public class ServerImpl extends UnicastRemoteObject implements Server
 
 		if(activeTransaction == null){
 			System.out.println("LOL1");
-			resources.get(resID).notifyShiet(null);
+			//resources.get(resID).notifyShiet(null);
 			return;
 		}
 		ResourceAccess waitingForResource = activeTransaction.getWaitingForResource();
@@ -636,9 +637,11 @@ public class ServerImpl extends UnicastRemoteObject implements Server
 		if(activeTransaction != null && waitingForResource != null){
 		if(probelist.contains(activeTransaction.getTransactionId())){
 			System.out.println("This transaction has gone in a loop: " + activeTransaction.getTransactionId());
-			probelist.add(activeTransaction.getTransactionId());						
+			//probelist.add(activeTransaction.getTransactionId());						
 			printhehe(probelist, activeTransaction.getTransactionId());
-			resources.get(resID).doAbort(activeTransaction);
+			System.out.println("RESID: + " + resID);
+			//resources.get(resID).doAbort(activeTransaction);
+			waitingForResource.server.doAbort(waitingForResource.resourceId, activeTransaction.getTransactionId());
 			//notifyAll();
 		}
 		else{
@@ -677,6 +680,11 @@ public class ServerImpl extends UnicastRemoteObject implements Server
 //		System.out.println(resources.get(id).toString());
 //		System.out.println(resources.get(id).getLocalLockOwner());
 		return resources.get(id).getLocalLockOwner();
+	}
+	@Override
+	public void doAbort(int resID, int transID) throws RemoteException{
+		System.out.println("SERVER res: " + resID + " transid: " + transID);
+		resources.get(resID).doAbort(transID);
 	}
 
 }

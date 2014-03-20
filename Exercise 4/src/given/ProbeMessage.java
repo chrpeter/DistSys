@@ -1,3 +1,4 @@
+package given;
 
 import java.rmi.RemoteException;
 import java.util.ArrayList;
@@ -5,6 +6,7 @@ import java.util.ArrayList;
 public class ProbeMessage extends Thread {
 
 	private int transactionId;
+
 	private ArrayList<Integer> probeList;
 	private Server newServer;
 	private int resource_id;
@@ -24,8 +26,9 @@ public class ProbeMessage extends Thread {
 
 			//Server newServer = serverImpl.getServer(newServerID);
 			probeList.add(transactionId);
+			System.out.println("PM: " + transactionId);
 			System.out.println("PROBELIST: " + probeList.toString());
-			
+
 			newServer.sendProbe(probeList, resource_id);
 
 

@@ -1,4 +1,6 @@
+package given;
 
+import java.rmi.RemoteException;
 import java.util.ArrayList;
 
 /**
@@ -16,6 +18,7 @@ class Resource
 	/**
 	 * Creates a new resource.
 	 */
+	int abortTransactionID = -1;
 	Resource()
 	{
 		lockOwner = NOT_LOCKED;
@@ -46,8 +49,10 @@ class Resource
 					} catch (InterruptedException e) {
 						//nothing to see here...
 					}
-					if(lockOwner != NOT_LOCKED){
+					System.out.println("abortid" + abortTransactionID + " tranid " + transactionId);
+					if(abortTransactionID == transactionId){
 						System.out.println("false hehehhehehe");
+						abortTransactionID = -1;
 						return false;
 					}
 				}
@@ -125,9 +130,13 @@ class Resource
 	{
 		return lockOwner != NOT_LOCKED && ServerImpl.getTransactionOwner(lockOwner) == serverId;
 	}
-	synchronized void doAbort(Transaction trans){
+	synchronized void doAbort(int transID){
+		System.out.println("R: + " +transID);
+		abortTransactionID = transID;
 		notifyAll();
+		
 	}
+
 	synchronized void notifyShiet(Transaction t){
 		notifyAll();
 

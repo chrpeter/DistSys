@@ -1,3 +1,4 @@
+package given;
 
 import java.rmi.*;
 import java.util.ArrayList;
@@ -57,5 +58,6 @@ public interface Server extends Remote
   void sendProbe(ArrayList<Integer> probelist, int resID) throws RemoteException;
   
   int getResourceOwnerID(int id) throws RemoteException;
+  void doAbort(int resID, int transID) throws RemoteException;
   
 }

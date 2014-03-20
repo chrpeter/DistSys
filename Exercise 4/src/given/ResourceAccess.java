@@ -1,3 +1,4 @@
+package given;
 
 /**
  * Data structure describing the server and ID of a resource in the distributed
