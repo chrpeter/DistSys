@@ -1,0 +1,27 @@
+==================================================================
+0: Test case F started.
+22: Server 2 was notified of the arrival of server 3
+74: Server 2 was notified of the arrival of server 4
+1369: Server 2 started.
+3435: Server 2 started its transactions.
+3507: Transaction 2000 arrived.
+3514: TRANS 2000: Starting transaction 2000.
+3515: TRANS 2000: Trying to claim lock of resource 0 at server 2
+3516: TRANS 2000: Lock claimed. Processing...
+4017: TRANS 2000: Trying to claim lock of resource 9 at server 1
+5485: TRANS 2000: Lock claimed. Processing...
+5497: TRANS 2000: Committing transaction 2000.
+5498: TRANS 2000: Unlocked resource 0 at server 2
+5499: TRANS 2000: Unlocked resource 9 at server 1
+5500: TRANS 2000: Transaction 2000 committed.
+5500: Transaction 2000 ended.
+5565: Transaction 2001 arrived.
+5566: TRANS 2001: Starting transaction 2001.
+5566: TRANS 2001: Trying to claim lock of resource 1 at server 2
+5567: TRANS 2001: Lock claimed. Processing...
+5669: TRANS 2001: Trying to claim lock of resource 1 at server 3
+8675: TRANS 2001: Aborting transaction 2001.
+8676: TRANS 2001: Unlocked resource 1 at server 2
+8676: TRANS 2001: Transaction 2001 aborted.
+8676: Transaction 2001 ended.
+8687: End of input file reached, no more transactions will be started.

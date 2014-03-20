@@ -1,0 +1,52 @@
+==================================================================
+0: Test case G started.
+58: Server 3 was notified of the arrival of server 4
+1521: Server 3 started.
+3208: Server 3 started its transactions.
+3242: Transaction 3000 arrived.
+3244: TRANS 3000: Starting transaction 3000.
+3244: TRANS 3000: Trying to claim lock of resource 9 at server 1
+3247: TRANS 3000: Lock claimed. Processing...
+5249: TRANS 3000: Committing transaction 3000.
+5253: TRANS 3000: Unlocked resource 9 at server 1
+5254: TRANS 3000: Transaction 3000 committed.
+5254: Transaction 3000 ended.
+5382: Transaction 3001 arrived.
+5383: TRANS 3001: Starting transaction 3001.
+5383: TRANS 3001: Trying to claim lock of resource 0 at server 1
+5384: TRANS 3001: Lock claimed. Processing...
+5396: TRANS 3001: Trying to claim lock of resource 1 at server 1
+5397: TRANS 3001: Lock claimed. Processing...
+5408: TRANS 3001: Trying to claim lock of resource 2 at server 1
+5410: TRANS 3001: Lock claimed. Processing...
+5421: TRANS 3001: Trying to claim lock of resource 3 at server 1
+5423: TRANS 3001: Lock claimed. Processing...
+5435: TRANS 3001: Trying to claim lock of resource 4 at server 1
+5435: TRANS 3001: Lock claimed. Processing...
+5448: TRANS 3001: Trying to claim lock of resource 5 at server 1
+5450: TRANS 3001: Lock claimed. Processing...
+5462: TRANS 3001: Trying to claim lock of resource 6 at server 1
+5467: TRANS 3001: Lock claimed. Processing...
+5479: TRANS 3001: Trying to claim lock of resource 7 at server 1
+5481: TRANS 3001: Lock claimed. Processing...
+5492: TRANS 3001: Trying to claim lock of resource 8 at server 1
+5503: TRANS 3001: Lock claimed. Processing...
+5515: TRANS 3001: Trying to claim lock of resource 9 at server 1
+5517: TRANS 3001: Lock claimed. Processing...
+6518: TRANS 3001: Trying to claim lock of resource 5 at server 4
+9487: TRANS 3001: Lock claimed. Processing...
+9497: TRANS 3001: Committing transaction 3001.
+9502: TRANS 3001: Unlocked resource 0 at server 1
+9503: TRANS 3001: Unlocked resource 1 at server 1
+9503: TRANS 3001: Unlocked resource 2 at server 1
+9504: TRANS 3001: Unlocked resource 3 at server 1
+9505: TRANS 3001: Unlocked resource 4 at server 1
+9505: TRANS 3001: Unlocked resource 5 at server 1
+9506: TRANS 3001: Unlocked resource 6 at server 1
+9507: TRANS 3001: Unlocked resource 7 at server 1
+9509: TRANS 3001: Unlocked resource 8 at server 1
+9510: TRANS 3001: Unlocked resource 9 at server 1
+9528: TRANS 3001: Unlocked resource 5 at server 4
+9529: TRANS 3001: Transaction 3001 committed.
+9529: Transaction 3001 ended.
+9540: End of input file reached, no more transactions will be started.

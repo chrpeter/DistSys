@@ -1,0 +1,51 @@
+==================================================================
+1: Test case B started.
+78: Server 3 was notified of the arrival of server 4
+1424: Server 3 started.
+3333: Server 3 started its transactions.
+3356: Transaction 3000 arrived.
+3357: TRANS 3000: Starting transaction 3000.
+3358: TRANS 3000: Trying to claim lock of resource 0 at server 2
+3360: TRANS 3000: Lock claimed. Processing...
+3862: TRANS 3000: Trying to claim lock of resource 9 at server 1
+7382: TRANS 3000: Aborting transaction 3000.
+7401: TRANS 3000: Unlocked resource 0 at server 2
+7402: TRANS 3000: Transaction 3000 aborted.
+7402: Transaction 3000 ended.
+7462: Transaction 3001 arrived.
+7463: TRANS 3001: Starting transaction 3001.
+7463: TRANS 3001: Trying to claim lock of resource 0 at server 2
+7467: TRANS 3001: Lock claimed. Processing...
+7478: TRANS 3001: Trying to claim lock of resource 1 at server 2
+7480: TRANS 3001: Lock claimed. Processing...
+7491: TRANS 3001: Trying to claim lock of resource 2 at server 2
+7492: TRANS 3001: Lock claimed. Processing...
+7503: TRANS 3001: Trying to claim lock of resource 3 at server 2
+7504: TRANS 3001: Lock claimed. Processing...
+7514: TRANS 3001: Trying to claim lock of resource 4 at server 2
+7515: TRANS 3001: Lock claimed. Processing...
+7527: TRANS 3001: Trying to claim lock of resource 5 at server 2
+7528: TRANS 3001: Lock claimed. Processing...
+7539: TRANS 3001: Trying to claim lock of resource 6 at server 2
+7541: TRANS 3001: Lock claimed. Processing...
+7554: TRANS 3001: Trying to claim lock of resource 7 at server 2
+7555: TRANS 3001: Lock claimed. Processing...
+7567: TRANS 3001: Trying to claim lock of resource 8 at server 2
+7569: TRANS 3001: Lock claimed. Processing...
+7581: TRANS 3001: Trying to claim lock of resource 9 at server 2
+7587: TRANS 3001: Lock claimed. Processing...
+8588: TRANS 3001: Trying to claim lock of resource 5 at server 3
+8632: TRANS 3001: Aborting transaction 3001.
+8634: TRANS 3001: Unlocked resource 0 at server 2
+8635: TRANS 3001: Unlocked resource 1 at server 2
+8635: TRANS 3001: Unlocked resource 2 at server 2
+8636: TRANS 3001: Unlocked resource 3 at server 2
+8638: TRANS 3001: Unlocked resource 4 at server 2
+8638: TRANS 3001: Unlocked resource 5 at server 2
+8641: TRANS 3001: Unlocked resource 6 at server 2
+8654: TRANS 3001: Unlocked resource 7 at server 2
+8655: TRANS 3001: Unlocked resource 8 at server 2
+8656: TRANS 3001: Unlocked resource 9 at server 2
+8657: TRANS 3001: Transaction 3001 aborted.
+8657: Transaction 3001 ended.
+8658: End of input file reached, no more transactions will be started.

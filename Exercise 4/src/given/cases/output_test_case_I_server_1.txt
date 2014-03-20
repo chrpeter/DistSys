@@ -1,0 +1,57 @@
+==================================================================
+0: Test case I started.
+40: Server 1 was notified of the arrival of server 2
+56: Server 1 was notified of the arrival of server 3
+117: Server 1 was notified of the arrival of server 4
+1337: Server 1 started.
+2940: Server 1 started its transactions.
+3027: Transaction 1000 arrived.
+3028: TRANS 1000: Starting transaction 1000.
+3029: TRANS 1000: Trying to claim lock of resource 0 at server 4
+3030: TRANS 1000: Lock claimed. Processing...
+3532: TRANS 1000: Trying to claim lock of resource 9 at server 1
+5049: TRANS 1000: Lock claimed. Processing...
+5061: TRANS 1000: Committing transaction 1000.
+5064: TRANS 1000: Unlocked resource 0 at server 4
+5065: TRANS 1000: Unlocked resource 9 at server 1
+5065: TRANS 1000: Transaction 1000 committed.
+5065: Transaction 1000 ended.
+5119: Transaction 1001 arrived.
+5119: TRANS 1001: Starting transaction 1001.
+5119: TRANS 1001: Trying to claim lock of resource 9 at server 4
+5123: TRANS 1001: Lock claimed. Processing...
+5135: TRANS 1001: Trying to claim lock of resource 1 at server 1
+5135: TRANS 1001: Lock claimed. Processing...
+6886: TRANS 1001: Trying to claim lock of resource 2 at server 1
+6886: TRANS 1001: Lock claimed. Processing...
+7888: TRANS 1001: Trying to claim lock of resource 3 at server 1
+7889: TRANS 1001: Lock claimed. Processing...
+8890: TRANS 1001: Trying to claim lock of resource 4 at server 1
+8890: TRANS 1001: Lock claimed. Processing...
+9892: TRANS 1001: Trying to claim lock of resource 5 at server 1
+9892: TRANS 1001: Lock claimed. Processing...
+10894: TRANS 1001: Trying to claim lock of resource 6 at server 1
+10894: TRANS 1001: Lock claimed. Processing...
+11896: TRANS 1001: Trying to claim lock of resource 7 at server 1
+11896: TRANS 1001: Lock claimed. Processing...
+12898: TRANS 1001: Trying to claim lock of resource 8 at server 1
+12898: TRANS 1001: Lock claimed. Processing...
+13900: TRANS 1001: Trying to claim lock of resource 9 at server 1
+13900: TRANS 1001: Lock claimed. Processing...
+14901: TRANS 1001: Trying to claim lock of resource 0 at server 1
+17154: TRANS 1001: Lock claimed. Processing...
+18156: TRANS 1001: Committing transaction 1001.
+18157: TRANS 1001: Unlocked resource 9 at server 4
+18157: TRANS 1001: Unlocked resource 1 at server 1
+18158: TRANS 1001: Unlocked resource 2 at server 1
+18158: TRANS 1001: Unlocked resource 3 at server 1
+18159: TRANS 1001: Unlocked resource 4 at server 1
+18159: TRANS 1001: Unlocked resource 5 at server 1
+18159: TRANS 1001: Unlocked resource 6 at server 1
+18160: TRANS 1001: Unlocked resource 7 at server 1
+18160: TRANS 1001: Unlocked resource 8 at server 1
+18160: TRANS 1001: Unlocked resource 9 at server 1
+18160: TRANS 1001: Unlocked resource 0 at server 1
+18160: TRANS 1001: Transaction 1001 committed.
+18160: Transaction 1001 ended.
+18167: End of input file reached, no more transactions will be started.

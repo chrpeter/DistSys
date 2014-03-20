@@ -1,4 +1,3 @@
-package given;
 
 import java.rmi.*;
 import java.util.*;
@@ -171,6 +170,10 @@ class Transaction
 		waitingForResource = resourceAccess;
 		owner.println("Trying to claim lock of resource " + resourceAccess.resourceId + " at server " + resourceAccess.serverId, transactionId);
 		try {
+			// if (Globals.PROBING_ENABLED) {
+			// 	ProbeMessage probeMessage = new ProbeMessage(owner, waitingForResource.resourceId);
+			// 	probeMessage.start();
+			// }
 			if (resourceAccess.server.lockResource(transactionId, resourceAccess.resourceId)) {
 				lockedResources.add(resourceAccess);
 				waitingForResource = null;

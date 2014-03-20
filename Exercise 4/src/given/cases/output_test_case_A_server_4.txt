@@ -1,0 +1,23 @@
+==================================================================
+0: Test case A started.
+1620: Server 4 started.
+3400: Server 4 started its transactions.
+3461: Transaction 4000 arrived.
+3462: TRANS 4000: Starting transaction 4000.
+3463: TRANS 4000: Trying to claim lock of resource 0 at server 4
+3465: TRANS 4000: Lock claimed. Processing...
+3966: TRANS 4000: Trying to claim lock of resource 9 at server 1
+7441: TRANS 4000: Aborting transaction 4000.
+7442: TRANS 4000: Unlocked resource 0 at server 4
+7442: TRANS 4000: Transaction 4000 aborted.
+7442: Transaction 4000 ended.
+7520: Transaction 4001 arrived.
+7520: TRANS 4001: Starting transaction 4001.
+7521: TRANS 4001: Trying to claim lock of resource 1 at server 4
+7521: TRANS 4001: Lock claimed. Processing...
+7638: TRANS 4001: Trying to claim lock of resource 1 at server 1
+7655: TRANS 4001: Aborting transaction 4001.
+7656: TRANS 4001: Unlocked resource 1 at server 4
+7656: TRANS 4001: Transaction 4001 aborted.
+7657: Transaction 4001 ended.
+7668: End of input file reached, no more transactions will be started.

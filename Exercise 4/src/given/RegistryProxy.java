@@ -1,4 +1,3 @@
-package given;
 
 import java.rmi.*;
 

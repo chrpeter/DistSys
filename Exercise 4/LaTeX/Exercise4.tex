@@ -1,51 +1,34 @@
-\documentclass[11pt, a4paper]{article}	% Alternativet er å bruke {report}, men vi holder oss helst til {article} i labrapportene
+\documentclass{article}
+
+\usepackage{datetime}
 \usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc} 								% Vise norske tegn
+\usepackage[margin=30mm]{geometry}
+\usepackage{graphicx}
 
-\usepackage{graphicx} 
-      						% For å inkludere figurer
-%\setcounter{secnumdepth}{0} 						% \section nummereres ikke
+\setlength{\parskip}{\medskipamount}
+\setlength{\parindent}{0pt}
 
-% Justeringer av defaultverdier for teksten på siden:
-\setlength{\textheight}{240mm} 
-\setlength{\textwidth}{150mm}  
-\topmargin -5mm 
-\oddsidemargin -10mm
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
+\title{Øving 4: Distrubuert vranglås}
+\author{Christian Peter, Kjetil Sletten og Simen Skoglund}
+\date{\today}
+\maketitle
+\section{Endringer}
+\subsection*{ServerImpl.java}
+Viktigste endringen i denne klassen er at vi legger til metoden \emph{SendProbe()}. Denne sjekker om probemeldingen har gått igjennom hele nettverket, om den finner igjen sin egen prosess har det oppstått en deadlock.
+\subsection*{Resource.java}
+Viktigste endringen foregår i metoden \emph{lock()}. Vi sjekker globals om test casen bruker enten \emph{probing} eller \emph{timeouts}. Om testen bruker probing vil denne metoden sende en \emph{ProbeMessage} asynkront over en ny tråd. Ved timeouts, så vil metoden gjennomføre en wait.
+\subsection*{Transaction.java}
+-------------
+\section{Resultater}
+Vi legger ved resultater for alle test-caser, $final_results.txt$. 
 
-\begin{titlepage}
-\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
- 
-\begin{center}
- 
+Alle test-casene kom til slutten av inputfilen.
 
-\textsc{\huge TDT4190 }\\[2.0cm]
+Vi hadde mest problemer med test case C, og fikk feil som RemoteException(Communication error). Dette ble løst vht. \emph{notifyAll()} som vekker alle trådene som venter på det gitte objektet.
 
- 
-\HRule \\[0.3cm]
-{\huge \bfseries  Øving  1
-\\\ \\\ \LARGE Kjetil Sletten, Simen Skoglund og Christian Peter }\\[0.4cm]
-\HRule \\[1.5cm]
- 
-\vfill
- 
-{\large \today}
- 
-\end{center}
-\end{titlepage}
+\section{Implementering}
+Vår implementering fungerer på følgende måte: Sjekker input om hvilke tester som tar i bruk enten \emph{edge chasing} eller \emph{timeouts}. Edge chasing sjekker om prossesen blir blokkert, når en prosess blir blokkert blir det sendt en melding til påfølgende prosesser som er avhengig av den første prosessen. Om denne meldingen kommer tilbake til førstnevnte prosess har det foregått en sirkulær løkke (en probe melding blir sendt en kant av gangen og danner en \emph{"wait-for graph"}), med andre ord en \emph{deadlock} har funnet sted og en transaksjon må aborteres. Ved bruk av edge chasing unngår vi å abortere \emph{phantom deadlocks}(tilsynelatende deadlocks), siden probe meldingen tar seg av en ressurs av gangen og danner en wait-for graph. 
 
-\newpage
-
-\section{Beskrivelse}
-
-
-\newpage
-\begin{thebibliography}{2}
-
-
-\end{thebibliography}
-
+Ved timeouts vil den gitte prosessen vente lokalt på følgende ressurs. Om tiden går ut vil transaksjonen abortere. 
 \end{document}

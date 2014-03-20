@@ -1,4 +1,3 @@
-package given;
 /**
  * A collection of globally available constants
  * and static methods.

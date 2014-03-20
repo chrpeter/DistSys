@@ -1,0 +1,54 @@
+==================================================================
+0: Test case G started.
+48: Server 2 was notified of the arrival of server 3
+104: Server 2 was notified of the arrival of server 4
+1296: Server 2 started.
+3257: Server 2 started its transactions.
+3318: Transaction 2000 arrived.
+3318: TRANS 2000: Starting transaction 2000.
+3320: TRANS 2000: Trying to claim lock of resource 0 at server 3
+3322: TRANS 2000: Lock claimed. Processing...
+3823: TRANS 2000: Trying to claim lock of resource 9 at server 1
+5317: TRANS 2000: Lock claimed. Processing...
+5328: TRANS 2000: Committing transaction 2000.
+5329: TRANS 2000: Unlocked resource 0 at server 3
+5330: TRANS 2000: Unlocked resource 9 at server 1
+5330: TRANS 2000: Transaction 2000 committed.
+5331: Transaction 2000 ended.
+5388: Transaction 2001 arrived.
+5388: TRANS 2001: Starting transaction 2001.
+5388: TRANS 2001: Trying to claim lock of resource 0 at server 3
+5401: TRANS 2001: Lock claimed. Processing...
+5413: TRANS 2001: Trying to claim lock of resource 1 at server 3
+5423: TRANS 2001: Lock claimed. Processing...
+5434: TRANS 2001: Trying to claim lock of resource 2 at server 3
+5437: TRANS 2001: Lock claimed. Processing...
+5447: TRANS 2001: Trying to claim lock of resource 3 at server 3
+5448: TRANS 2001: Lock claimed. Processing...
+5461: TRANS 2001: Trying to claim lock of resource 4 at server 3
+5469: TRANS 2001: Lock claimed. Processing...
+5483: TRANS 2001: Trying to claim lock of resource 5 at server 3
+5485: TRANS 2001: Lock claimed. Processing...
+5497: TRANS 2001: Trying to claim lock of resource 6 at server 3
+5500: TRANS 2001: Lock claimed. Processing...
+5512: TRANS 2001: Trying to claim lock of resource 7 at server 3
+5514: TRANS 2001: Lock claimed. Processing...
+5532: TRANS 2001: Trying to claim lock of resource 8 at server 3
+5532: TRANS 2001: Lock claimed. Processing...
+5545: TRANS 2001: Trying to claim lock of resource 9 at server 3
+5547: TRANS 2001: Lock claimed. Processing...
+6548: TRANS 2001: Trying to claim lock of resource 5 at server 1
+9552: TRANS 2001: Aborting transaction 2001.
+9573: TRANS 2001: Unlocked resource 0 at server 3
+9578: TRANS 2001: Unlocked resource 1 at server 3
+9579: TRANS 2001: Unlocked resource 2 at server 3
+9585: TRANS 2001: Unlocked resource 3 at server 3
+9589: TRANS 2001: Unlocked resource 4 at server 3
+9593: TRANS 2001: Unlocked resource 5 at server 3
+9602: TRANS 2001: Unlocked resource 6 at server 3
+9603: TRANS 2001: Unlocked resource 7 at server 3
+9610: TRANS 2001: Unlocked resource 8 at server 3
+9613: TRANS 2001: Unlocked resource 9 at server 3
+9614: TRANS 2001: Transaction 2001 aborted.
+9614: Transaction 2001 ended.
+9627: End of input file reached, no more transactions will be started.

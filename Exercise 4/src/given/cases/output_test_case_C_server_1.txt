@@ -1,0 +1,27 @@
+==================================================================
+2: Test case C started.
+36: Server 1 was notified of the arrival of server 2
+53: Server 1 was notified of the arrival of server 3
+97: Server 1 was notified of the arrival of server 4
+1419: Server 1 started.
+4972: Server 1 started its transactions.
+5088: Transaction 1000 arrived.
+5091: TRANS 1000: Starting transaction 1000.
+5093: TRANS 1000: Trying to claim lock of resource 9 at server 1
+5094: TRANS 1000: Lock claimed. Processing...
+9095: TRANS 1000: Committing transaction 1000.
+9096: TRANS 1000: Unlocked resource 9 at server 1
+9096: TRANS 1000: Transaction 1000 committed.
+9096: Transaction 1000 ended.
+9150: Transaction 1001 arrived.
+9151: TRANS 1001: Starting transaction 1001.
+9151: TRANS 1001: Trying to claim lock of resource 7 at server 2
+9152: TRANS 1001: Lock claimed. Processing...
+9454: TRANS 1001: Trying to claim lock of resource 4 at server 4
+9455: TRANS 1001: Lock claimed. Processing...
+9556: TRANS 1001: Committing transaction 1001.
+9558: TRANS 1001: Unlocked resource 7 at server 2
+9559: TRANS 1001: Unlocked resource 4 at server 4
+9559: TRANS 1001: Transaction 1001 committed.
+9559: Transaction 1001 ended.
+9564: End of input file reached, no more transactions will be started.

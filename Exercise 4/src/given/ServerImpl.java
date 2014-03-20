@@ -1,4 +1,3 @@
-package given;
 
 import java.net.MalformedURLException;
 import java.rmi.*;
@@ -92,7 +91,7 @@ public class ServerImpl extends UnicastRemoteObject implements Server
 		servers = new HashMap<Integer, Server>();
 		transactionCounter = 0;
 		nofAborts = 0;
-		inputfile = "src/given/cases/input_test_case_A_server_"+ 4 + ".txt";
+		// inputfile = "src/given/cases/input_test_case_A_server_"+ 4 + ".txt";
 		activeTransaction = null;
 		System.out.println(inputfile);
 		readGlobalParameters(inputfile);
@@ -598,7 +597,7 @@ public class ServerImpl extends UnicastRemoteObject implements Server
 	 */
 	public static void main(String[] args)
 	{
-		String registryAddress = "localhost:35000";
+		String registryAddress = "localhost:1111";
 		String inputfile = null;
 		if (args.length > 0)
 			registryAddress = args[0];
@@ -623,24 +622,28 @@ public class ServerImpl extends UnicastRemoteObject implements Server
 	public void  sendProbe(ArrayList<Integer> probelist, int resID) throws RemoteException {
 
 		if(activeTransaction == null){
+			System.out.println("LOL1");
+			resources.get(resID).notifyShiet(null);
 			return;
 		}
-		
+		ResourceAccess waitingForResource = activeTransaction.getWaitingForResource();
+		if(waitingForResource == null){
+			System.out.println("LOL2");
+			resources.get(resID).notifyShiet(null);
+			return;
+		}
+		System.out.println("LOL3");	
+		if(activeTransaction != null && waitingForResource != null){
 		if(probelist.contains(activeTransaction.getTransactionId())){
 			System.out.println("This transaction has gone in a loop: " + activeTransaction.getTransactionId());
-
+			probelist.add(activeTransaction.getTransactionId());						
 			printhehe(probelist, activeTransaction.getTransactionId());
-			int newServerID = getTransactionOwner(probelist.get(1));
-			Server abortServer = getServer(newServerID);
 			resources.get(resID).doAbort(activeTransaction);
 			//notifyAll();
 		}
 		else{
 			System.out.println("halla");
-			ResourceAccess waitingForResource = activeTransaction.getWaitingForResource();
-			if(waitingForResource == null){
-				return;
-			}
+			
 			int resourceID = waitingForResource.resourceId;
 			int lockowner = waitingForResource.server.getResourceOwnerID(resourceID);
 
@@ -650,7 +653,17 @@ public class ServerImpl extends UnicastRemoteObject implements Server
 				ProbeMessage probeMessage = new ProbeMessage(activeTransaction.getTransactionId(), probelist, newServer, resourceID);
 				probeMessage.start();
 			}
+			// if(waitingForResource != null){
+			// 	int resourceID = waitingForResource.resourceId;
+			// 	int lockowner = waitingForResource.server.getResourceOwnerID(resourceID);
+			// 	// getServer(getTransactionOwner(lockowner)).sendProbe(probelist, resID);
+			// 	System.out.println(activeTransaction);
+			// 	System.out.println(activeTransaction.getWaitingForResource());
+			// 	System.out.println(activeTransaction.getWaitingForResource().server);
+			// 	activeTransaction.getWaitingForResource().server.sendProbe(probelist,resID);
+			// }
 		}
+	}
 	}
 	public int getID(){
 		return serverId;

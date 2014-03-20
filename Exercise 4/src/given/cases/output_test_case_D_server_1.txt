@@ -1,0 +1,53 @@
+==================================================================
+1: Test case D started.
+34: Server 1 was notified of the arrival of server 2
+54: Server 1 was notified of the arrival of server 3
+128: Server 1 was notified of the arrival of server 4
+1364: Server 1 started.
+3231: Server 1 started its transactions.
+3293: Transaction 1000 arrived.
+3295: TRANS 1000: Starting transaction 1000.
+3296: TRANS 1000: Trying to claim lock of resource 0 at server 4
+3298: TRANS 1000: Lock claimed. Processing...
+3799: TRANS 1000: Trying to claim lock of resource 9 at server 1
+7305: TRANS 1000: Aborting transaction 1000.
+7311: TRANS 1000: Unlocked resource 0 at server 4
+7311: TRANS 1000: Transaction 1000 aborted.
+7311: Transaction 1000 ended.
+7381: Transaction 1001 arrived.
+7382: TRANS 1001: Starting transaction 1001.
+7382: TRANS 1001: Trying to claim lock of resource 9 at server 4
+7384: TRANS 1001: Lock claimed. Processing...
+7395: TRANS 1001: Trying to claim lock of resource 1 at server 1
+7396: TRANS 1001: Lock claimed. Processing...
+8432: TRANS 1001: Trying to claim lock of resource 2 at server 1
+8433: TRANS 1001: Lock claimed. Processing...
+9434: TRANS 1001: Trying to claim lock of resource 3 at server 1
+9434: TRANS 1001: Lock claimed. Processing...
+10436: TRANS 1001: Trying to claim lock of resource 4 at server 1
+10437: TRANS 1001: Lock claimed. Processing...
+11438: TRANS 1001: Trying to claim lock of resource 5 at server 1
+11439: TRANS 1001: Lock claimed. Processing...
+12440: TRANS 1001: Trying to claim lock of resource 6 at server 1
+12441: TRANS 1001: Lock claimed. Processing...
+13442: TRANS 1001: Trying to claim lock of resource 7 at server 1
+13442: TRANS 1001: Lock claimed. Processing...
+14444: TRANS 1001: Trying to claim lock of resource 8 at server 1
+14444: TRANS 1001: Lock claimed. Processing...
+15446: TRANS 1001: Trying to claim lock of resource 9 at server 1
+15446: TRANS 1001: Lock claimed. Processing...
+16448: TRANS 1001: Trying to claim lock of resource 0 at server 1
+16925: TRANS 1001: Aborting transaction 1001.
+16930: TRANS 1001: Unlocked resource 9 at server 4
+16930: TRANS 1001: Unlocked resource 1 at server 1
+16930: TRANS 1001: Unlocked resource 2 at server 1
+16931: TRANS 1001: Unlocked resource 3 at server 1
+16931: TRANS 1001: Unlocked resource 4 at server 1
+16931: TRANS 1001: Unlocked resource 5 at server 1
+16931: TRANS 1001: Unlocked resource 6 at server 1
+16932: TRANS 1001: Unlocked resource 7 at server 1
+16932: TRANS 1001: Unlocked resource 8 at server 1
+16932: TRANS 1001: Unlocked resource 9 at server 1
+16932: TRANS 1001: Transaction 1001 aborted.
+16933: Transaction 1001 ended.
+16944: End of input file reached, no more transactions will be started.

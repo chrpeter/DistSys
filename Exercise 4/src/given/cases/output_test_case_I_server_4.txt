@@ -1,0 +1,52 @@
+==================================================================
+1: Test case I started.
+1433: Server 4 started.
+2810: Server 4 started its transactions.
+2879: Transaction 4000 arrived.
+2881: TRANS 4000: Starting transaction 4000.
+2882: TRANS 4000: Trying to claim lock of resource 0 at server 3
+2884: TRANS 4000: Lock claimed. Processing...
+3386: TRANS 4000: Trying to claim lock of resource 9 at server 1
+4958: TRANS 4000: Lock claimed. Processing...
+4975: TRANS 4000: Committing transaction 4000.
+4978: TRANS 4000: Unlocked resource 0 at server 3
+4981: TRANS 4000: Unlocked resource 9 at server 1
+4981: TRANS 4000: Transaction 4000 committed.
+4982: Transaction 4000 ended.
+5036: Transaction 4001 arrived.
+5036: TRANS 4001: Starting transaction 4001.
+5036: TRANS 4001: Trying to claim lock of resource 9 at server 3
+5037: TRANS 4001: Lock claimed. Processing...
+5049: TRANS 4001: Trying to claim lock of resource 0 at server 4
+5049: TRANS 4001: Lock claimed. Processing...
+6550: TRANS 4001: Trying to claim lock of resource 1 at server 4
+6550: TRANS 4001: Lock claimed. Processing...
+7552: TRANS 4001: Trying to claim lock of resource 2 at server 4
+7552: TRANS 4001: Lock claimed. Processing...
+8554: TRANS 4001: Trying to claim lock of resource 3 at server 4
+8554: TRANS 4001: Lock claimed. Processing...
+9555: TRANS 4001: Trying to claim lock of resource 4 at server 4
+9556: TRANS 4001: Lock claimed. Processing...
+10557: TRANS 4001: Trying to claim lock of resource 5 at server 4
+10557: TRANS 4001: Lock claimed. Processing...
+11558: TRANS 4001: Trying to claim lock of resource 6 at server 4
+11559: TRANS 4001: Lock claimed. Processing...
+12560: TRANS 4001: Trying to claim lock of resource 7 at server 4
+12560: TRANS 4001: Lock claimed. Processing...
+13562: TRANS 4001: Trying to claim lock of resource 8 at server 4
+13562: TRANS 4001: Lock claimed. Processing...
+14564: TRANS 4001: Trying to claim lock of resource 9 at server 4
+17566: TRANS 4001: Aborting transaction 4001.
+17567: TRANS 4001: Unlocked resource 9 at server 3
+17567: TRANS 4001: Unlocked resource 0 at server 4
+17568: TRANS 4001: Unlocked resource 1 at server 4
+17568: TRANS 4001: Unlocked resource 2 at server 4
+17568: TRANS 4001: Unlocked resource 3 at server 4
+17568: TRANS 4001: Unlocked resource 4 at server 4
+17569: TRANS 4001: Unlocked resource 5 at server 4
+17569: TRANS 4001: Unlocked resource 6 at server 4
+17569: TRANS 4001: Unlocked resource 7 at server 4
+17569: TRANS 4001: Unlocked resource 8 at server 4
+17570: TRANS 4001: Transaction 4001 aborted.
+17570: Transaction 4001 ended.
+17572: End of input file reached, no more transactions will be started.

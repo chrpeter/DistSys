@@ -1,0 +1,1379 @@
+Thu Mar 20 12:07:46 CET 2014
+---------
+output_test_case_A_server_1.txt
+==================================================================
+0: Test case A started.
+27: Server 1 was notified of the arrival of server 2
+49: Server 1 was notified of the arrival of server 3
+61: Server 1 was notified of the arrival of server 4
+1749: Server 1 started.
+3468: Server 1 started its transactions.
+3579: Transaction 1000 arrived.
+3580: TRANS 1000: Starting transaction 1000.
+3581: TRANS 1000: Trying to claim lock of resource 0 at server 2
+3582: TRANS 1000: Lock claimed. Processing...
+4084: TRANS 1000: Trying to claim lock of resource 9 at server 1
+7509: TRANS 1000: Aborting transaction 1000.
+7514: TRANS 1000: Unlocked resource 0 at server 2
+7515: TRANS 1000: Transaction 1000 aborted.
+7515: Transaction 1000 ended.
+7577: Transaction 1001 arrived.
+7578: TRANS 1001: Starting transaction 1001.
+7578: TRANS 1001: Trying to claim lock of resource 1 at server 2
+7582: TRANS 1001: Lock claimed. Processing...
+7683: TRANS 1001: Trying to claim lock of resource 1 at server 3
+7684: TRANS 1001: Lock claimed. Processing...
+8685: TRANS 1001: Committing transaction 1001.
+8686: TRANS 1001: Unlocked resource 1 at server 2
+8688: TRANS 1001: Unlocked resource 1 at server 3
+8688: TRANS 1001: Transaction 1001 committed.
+8688: Transaction 1001 ended.
+8691: End of input file reached, no more transactions will be started.
+---------
+output_test_case_A_server_2.txt
+==================================================================
+1: Test case A started.
+28: Server 2 was notified of the arrival of server 3
+38: Server 2 was notified of the arrival of server 4
+1538: Server 2 started.
+3442: Server 2 started its transactions.
+3472: Transaction 2000 arrived.
+3473: TRANS 2000: Starting transaction 2000.
+3474: TRANS 2000: Trying to claim lock of resource 9 at server 1
+3479: TRANS 2000: Lock claimed. Processing...
+7481: TRANS 2000: Committing transaction 2000.
+7501: TRANS 2000: Unlocked resource 9 at server 1
+7501: TRANS 2000: Transaction 2000 committed.
+7501: Transaction 2000 ended.
+7566: Transaction 2001 arrived.
+7566: TRANS 2001: Starting transaction 2001.
+7566: TRANS 2001: Trying to claim lock of resource 1 at server 1
+7589: TRANS 2001: Lock claimed. Processing...
+7691: TRANS 2001: Trying to claim lock of resource 1 at server 2
+8659: TRANS 2001: Aborting transaction 2001.
+8660: TRANS 2001: Unlocked resource 1 at server 1
+8661: TRANS 2001: Transaction 2001 aborted.
+8661: Transaction 2001 ended.
+8664: End of input file reached, no more transactions will be started.
+---------
+output_test_case_A_server_3.txt
+==================================================================
+1: Test case A started.
+17: Server 3 was notified of the arrival of server 4
+1432: Server 3 started.
+3415: Server 3 started its transactions.
+3471: Transaction 3000 arrived.
+3473: TRANS 3000: Starting transaction 3000.
+3474: TRANS 3000: Trying to claim lock of resource 0 at server 3
+3475: TRANS 3000: Lock claimed. Processing...
+3977: TRANS 3000: Trying to claim lock of resource 9 at server 1
+7458: TRANS 3000: Aborting transaction 3000.
+7459: TRANS 3000: Unlocked resource 0 at server 3
+7459: TRANS 3000: Transaction 3000 aborted.
+7459: Transaction 3000 ended.
+7517: Transaction 3001 arrived.
+7517: TRANS 3001: Starting transaction 3001.
+7518: TRANS 3001: Trying to claim lock of resource 1 at server 3
+7518: TRANS 3001: Lock claimed. Processing...
+7619: TRANS 3001: Trying to claim lock of resource 1 at server 4
+7628: TRANS 3001: Aborting transaction 3001.
+7628: TRANS 3001: Unlocked resource 1 at server 3
+7628: TRANS 3001: Transaction 3001 aborted.
+7628: Transaction 3001 ended.
+7642: End of input file reached, no more transactions will be started.
+---------
+output_test_case_A_server_4.txt
+==================================================================
+0: Test case A started.
+1620: Server 4 started.
+3400: Server 4 started its transactions.
+3461: Transaction 4000 arrived.
+3462: TRANS 4000: Starting transaction 4000.
+3463: TRANS 4000: Trying to claim lock of resource 0 at server 4
+3465: TRANS 4000: Lock claimed. Processing...
+3966: TRANS 4000: Trying to claim lock of resource 9 at server 1
+7441: TRANS 4000: Aborting transaction 4000.
+7442: TRANS 4000: Unlocked resource 0 at server 4
+7442: TRANS 4000: Transaction 4000 aborted.
+7442: Transaction 4000 ended.
+7520: Transaction 4001 arrived.
+7520: TRANS 4001: Starting transaction 4001.
+7521: TRANS 4001: Trying to claim lock of resource 1 at server 4
+7521: TRANS 4001: Lock claimed. Processing...
+7638: TRANS 4001: Trying to claim lock of resource 1 at server 1
+7655: TRANS 4001: Aborting transaction 4001.
+7656: TRANS 4001: Unlocked resource 1 at server 4
+7656: TRANS 4001: Transaction 4001 aborted.
+7657: Transaction 4001 ended.
+7668: End of input file reached, no more transactions will be started.
+---------
+output_test_case_B_server_1.txt
+==================================================================
+1: Test case B started.
+34: Server 1 was notified of the arrival of server 2
+64: Server 1 was notified of the arrival of server 3
+161: Server 1 was notified of the arrival of server 4
+1301: Server 1 started.
+3425: Server 1 started its transactions.
+3528: Transaction 1000 arrived.
+3529: TRANS 1000: Starting transaction 1000.
+3529: TRANS 1000: Trying to claim lock of resource 0 at server 3
+3530: TRANS 1000: Lock claimed. Processing...
+4032: TRANS 1000: Trying to claim lock of resource 9 at server 1
+7475: TRANS 1000: Aborting transaction 1000.
+7482: TRANS 1000: Unlocked resource 0 at server 3
+7483: TRANS 1000: Transaction 1000 aborted.
+7483: Transaction 1000 ended.
+7583: Transaction 1001 arrived.
+7584: TRANS 1001: Starting transaction 1001.
+7585: TRANS 1001: Trying to claim lock of resource 0 at server 3
+7586: TRANS 1001: Lock claimed. Processing...
+7596: TRANS 1001: Trying to claim lock of resource 1 at server 3
+7597: TRANS 1001: Lock claimed. Processing...
+7608: TRANS 1001: Trying to claim lock of resource 2 at server 3
+7608: TRANS 1001: Lock claimed. Processing...
+7620: TRANS 1001: Trying to claim lock of resource 3 at server 3
+7622: TRANS 1001: Lock claimed. Processing...
+7632: TRANS 1001: Trying to claim lock of resource 4 at server 3
+7633: TRANS 1001: Lock claimed. Processing...
+7645: TRANS 1001: Trying to claim lock of resource 5 at server 3
+7646: TRANS 1001: Lock claimed. Processing...
+7657: TRANS 1001: Trying to claim lock of resource 6 at server 3
+7658: TRANS 1001: Lock claimed. Processing...
+7670: TRANS 1001: Trying to claim lock of resource 7 at server 3
+7672: TRANS 1001: Lock claimed. Processing...
+7693: TRANS 1001: Trying to claim lock of resource 8 at server 3
+7695: TRANS 1001: Lock claimed. Processing...
+7706: TRANS 1001: Trying to claim lock of resource 9 at server 3
+7710: TRANS 1001: Lock claimed. Processing...
+8712: TRANS 1001: Trying to claim lock of resource 5 at server 1
+8722: TRANS 1001: Aborting transaction 1001.
+8723: TRANS 1001: Unlocked resource 0 at server 3
+8724: TRANS 1001: Unlocked resource 1 at server 3
+8724: TRANS 1001: Unlocked resource 2 at server 3
+8725: TRANS 1001: Unlocked resource 3 at server 3
+8725: TRANS 1001: Unlocked resource 4 at server 3
+8726: TRANS 1001: Unlocked resource 5 at server 3
+8728: TRANS 1001: Unlocked resource 6 at server 3
+8728: TRANS 1001: Unlocked resource 7 at server 3
+8729: TRANS 1001: Unlocked resource 8 at server 3
+8729: TRANS 1001: Unlocked resource 9 at server 3
+8730: TRANS 1001: Transaction 1001 aborted.
+8730: Transaction 1001 ended.
+8741: End of input file reached, no more transactions will be started.
+---------
+output_test_case_B_server_2.txt
+==================================================================
+1: Test case B started.
+48: Server 2 was notified of the arrival of server 3
+131: Server 2 was notified of the arrival of server 4
+1394: Server 2 started.
+3390: Server 2 started its transactions.
+3432: Transaction 2000 arrived.
+3434: TRANS 2000: Starting transaction 2000.
+3434: TRANS 2000: Trying to claim lock of resource 9 at server 1
+3437: TRANS 2000: Lock claimed. Processing...
+7438: TRANS 2000: Committing transaction 2000.
+7441: TRANS 2000: Unlocked resource 9 at server 1
+7441: TRANS 2000: Transaction 2000 committed.
+7441: Transaction 2000 ended.
+7502: Transaction 2001 arrived.
+7503: TRANS 2001: Starting transaction 2001.
+7505: TRANS 2001: Trying to claim lock of resource 0 at server 1
+7507: TRANS 2001: Lock claimed. Processing...
+7519: TRANS 2001: Trying to claim lock of resource 1 at server 1
+7520: TRANS 2001: Lock claimed. Processing...
+7532: TRANS 2001: Trying to claim lock of resource 2 at server 1
+7534: TRANS 2001: Lock claimed. Processing...
+7545: TRANS 2001: Trying to claim lock of resource 3 at server 1
+7547: TRANS 2001: Lock claimed. Processing...
+7558: TRANS 2001: Trying to claim lock of resource 4 at server 1
+7560: TRANS 2001: Lock claimed. Processing...
+7570: TRANS 2001: Trying to claim lock of resource 5 at server 1
+7571: TRANS 2001: Lock claimed. Processing...
+7582: TRANS 2001: Trying to claim lock of resource 6 at server 1
+7584: TRANS 2001: Lock claimed. Processing...
+7596: TRANS 2001: Trying to claim lock of resource 7 at server 1
+7597: TRANS 2001: Lock claimed. Processing...
+7611: TRANS 2001: Trying to claim lock of resource 8 at server 1
+7614: TRANS 2001: Lock claimed. Processing...
+7627: TRANS 2001: Trying to claim lock of resource 9 at server 1
+7629: TRANS 2001: Lock claimed. Processing...
+8629: TRANS 2001: Trying to claim lock of resource 5 at server 4
+8700: TRANS 2001: Aborting transaction 2001.
+8702: TRANS 2001: Unlocked resource 0 at server 1
+8703: TRANS 2001: Unlocked resource 1 at server 1
+8706: TRANS 2001: Unlocked resource 2 at server 1
+8707: TRANS 2001: Unlocked resource 3 at server 1
+8708: TRANS 2001: Unlocked resource 4 at server 1
+8708: TRANS 2001: Unlocked resource 5 at server 1
+8709: TRANS 2001: Unlocked resource 6 at server 1
+8710: TRANS 2001: Unlocked resource 7 at server 1
+8711: TRANS 2001: Unlocked resource 8 at server 1
+8712: TRANS 2001: Unlocked resource 9 at server 1
+8712: TRANS 2001: Transaction 2001 aborted.
+8712: Transaction 2001 ended.
+8716: End of input file reached, no more transactions will be started.
+---------
+output_test_case_B_server_3.txt
+==================================================================
+1: Test case B started.
+78: Server 3 was notified of the arrival of server 4
+1424: Server 3 started.
+3333: Server 3 started its transactions.
+3356: Transaction 3000 arrived.
+3357: TRANS 3000: Starting transaction 3000.
+3358: TRANS 3000: Trying to claim lock of resource 0 at server 2
+3360: TRANS 3000: Lock claimed. Processing...
+3862: TRANS 3000: Trying to claim lock of resource 9 at server 1
+7382: TRANS 3000: Aborting transaction 3000.
+7401: TRANS 3000: Unlocked resource 0 at server 2
+7402: TRANS 3000: Transaction 3000 aborted.
+7402: Transaction 3000 ended.
+7462: Transaction 3001 arrived.
+7463: TRANS 3001: Starting transaction 3001.
+7463: TRANS 3001: Trying to claim lock of resource 0 at server 2
+7467: TRANS 3001: Lock claimed. Processing...
+7478: TRANS 3001: Trying to claim lock of resource 1 at server 2
+7480: TRANS 3001: Lock claimed. Processing...
+7491: TRANS 3001: Trying to claim lock of resource 2 at server 2
+7492: TRANS 3001: Lock claimed. Processing...
+7503: TRANS 3001: Trying to claim lock of resource 3 at server 2
+7504: TRANS 3001: Lock claimed. Processing...
+7514: TRANS 3001: Trying to claim lock of resource 4 at server 2
+7515: TRANS 3001: Lock claimed. Processing...
+7527: TRANS 3001: Trying to claim lock of resource 5 at server 2
+7528: TRANS 3001: Lock claimed. Processing...
+7539: TRANS 3001: Trying to claim lock of resource 6 at server 2
+7541: TRANS 3001: Lock claimed. Processing...
+7554: TRANS 3001: Trying to claim lock of resource 7 at server 2
+7555: TRANS 3001: Lock claimed. Processing...
+7567: TRANS 3001: Trying to claim lock of resource 8 at server 2
+7569: TRANS 3001: Lock claimed. Processing...
+7581: TRANS 3001: Trying to claim lock of resource 9 at server 2
+7587: TRANS 3001: Lock claimed. Processing...
+8588: TRANS 3001: Trying to claim lock of resource 5 at server 3
+8632: TRANS 3001: Aborting transaction 3001.
+8634: TRANS 3001: Unlocked resource 0 at server 2
+8635: TRANS 3001: Unlocked resource 1 at server 2
+8635: TRANS 3001: Unlocked resource 2 at server 2
+8636: TRANS 3001: Unlocked resource 3 at server 2
+8638: TRANS 3001: Unlocked resource 4 at server 2
+8638: TRANS 3001: Unlocked resource 5 at server 2
+8641: TRANS 3001: Unlocked resource 6 at server 2
+8654: TRANS 3001: Unlocked resource 7 at server 2
+8655: TRANS 3001: Unlocked resource 8 at server 2
+8656: TRANS 3001: Unlocked resource 9 at server 2
+8657: TRANS 3001: Transaction 3001 aborted.
+8657: Transaction 3001 ended.
+8658: End of input file reached, no more transactions will be started.
+---------
+output_test_case_B_server_4.txt
+==================================================================
+0: Test case B started.
+1431: Server 4 started.
+3256: Server 4 started its transactions.
+3354: Transaction 4000 arrived.
+3355: TRANS 4000: Starting transaction 4000.
+3355: TRANS 4000: Trying to claim lock of resource 0 at server 4
+3356: TRANS 4000: Lock claimed. Processing...
+3857: TRANS 4000: Trying to claim lock of resource 9 at server 1
+7304: TRANS 4000: Aborting transaction 4000.
+7304: TRANS 4000: Unlocked resource 0 at server 4
+7307: TRANS 4000: Transaction 4000 aborted.
+7308: Transaction 4000 ended.
+7366: Transaction 4001 arrived.
+7367: TRANS 4001: Starting transaction 4001.
+7367: TRANS 4001: Trying to claim lock of resource 0 at server 4
+7368: TRANS 4001: Lock claimed. Processing...
+7381: TRANS 4001: Trying to claim lock of resource 1 at server 4
+7382: TRANS 4001: Lock claimed. Processing...
+7394: TRANS 4001: Trying to claim lock of resource 2 at server 4
+7394: TRANS 4001: Lock claimed. Processing...
+7407: TRANS 4001: Trying to claim lock of resource 3 at server 4
+7408: TRANS 4001: Lock claimed. Processing...
+7419: TRANS 4001: Trying to claim lock of resource 4 at server 4
+7423: TRANS 4001: Lock claimed. Processing...
+7434: TRANS 4001: Trying to claim lock of resource 5 at server 4
+7434: TRANS 4001: Lock claimed. Processing...
+7445: TRANS 4001: Trying to claim lock of resource 6 at server 4
+7446: TRANS 4001: Lock claimed. Processing...
+7462: TRANS 4001: Trying to claim lock of resource 7 at server 4
+7463: TRANS 4001: Lock claimed. Processing...
+7476: TRANS 4001: Trying to claim lock of resource 8 at server 4
+7477: TRANS 4001: Lock claimed. Processing...
+7488: TRANS 4001: Trying to claim lock of resource 9 at server 4
+7489: TRANS 4001: Lock claimed. Processing...
+8490: TRANS 4001: Trying to claim lock of resource 5 at server 2
+8560: TRANS 4001: Aborting transaction 4001.
+8560: TRANS 4001: Unlocked resource 0 at server 4
+8560: TRANS 4001: Unlocked resource 1 at server 4
+8560: TRANS 4001: Unlocked resource 2 at server 4
+8560: TRANS 4001: Unlocked resource 3 at server 4
+8561: TRANS 4001: Unlocked resource 4 at server 4
+8561: TRANS 4001: Unlocked resource 5 at server 4
+8561: TRANS 4001: Unlocked resource 6 at server 4
+8562: TRANS 4001: Unlocked resource 7 at server 4
+8562: TRANS 4001: Unlocked resource 8 at server 4
+8562: TRANS 4001: Unlocked resource 9 at server 4
+8563: TRANS 4001: Transaction 4001 aborted.
+8563: Transaction 4001 ended.
+8574: End of input file reached, no more transactions will be started.
+---------
+output_test_case_C_server_1.txt
+==================================================================
+2: Test case C started.
+36: Server 1 was notified of the arrival of server 2
+53: Server 1 was notified of the arrival of server 3
+97: Server 1 was notified of the arrival of server 4
+1419: Server 1 started.
+4972: Server 1 started its transactions.
+5088: Transaction 1000 arrived.
+5091: TRANS 1000: Starting transaction 1000.
+5093: TRANS 1000: Trying to claim lock of resource 9 at server 1
+5094: TRANS 1000: Lock claimed. Processing...
+9095: TRANS 1000: Committing transaction 1000.
+9096: TRANS 1000: Unlocked resource 9 at server 1
+9096: TRANS 1000: Transaction 1000 committed.
+9096: Transaction 1000 ended.
+9150: Transaction 1001 arrived.
+9151: TRANS 1001: Starting transaction 1001.
+9151: TRANS 1001: Trying to claim lock of resource 7 at server 2
+9152: TRANS 1001: Lock claimed. Processing...
+9454: TRANS 1001: Trying to claim lock of resource 4 at server 4
+9455: TRANS 1001: Lock claimed. Processing...
+9556: TRANS 1001: Committing transaction 1001.
+9558: TRANS 1001: Unlocked resource 7 at server 2
+9559: TRANS 1001: Unlocked resource 4 at server 4
+9559: TRANS 1001: Transaction 1001 committed.
+9559: Transaction 1001 ended.
+9564: End of input file reached, no more transactions will be started.
+---------
+output_test_case_C_server_2.txt
+==================================================================
+1: Test case C started.
+19: Server 2 was notified of the arrival of server 3
+71: Server 2 was notified of the arrival of server 4
+1279: Server 2 started.
+4935: Server 2 started its transactions.
+5013: Transaction 2000 arrived.
+5016: TRANS 2000: Starting transaction 2000.
+5017: TRANS 2000: Trying to claim lock of resource 0 at server 3
+5018: TRANS 2000: Lock claimed. Processing...
+5520: TRANS 2000: Trying to claim lock of resource 9 at server 1
+5523: TRANS 2000: Aborting transaction 2000.
+5526: TRANS 2000: Unlocked resource 0 at server 3
+5526: TRANS 2000: Transaction 2000 aborted.
+5527: Transaction 2000 ended.
+5583: Transaction 2001 arrived.
+5583: TRANS 2001: Starting transaction 2001.
+5584: TRANS 2001: Trying to claim lock of resource 4 at server 4
+5585: TRANS 2001: Lock claimed. Processing...
+6286: TRANS 2001: Trying to claim lock of resource 7 at server 2
+6287: TRANS 2001: Lock claimed. Processing...
+6298: TRANS 2001: Committing transaction 2001.
+6300: TRANS 2001: Unlocked resource 4 at server 4
+6300: TRANS 2001: Unlocked resource 7 at server 2
+6300: TRANS 2001: Transaction 2001 committed.
+6301: Transaction 2001 ended.
+6307: End of input file reached, no more transactions will be started.
+---------
+output_test_case_C_server_3.txt
+==================================================================
+1: Test case C started.
+54: Server 3 was notified of the arrival of server 4
+1428: Server 3 started.
+4912: Server 3 started its transactions.
+4960: Transaction 3000 arrived.
+4960: TRANS 3000: Starting transaction 3000.
+4962: TRANS 3000: Trying to claim lock of resource 0 at server 4
+4964: TRANS 3000: Lock claimed. Processing...
+5466: TRANS 3000: Trying to claim lock of resource 9 at server 1
+5469: TRANS 3000: Aborting transaction 3000.
+5471: TRANS 3000: Unlocked resource 0 at server 4
+5472: TRANS 3000: Transaction 3000 aborted.
+5472: Transaction 3000 ended.
+5484: End of input file reached, no more transactions will be started.
+---------
+output_test_case_C_server_4.txt
+==================================================================
+1: Test case C started.
+1490: Server 4 started.
+4859: Server 4 started its transactions.
+4939: Transaction 4000 arrived.
+4940: TRANS 4000: Starting transaction 4000.
+4940: TRANS 4000: Trying to claim lock of resource 0 at server 2
+4944: TRANS 4000: Lock claimed. Processing...
+5445: TRANS 4000: Trying to claim lock of resource 9 at server 1
+5448: TRANS 4000: Aborting transaction 4000.
+5452: TRANS 4000: Unlocked resource 0 at server 2
+5453: TRANS 4000: Transaction 4000 aborted.
+5453: Transaction 4000 ended.
+5505: End of input file reached, no more transactions will be started.
+---------
+output_test_case_D_server_1.txt
+==================================================================
+1: Test case D started.
+34: Server 1 was notified of the arrival of server 2
+54: Server 1 was notified of the arrival of server 3
+128: Server 1 was notified of the arrival of server 4
+1364: Server 1 started.
+3231: Server 1 started its transactions.
+3293: Transaction 1000 arrived.
+3295: TRANS 1000: Starting transaction 1000.
+3296: TRANS 1000: Trying to claim lock of resource 0 at server 4
+3298: TRANS 1000: Lock claimed. Processing...
+3799: TRANS 1000: Trying to claim lock of resource 9 at server 1
+7305: TRANS 1000: Aborting transaction 1000.
+7311: TRANS 1000: Unlocked resource 0 at server 4
+7311: TRANS 1000: Transaction 1000 aborted.
+7311: Transaction 1000 ended.
+7381: Transaction 1001 arrived.
+7382: TRANS 1001: Starting transaction 1001.
+7382: TRANS 1001: Trying to claim lock of resource 9 at server 4
+7384: TRANS 1001: Lock claimed. Processing...
+7395: TRANS 1001: Trying to claim lock of resource 1 at server 1
+7396: TRANS 1001: Lock claimed. Processing...
+8432: TRANS 1001: Trying to claim lock of resource 2 at server 1
+8433: TRANS 1001: Lock claimed. Processing...
+9434: TRANS 1001: Trying to claim lock of resource 3 at server 1
+9434: TRANS 1001: Lock claimed. Processing...
+10436: TRANS 1001: Trying to claim lock of resource 4 at server 1
+10437: TRANS 1001: Lock claimed. Processing...
+11438: TRANS 1001: Trying to claim lock of resource 5 at server 1
+11439: TRANS 1001: Lock claimed. Processing...
+12440: TRANS 1001: Trying to claim lock of resource 6 at server 1
+12441: TRANS 1001: Lock claimed. Processing...
+13442: TRANS 1001: Trying to claim lock of resource 7 at server 1
+13442: TRANS 1001: Lock claimed. Processing...
+14444: TRANS 1001: Trying to claim lock of resource 8 at server 1
+14444: TRANS 1001: Lock claimed. Processing...
+15446: TRANS 1001: Trying to claim lock of resource 9 at server 1
+15446: TRANS 1001: Lock claimed. Processing...
+16448: TRANS 1001: Trying to claim lock of resource 0 at server 1
+16925: TRANS 1001: Aborting transaction 1001.
+16930: TRANS 1001: Unlocked resource 9 at server 4
+16930: TRANS 1001: Unlocked resource 1 at server 1
+16930: TRANS 1001: Unlocked resource 2 at server 1
+16931: TRANS 1001: Unlocked resource 3 at server 1
+16931: TRANS 1001: Unlocked resource 4 at server 1
+16931: TRANS 1001: Unlocked resource 5 at server 1
+16931: TRANS 1001: Unlocked resource 6 at server 1
+16932: TRANS 1001: Unlocked resource 7 at server 1
+16932: TRANS 1001: Unlocked resource 8 at server 1
+16932: TRANS 1001: Unlocked resource 9 at server 1
+16932: TRANS 1001: Transaction 1001 aborted.
+16933: Transaction 1001 ended.
+16944: End of input file reached, no more transactions will be started.
+---------
+output_test_case_D_server_2.txt
+==================================================================
+0: Test case D started.
+27: Server 2 was notified of the arrival of server 3
+104: Server 2 was notified of the arrival of server 4
+1548: Server 2 started.
+3198: Server 2 started its transactions.
+3266: Transaction 2000 arrived.
+3267: TRANS 2000: Starting transaction 2000.
+3267: TRANS 2000: Trying to claim lock of resource 9 at server 1
+3268: TRANS 2000: Lock claimed. Processing...
+7269: TRANS 2000: Committing transaction 2000.
+7274: TRANS 2000: Unlocked resource 9 at server 1
+7274: TRANS 2000: Transaction 2000 committed.
+7274: Transaction 2000 ended.
+7338: Transaction 2001 arrived.
+7339: TRANS 2001: Starting transaction 2001.
+7340: TRANS 2001: Trying to claim lock of resource 0 at server 1
+7342: TRANS 2001: Lock claimed. Processing...
+7354: TRANS 2001: Trying to claim lock of resource 0 at server 2
+7355: TRANS 2001: Lock claimed. Processing...
+8356: TRANS 2001: Trying to claim lock of resource 1 at server 2
+8357: TRANS 2001: Lock claimed. Processing...
+9358: TRANS 2001: Trying to claim lock of resource 2 at server 2
+9359: TRANS 2001: Lock claimed. Processing...
+10360: TRANS 2001: Trying to claim lock of resource 3 at server 2
+10361: TRANS 2001: Lock claimed. Processing...
+11362: TRANS 2001: Trying to claim lock of resource 4 at server 2
+11363: TRANS 2001: Lock claimed. Processing...
+12364: TRANS 2001: Trying to claim lock of resource 5 at server 2
+12364: TRANS 2001: Lock claimed. Processing...
+13366: TRANS 2001: Trying to claim lock of resource 6 at server 2
+13366: TRANS 2001: Lock claimed. Processing...
+14368: TRANS 2001: Trying to claim lock of resource 7 at server 2
+14368: TRANS 2001: Lock claimed. Processing...
+15370: TRANS 2001: Trying to claim lock of resource 8 at server 2
+15370: TRANS 2001: Lock claimed. Processing...
+16372: TRANS 2001: Trying to claim lock of resource 9 at server 2
+16889: TRANS 2001: Aborting transaction 2001.
+16894: TRANS 2001: Unlocked resource 0 at server 1
+16894: TRANS 2001: Unlocked resource 0 at server 2
+16894: TRANS 2001: Unlocked resource 1 at server 2
+16894: TRANS 2001: Unlocked resource 2 at server 2
+16894: TRANS 2001: Unlocked resource 3 at server 2
+16894: TRANS 2001: Unlocked resource 4 at server 2
+16894: TRANS 2001: Unlocked resource 5 at server 2
+16895: TRANS 2001: Unlocked resource 6 at server 2
+16895: TRANS 2001: Unlocked resource 7 at server 2
+16895: TRANS 2001: Unlocked resource 8 at server 2
+16895: TRANS 2001: Transaction 2001 aborted.
+16895: Transaction 2001 ended.
+16906: End of input file reached, no more transactions will be started.
+---------
+output_test_case_D_server_3.txt
+==================================================================
+0: Test case D started.
+80: Server 3 was notified of the arrival of server 4
+1416: Server 3 started.
+3166: Server 3 started its transactions.
+3233: Transaction 3000 arrived.
+3234: TRANS 3000: Starting transaction 3000.
+3235: TRANS 3000: Trying to claim lock of resource 0 at server 2
+3236: TRANS 3000: Lock claimed. Processing...
+3738: TRANS 3000: Trying to claim lock of resource 9 at server 1
+7242: TRANS 3000: Aborting transaction 3000.
+7247: TRANS 3000: Unlocked resource 0 at server 2
+7248: TRANS 3000: Transaction 3000 aborted.
+7248: Transaction 3000 ended.
+7309: Transaction 3001 arrived.
+7310: TRANS 3001: Starting transaction 3001.
+7310: TRANS 3001: Trying to claim lock of resource 9 at server 2
+7312: TRANS 3001: Lock claimed. Processing...
+7324: TRANS 3001: Trying to claim lock of resource 0 at server 3
+7325: TRANS 3001: Lock claimed. Processing...
+8577: TRANS 3001: Trying to claim lock of resource 1 at server 3
+8577: TRANS 3001: Lock claimed. Processing...
+9579: TRANS 3001: Trying to claim lock of resource 2 at server 3
+9579: TRANS 3001: Lock claimed. Processing...
+10580: TRANS 3001: Trying to claim lock of resource 3 at server 3
+10580: TRANS 3001: Lock claimed. Processing...
+11582: TRANS 3001: Trying to claim lock of resource 4 at server 3
+11583: TRANS 3001: Lock claimed. Processing...
+12584: TRANS 3001: Trying to claim lock of resource 5 at server 3
+12585: TRANS 3001: Lock claimed. Processing...
+13585: TRANS 3001: Trying to claim lock of resource 6 at server 3
+13586: TRANS 3001: Lock claimed. Processing...
+14587: TRANS 3001: Trying to claim lock of resource 7 at server 3
+14588: TRANS 3001: Lock claimed. Processing...
+15589: TRANS 3001: Trying to claim lock of resource 8 at server 3
+15590: TRANS 3001: Lock claimed. Processing...
+16591: TRANS 3001: Trying to claim lock of resource 9 at server 3
+16853: TRANS 3001: Aborting transaction 3001.
+16857: TRANS 3001: Unlocked resource 9 at server 2
+16857: TRANS 3001: Unlocked resource 0 at server 3
+16857: TRANS 3001: Unlocked resource 1 at server 3
+16857: TRANS 3001: Unlocked resource 2 at server 3
+16860: TRANS 3001: Unlocked resource 3 at server 3
+16860: TRANS 3001: Unlocked resource 4 at server 3
+16860: TRANS 3001: Unlocked resource 5 at server 3
+16861: TRANS 3001: Unlocked resource 6 at server 3
+16861: TRANS 3001: Unlocked resource 7 at server 3
+16861: TRANS 3001: Unlocked resource 8 at server 3
+16861: TRANS 3001: Transaction 3001 aborted.
+16861: Transaction 3001 ended.
+16882: End of input file reached, no more transactions will be started.
+---------
+output_test_case_D_server_4.txt
+==================================================================
+2: Test case D started.
+1552: Server 4 started.
+3087: Server 4 started its transactions.
+3185: Transaction 4000 arrived.
+3186: TRANS 4000: Starting transaction 4000.
+3186: TRANS 4000: Trying to claim lock of resource 0 at server 3
+3188: TRANS 4000: Lock claimed. Processing...
+3690: TRANS 4000: Trying to claim lock of resource 9 at server 1
+7159: TRANS 4000: Aborting transaction 4000.
+7165: TRANS 4000: Unlocked resource 0 at server 3
+7166: TRANS 4000: Transaction 4000 aborted.
+7166: Transaction 4000 ended.
+7228: Transaction 4001 arrived.
+7228: TRANS 4001: Starting transaction 4001.
+7228: TRANS 4001: Trying to claim lock of resource 9 at server 3
+7230: TRANS 4001: Lock claimed. Processing...
+7242: TRANS 4001: Trying to claim lock of resource 0 at server 4
+7243: TRANS 4001: Lock claimed. Processing...
+8747: TRANS 4001: Trying to claim lock of resource 1 at server 4
+8748: TRANS 4001: Lock claimed. Processing...
+9750: TRANS 4001: Trying to claim lock of resource 2 at server 4
+9750: TRANS 4001: Lock claimed. Processing...
+10752: TRANS 4001: Trying to claim lock of resource 3 at server 4
+10752: TRANS 4001: Lock claimed. Processing...
+11754: TRANS 4001: Trying to claim lock of resource 4 at server 4
+11755: TRANS 4001: Lock claimed. Processing...
+12756: TRANS 4001: Trying to claim lock of resource 5 at server 4
+12756: TRANS 4001: Lock claimed. Processing...
+13757: TRANS 4001: Trying to claim lock of resource 6 at server 4
+13757: TRANS 4001: Lock claimed. Processing...
+14759: TRANS 4001: Trying to claim lock of resource 7 at server 4
+14760: TRANS 4001: Lock claimed. Processing...
+15761: TRANS 4001: Trying to claim lock of resource 8 at server 4
+15762: TRANS 4001: Lock claimed. Processing...
+16762: TRANS 4001: Trying to claim lock of resource 9 at server 4
+16770: TRANS 4001: Aborting transaction 4001.
+16772: TRANS 4001: Unlocked resource 9 at server 3
+16773: TRANS 4001: Unlocked resource 0 at server 4
+16773: TRANS 4001: Unlocked resource 1 at server 4
+16773: TRANS 4001: Unlocked resource 2 at server 4
+16773: TRANS 4001: Unlocked resource 3 at server 4
+16773: TRANS 4001: Unlocked resource 4 at server 4
+16773: TRANS 4001: Unlocked resource 5 at server 4
+16773: TRANS 4001: Unlocked resource 6 at server 4
+16774: TRANS 4001: Unlocked resource 7 at server 4
+16774: TRANS 4001: Unlocked resource 8 at server 4
+16811: TRANS 4001: Transaction 4001 aborted.
+16811: Transaction 4001 ended.
+16827: End of input file reached, no more transactions will be started.
+---------
+output_test_case_E_server_1.txt
+==================================================================
+3: Test case E started.
+46: Server 1 was notified of the arrival of server 2
+64: Server 1 was notified of the arrival of server 3
+106: Server 1 was notified of the arrival of server 4
+1313: Server 1 started.
+3798: Server 1 started its transactions.
+3853: Transaction 1000 arrived.
+3854: TRANS 1000: Starting transaction 1000.
+3856: TRANS 1000: Trying to claim lock of resource 0 at server 3
+3858: TRANS 1000: Lock claimed. Processing...
+4360: TRANS 1000: Trying to claim lock of resource 0 at server 1
+7893: TRANS 1000: Aborting transaction 1000.
+7898: TRANS 1000: Unlocked resource 0 at server 3
+7899: TRANS 1000: Transaction 1000 aborted.
+7899: Transaction 1000 ended.
+8453: Transaction 1001 arrived.
+8454: TRANS 1001: Starting transaction 1001.
+8454: TRANS 1001: Trying to claim lock of resource 0 at server 2
+9471: TRANS 1001: Aborting transaction 1001.
+9472: TRANS 1001: Transaction 1001 aborted.
+9472: Transaction 1001 ended.
+9483: End of input file reached, no more transactions will be started.
+---------
+output_test_case_E_server_2.txt
+==================================================================
+0: Test case E started.
+25: Server 2 was notified of the arrival of server 3
+68: Server 2 was notified of the arrival of server 4
+1355: Server 2 started.
+3752: Server 2 started its transactions.
+3790: Transaction 2000 arrived.
+3793: TRANS 2000: Starting transaction 2000.
+3794: TRANS 2000: Trying to claim lock of resource 0 at server 2
+3795: TRANS 2000: Lock claimed. Processing...
+4297: TRANS 2000: Trying to claim lock of resource 0 at server 1
+7850: TRANS 2000: Aborting transaction 2000.
+7850: TRANS 2000: Unlocked resource 0 at server 2
+7850: TRANS 2000: Transaction 2000 aborted.
+7850: Transaction 2000 ended.
+7914: Transaction 2001 arrived.
+7915: TRANS 2001: Starting transaction 2001.
+7916: TRANS 2001: Trying to claim lock of resource 0 at server 1
+7920: TRANS 2001: Lock claimed. Processing...
+8921: TRANS 2001: Trying to claim lock of resource 0 at server 3
+9434: TRANS 2001: Aborting transaction 2001.
+9439: TRANS 2001: Unlocked resource 0 at server 1
+9439: TRANS 2001: Transaction 2001 aborted.
+9440: Transaction 2001 ended.
+9450: End of input file reached, no more transactions will be started.
+---------
+output_test_case_E_server_3.txt
+==================================================================
+4: Test case E started.
+53: Server 3 was notified of the arrival of server 4
+1400: Server 3 started.
+3724: Server 3 started its transactions.
+3827: Transaction 3000 arrived.
+3829: TRANS 3000: Starting transaction 3000.
+3830: TRANS 3000: Trying to claim lock of resource 0 at server 4
+3832: TRANS 3000: Lock claimed. Processing...
+4333: TRANS 3000: Trying to claim lock of resource 0 at server 1
+7821: TRANS 3000: Aborting transaction 3000.
+7829: TRANS 3000: Unlocked resource 0 at server 4
+7829: TRANS 3000: Transaction 3000 aborted.
+7829: Transaction 3000 ended.
+8883: Transaction 3001 arrived.
+8884: TRANS 3001: Starting transaction 3001.
+8884: TRANS 3001: Trying to claim lock of resource 0 at server 2
+9396: TRANS 3001: Aborting transaction 3001.
+9397: TRANS 3001: Transaction 3001 aborted.
+9397: Transaction 3001 ended.
+9409: End of input file reached, no more transactions will be started.
+---------
+output_test_case_E_server_4.txt
+==================================================================
+1: Test case E started.
+1424: Server 4 started.
+3671: Server 4 started its transactions.
+3753: Transaction 4000 arrived.
+3755: TRANS 4000: Starting transaction 4000.
+3756: TRANS 4000: Trying to claim lock of resource 0 at server 1
+3759: TRANS 4000: Lock claimed. Processing...
+7761: TRANS 4000: Committing transaction 4000.
+7764: TRANS 4000: Unlocked resource 0 at server 1
+7764: TRANS 4000: Transaction 4000 committed.
+7765: Transaction 4000 ended.
+7827: Transaction 4001 arrived.
+7828: TRANS 4001: Starting transaction 4001.
+7828: TRANS 4001: Trying to claim lock of resource 0 at server 2
+7831: TRANS 4001: Lock claimed. Processing...
+8333: TRANS 4001: Trying to claim lock of resource 0 at server 3
+8336: TRANS 4001: Lock claimed. Processing...
+8837: TRANS 4001: Trying to claim lock of resource 0 at server 4
+8837: TRANS 4001: Lock claimed. Processing...
+9339: TRANS 4001: Committing transaction 4001.
+9344: TRANS 4001: Unlocked resource 0 at server 2
+9349: TRANS 4001: Unlocked resource 0 at server 3
+9351: TRANS 4001: Unlocked resource 0 at server 4
+9351: TRANS 4001: Transaction 4001 committed.
+9352: Transaction 4001 ended.
+9366: End of input file reached, no more transactions will be started.
+---------
+output_test_case_F_server_1.txt
+==================================================================
+1: Test case F started.
+40: Server 1 was notified of the arrival of server 2
+56: Server 1 was notified of the arrival of server 3
+105: Server 1 was notified of the arrival of server 4
+1290: Server 1 started.
+3476: Server 1 started its transactions.
+3520: Transaction 1000 arrived.
+3521: TRANS 1000: Starting transaction 1000.
+3522: TRANS 1000: Trying to claim lock of resource 9 at server 1
+3523: TRANS 1000: Lock claimed. Processing...
+5524: TRANS 1000: Committing transaction 1000.
+5525: TRANS 1000: Unlocked resource 9 at server 1
+5525: TRANS 1000: Transaction 1000 committed.
+5526: Transaction 1000 ended.
+5582: Transaction 1001 arrived.
+5584: TRANS 1001: Starting transaction 1001.
+5585: TRANS 1001: Trying to claim lock of resource 1 at server 1
+5586: TRANS 1001: Lock claimed. Processing...
+5687: TRANS 1001: Trying to claim lock of resource 1 at server 2
+8691: TRANS 1001: Aborting transaction 1001.
+8691: TRANS 1001: Unlocked resource 1 at server 1
+8692: TRANS 1001: Transaction 1001 aborted.
+8692: Transaction 1001 ended.
+8702: End of input file reached, no more transactions will be started.
+---------
+output_test_case_F_server_2.txt
+==================================================================
+0: Test case F started.
+22: Server 2 was notified of the arrival of server 3
+74: Server 2 was notified of the arrival of server 4
+1369: Server 2 started.
+3435: Server 2 started its transactions.
+3507: Transaction 2000 arrived.
+3514: TRANS 2000: Starting transaction 2000.
+3515: TRANS 2000: Trying to claim lock of resource 0 at server 2
+3516: TRANS 2000: Lock claimed. Processing...
+4017: TRANS 2000: Trying to claim lock of resource 9 at server 1
+5485: TRANS 2000: Lock claimed. Processing...
+5497: TRANS 2000: Committing transaction 2000.
+5498: TRANS 2000: Unlocked resource 0 at server 2
+5499: TRANS 2000: Unlocked resource 9 at server 1
+5500: TRANS 2000: Transaction 2000 committed.
+5500: Transaction 2000 ended.
+5565: Transaction 2001 arrived.
+5566: TRANS 2001: Starting transaction 2001.
+5566: TRANS 2001: Trying to claim lock of resource 1 at server 2
+5567: TRANS 2001: Lock claimed. Processing...
+5669: TRANS 2001: Trying to claim lock of resource 1 at server 3
+8675: TRANS 2001: Aborting transaction 2001.
+8676: TRANS 2001: Unlocked resource 1 at server 2
+8676: TRANS 2001: Transaction 2001 aborted.
+8676: Transaction 2001 ended.
+8687: End of input file reached, no more transactions will be started.
+---------
+output_test_case_F_server_3.txt
+==================================================================
+0: Test case F started.
+66: Server 3 was notified of the arrival of server 4
+1410: Server 3 started.
+3413: Server 3 started its transactions.
+3435: Transaction 3000 arrived.
+3436: TRANS 3000: Starting transaction 3000.
+3437: TRANS 3000: Trying to claim lock of resource 0 at server 4
+3439: TRANS 3000: Lock claimed. Processing...
+3941: TRANS 3000: Trying to claim lock of resource 9 at server 1
+5479: TRANS 3000: Lock claimed. Processing...
+5493: TRANS 3000: Committing transaction 3000.
+5502: TRANS 3000: Unlocked resource 0 at server 4
+5507: TRANS 3000: Unlocked resource 9 at server 1
+5508: TRANS 3000: Transaction 3000 committed.
+5508: Transaction 3000 ended.
+5564: Transaction 3001 arrived.
+5564: TRANS 3001: Starting transaction 3001.
+5565: TRANS 3001: Trying to claim lock of resource 1 at server 4
+5568: TRANS 3001: Lock claimed. Processing...
+5670: TRANS 3001: Trying to claim lock of resource 1 at server 1
+8630: TRANS 3001: Lock claimed. Processing...
+9631: TRANS 3001: Committing transaction 3001.
+9633: TRANS 3001: Unlocked resource 1 at server 4
+9635: TRANS 3001: Unlocked resource 1 at server 1
+9635: TRANS 3001: Transaction 3001 committed.
+9636: Transaction 3001 ended.
+9642: End of input file reached, no more transactions will be started.
+---------
+output_test_case_F_server_4.txt
+==================================================================
+0: Test case F started.
+1443: Server 4 started.
+3348: Server 4 started its transactions.
+3372: Transaction 4000 arrived.
+3373: TRANS 4000: Starting transaction 4000.
+3374: TRANS 4000: Trying to claim lock of resource 0 at server 3
+3378: TRANS 4000: Lock claimed. Processing...
+3879: TRANS 4000: Trying to claim lock of resource 9 at server 1
+5440: TRANS 4000: Lock claimed. Processing...
+5457: TRANS 4000: Committing transaction 4000.
+5463: TRANS 4000: Unlocked resource 0 at server 3
+5463: TRANS 4000: Unlocked resource 9 at server 1
+5464: TRANS 4000: Transaction 4000 committed.
+5465: Transaction 4000 ended.
+5533: Transaction 4001 arrived.
+5533: TRANS 4001: Starting transaction 4001.
+5534: TRANS 4001: Trying to claim lock of resource 1 at server 3
+5536: TRANS 4001: Lock claimed. Processing...
+5638: TRANS 4001: Trying to claim lock of resource 1 at server 4
+8640: TRANS 4001: Aborting transaction 4001.
+8643: TRANS 4001: Unlocked resource 1 at server 3
+8643: TRANS 4001: Transaction 4001 aborted.
+8644: Transaction 4001 ended.
+8644: End of input file reached, no more transactions will be started.
+---------
+output_test_case_G_server_1.txt
+==================================================================
+1: Test case G started.
+44: Server 1 was notified of the arrival of server 2
+72: Server 1 was notified of the arrival of server 3
+143: Server 1 was notified of the arrival of server 4
+1534: Server 1 started.
+3301: Server 1 started its transactions.
+3380: Transaction 1000 arrived.
+3381: TRANS 1000: Starting transaction 1000.
+3382: TRANS 1000: Trying to claim lock of resource 0 at server 2
+3386: TRANS 1000: Lock claimed. Processing...
+3888: TRANS 1000: Trying to claim lock of resource 9 at server 1
+5345: TRANS 1000: Lock claimed. Processing...
+5357: TRANS 1000: Committing transaction 1000.
+5359: TRANS 1000: Unlocked resource 0 at server 2
+5360: TRANS 1000: Unlocked resource 9 at server 1
+5360: TRANS 1000: Transaction 1000 committed.
+5360: Transaction 1000 ended.
+5456: Transaction 1001 arrived.
+5457: TRANS 1001: Starting transaction 1001.
+5458: TRANS 1001: Trying to claim lock of resource 0 at server 2
+5461: TRANS 1001: Lock claimed. Processing...
+5473: TRANS 1001: Trying to claim lock of resource 1 at server 2
+5473: TRANS 1001: Lock claimed. Processing...
+5484: TRANS 1001: Trying to claim lock of resource 2 at server 2
+5485: TRANS 1001: Lock claimed. Processing...
+5496: TRANS 1001: Trying to claim lock of resource 3 at server 2
+5500: TRANS 1001: Lock claimed. Processing...
+5511: TRANS 1001: Trying to claim lock of resource 4 at server 2
+5514: TRANS 1001: Lock claimed. Processing...
+5526: TRANS 1001: Trying to claim lock of resource 5 at server 2
+5530: TRANS 1001: Lock claimed. Processing...
+5542: TRANS 1001: Trying to claim lock of resource 6 at server 2
+5545: TRANS 1001: Lock claimed. Processing...
+5560: TRANS 1001: Trying to claim lock of resource 7 at server 2
+5562: TRANS 1001: Lock claimed. Processing...
+5574: TRANS 1001: Trying to claim lock of resource 8 at server 2
+5577: TRANS 1001: Lock claimed. Processing...
+5598: TRANS 1001: Trying to claim lock of resource 9 at server 2
+5599: TRANS 1001: Lock claimed. Processing...
+6601: TRANS 1001: Trying to claim lock of resource 5 at server 3
+9608: TRANS 1001: Aborting transaction 1001.
+9622: TRANS 1001: Unlocked resource 0 at server 2
+9624: TRANS 1001: Unlocked resource 1 at server 2
+9625: TRANS 1001: Unlocked resource 2 at server 2
+9629: TRANS 1001: Unlocked resource 3 at server 2
+9633: TRANS 1001: Unlocked resource 4 at server 2
+9634: TRANS 1001: Unlocked resource 5 at server 2
+9638: TRANS 1001: Unlocked resource 6 at server 2
+9639: TRANS 1001: Unlocked resource 7 at server 2
+9647: TRANS 1001: Unlocked resource 8 at server 2
+9647: TRANS 1001: Unlocked resource 9 at server 2
+9648: TRANS 1001: Transaction 1001 aborted.
+9648: Transaction 1001 ended.
+9659: End of input file reached, no more transactions will be started.
+---------
+output_test_case_G_server_2.txt
+==================================================================
+0: Test case G started.
+48: Server 2 was notified of the arrival of server 3
+104: Server 2 was notified of the arrival of server 4
+1296: Server 2 started.
+3257: Server 2 started its transactions.
+3318: Transaction 2000 arrived.
+3318: TRANS 2000: Starting transaction 2000.
+3320: TRANS 2000: Trying to claim lock of resource 0 at server 3
+3322: TRANS 2000: Lock claimed. Processing...
+3823: TRANS 2000: Trying to claim lock of resource 9 at server 1
+5317: TRANS 2000: Lock claimed. Processing...
+5328: TRANS 2000: Committing transaction 2000.
+5329: TRANS 2000: Unlocked resource 0 at server 3
+5330: TRANS 2000: Unlocked resource 9 at server 1
+5330: TRANS 2000: Transaction 2000 committed.
+5331: Transaction 2000 ended.
+5388: Transaction 2001 arrived.
+5388: TRANS 2001: Starting transaction 2001.
+5388: TRANS 2001: Trying to claim lock of resource 0 at server 3
+5401: TRANS 2001: Lock claimed. Processing...
+5413: TRANS 2001: Trying to claim lock of resource 1 at server 3
+5423: TRANS 2001: Lock claimed. Processing...
+5434: TRANS 2001: Trying to claim lock of resource 2 at server 3
+5437: TRANS 2001: Lock claimed. Processing...
+5447: TRANS 2001: Trying to claim lock of resource 3 at server 3
+5448: TRANS 2001: Lock claimed. Processing...
+5461: TRANS 2001: Trying to claim lock of resource 4 at server 3
+5469: TRANS 2001: Lock claimed. Processing...
+5483: TRANS 2001: Trying to claim lock of resource 5 at server 3
+5485: TRANS 2001: Lock claimed. Processing...
+5497: TRANS 2001: Trying to claim lock of resource 6 at server 3
+5500: TRANS 2001: Lock claimed. Processing...
+5512: TRANS 2001: Trying to claim lock of resource 7 at server 3
+5514: TRANS 2001: Lock claimed. Processing...
+5532: TRANS 2001: Trying to claim lock of resource 8 at server 3
+5532: TRANS 2001: Lock claimed. Processing...
+5545: TRANS 2001: Trying to claim lock of resource 9 at server 3
+5547: TRANS 2001: Lock claimed. Processing...
+6548: TRANS 2001: Trying to claim lock of resource 5 at server 1
+9552: TRANS 2001: Aborting transaction 2001.
+9573: TRANS 2001: Unlocked resource 0 at server 3
+9578: TRANS 2001: Unlocked resource 1 at server 3
+9579: TRANS 2001: Unlocked resource 2 at server 3
+9585: TRANS 2001: Unlocked resource 3 at server 3
+9589: TRANS 2001: Unlocked resource 4 at server 3
+9593: TRANS 2001: Unlocked resource 5 at server 3
+9602: TRANS 2001: Unlocked resource 6 at server 3
+9603: TRANS 2001: Unlocked resource 7 at server 3
+9610: TRANS 2001: Unlocked resource 8 at server 3
+9613: TRANS 2001: Unlocked resource 9 at server 3
+9614: TRANS 2001: Transaction 2001 aborted.
+9614: Transaction 2001 ended.
+9627: End of input file reached, no more transactions will be started.
+---------
+output_test_case_G_server_3.txt
+==================================================================
+0: Test case G started.
+58: Server 3 was notified of the arrival of server 4
+1521: Server 3 started.
+3208: Server 3 started its transactions.
+3242: Transaction 3000 arrived.
+3244: TRANS 3000: Starting transaction 3000.
+3244: TRANS 3000: Trying to claim lock of resource 9 at server 1
+3247: TRANS 3000: Lock claimed. Processing...
+5249: TRANS 3000: Committing transaction 3000.
+5253: TRANS 3000: Unlocked resource 9 at server 1
+5254: TRANS 3000: Transaction 3000 committed.
+5254: Transaction 3000 ended.
+5382: Transaction 3001 arrived.
+5383: TRANS 3001: Starting transaction 3001.
+5383: TRANS 3001: Trying to claim lock of resource 0 at server 1
+5384: TRANS 3001: Lock claimed. Processing...
+5396: TRANS 3001: Trying to claim lock of resource 1 at server 1
+5397: TRANS 3001: Lock claimed. Processing...
+5408: TRANS 3001: Trying to claim lock of resource 2 at server 1
+5410: TRANS 3001: Lock claimed. Processing...
+5421: TRANS 3001: Trying to claim lock of resource 3 at server 1
+5423: TRANS 3001: Lock claimed. Processing...
+5435: TRANS 3001: Trying to claim lock of resource 4 at server 1
+5435: TRANS 3001: Lock claimed. Processing...
+5448: TRANS 3001: Trying to claim lock of resource 5 at server 1
+5450: TRANS 3001: Lock claimed. Processing...
+5462: TRANS 3001: Trying to claim lock of resource 6 at server 1
+5467: TRANS 3001: Lock claimed. Processing...
+5479: TRANS 3001: Trying to claim lock of resource 7 at server 1
+5481: TRANS 3001: Lock claimed. Processing...
+5492: TRANS 3001: Trying to claim lock of resource 8 at server 1
+5503: TRANS 3001: Lock claimed. Processing...
+5515: TRANS 3001: Trying to claim lock of resource 9 at server 1
+5517: TRANS 3001: Lock claimed. Processing...
+6518: TRANS 3001: Trying to claim lock of resource 5 at server 4
+9487: TRANS 3001: Lock claimed. Processing...
+9497: TRANS 3001: Committing transaction 3001.
+9502: TRANS 3001: Unlocked resource 0 at server 1
+9503: TRANS 3001: Unlocked resource 1 at server 1
+9503: TRANS 3001: Unlocked resource 2 at server 1
+9504: TRANS 3001: Unlocked resource 3 at server 1
+9505: TRANS 3001: Unlocked resource 4 at server 1
+9505: TRANS 3001: Unlocked resource 5 at server 1
+9506: TRANS 3001: Unlocked resource 6 at server 1
+9507: TRANS 3001: Unlocked resource 7 at server 1
+9509: TRANS 3001: Unlocked resource 8 at server 1
+9510: TRANS 3001: Unlocked resource 9 at server 1
+9528: TRANS 3001: Unlocked resource 5 at server 4
+9529: TRANS 3001: Transaction 3001 committed.
+9529: Transaction 3001 ended.
+9540: End of input file reached, no more transactions will be started.
+---------
+output_test_case_G_server_4.txt
+==================================================================
+1: Test case G started.
+1273: Server 4 started.
+3149: Server 4 started its transactions.
+3225: Transaction 4000 arrived.
+3226: TRANS 4000: Starting transaction 4000.
+3227: TRANS 4000: Trying to claim lock of resource 0 at server 4
+3228: TRANS 4000: Lock claimed. Processing...
+3729: TRANS 4000: Trying to claim lock of resource 9 at server 1
+5219: TRANS 4000: Lock claimed. Processing...
+5233: TRANS 4000: Committing transaction 4000.
+5234: TRANS 4000: Unlocked resource 0 at server 4
+5237: TRANS 4000: Unlocked resource 9 at server 1
+5238: TRANS 4000: Transaction 4000 committed.
+5239: Transaction 4000 ended.
+5294: Transaction 4001 arrived.
+5294: TRANS 4001: Starting transaction 4001.
+5294: TRANS 4001: Trying to claim lock of resource 0 at server 4
+5294: TRANS 4001: Lock claimed. Processing...
+5307: TRANS 4001: Trying to claim lock of resource 1 at server 4
+5307: TRANS 4001: Lock claimed. Processing...
+5319: TRANS 4001: Trying to claim lock of resource 2 at server 4
+5320: TRANS 4001: Lock claimed. Processing...
+5334: TRANS 4001: Trying to claim lock of resource 3 at server 4
+5335: TRANS 4001: Lock claimed. Processing...
+5347: TRANS 4001: Trying to claim lock of resource 4 at server 4
+5347: TRANS 4001: Lock claimed. Processing...
+5359: TRANS 4001: Trying to claim lock of resource 5 at server 4
+5359: TRANS 4001: Lock claimed. Processing...
+5374: TRANS 4001: Trying to claim lock of resource 6 at server 4
+5374: TRANS 4001: Lock claimed. Processing...
+5390: TRANS 4001: Trying to claim lock of resource 7 at server 4
+5390: TRANS 4001: Lock claimed. Processing...
+5404: TRANS 4001: Trying to claim lock of resource 8 at server 4
+5405: TRANS 4001: Lock claimed. Processing...
+5415: TRANS 4001: Trying to claim lock of resource 9 at server 4
+5416: TRANS 4001: Lock claimed. Processing...
+6417: TRANS 4001: Trying to claim lock of resource 5 at server 2
+9420: TRANS 4001: Aborting transaction 4001.
+9420: TRANS 4001: Unlocked resource 0 at server 4
+9420: TRANS 4001: Unlocked resource 1 at server 4
+9421: TRANS 4001: Unlocked resource 2 at server 4
+9421: TRANS 4001: Unlocked resource 3 at server 4
+9421: TRANS 4001: Unlocked resource 4 at server 4
+9422: TRANS 4001: Unlocked resource 5 at server 4
+9422: TRANS 4001: Unlocked resource 6 at server 4
+9422: TRANS 4001: Unlocked resource 7 at server 4
+9422: TRANS 4001: Unlocked resource 8 at server 4
+9423: TRANS 4001: Unlocked resource 9 at server 4
+9423: TRANS 4001: Transaction 4001 aborted.
+9423: Transaction 4001 ended.
+9425: End of input file reached, no more transactions will be started.
+---------
+output_test_case_H_server_1.txt
+==================================================================
+0: Test case H started.
+47: Server 1 was notified of the arrival of server 2
+61: Server 1 was notified of the arrival of server 3
+106: Server 1 was notified of the arrival of server 4
+1305: Server 1 started.
+3340: Server 1 started its transactions.
+3448: Transaction 1000 arrived.
+3449: TRANS 1000: Starting transaction 1000.
+3450: TRANS 1000: Trying to claim lock of resource 0 at server 4
+3453: TRANS 1000: Lock claimed. Processing...
+3955: TRANS 1000: Trying to claim lock of resource 9 at server 1
+5409: TRANS 1000: Lock claimed. Processing...
+5421: TRANS 1000: Committing transaction 1000.
+5422: TRANS 1000: Unlocked resource 0 at server 4
+5422: TRANS 1000: Unlocked resource 9 at server 1
+5422: TRANS 1000: Transaction 1000 committed.
+5422: Transaction 1000 ended.
+5433: End of input file reached, no more transactions will be started.
+---------
+output_test_case_H_server_2.txt
+==================================================================
+0: Test case H started.
+21: Server 2 was notified of the arrival of server 3
+63: Server 2 was notified of the arrival of server 4
+1439: Server 2 started.
+3291: Server 2 started its transactions.
+3359: Transaction 2000 arrived.
+3360: TRANS 2000: Starting transaction 2000.
+3360: TRANS 2000: Trying to claim lock of resource 0 at server 2
+3360: TRANS 2000: Lock claimed. Processing...
+3862: TRANS 2000: Trying to claim lock of resource 9 at server 1
+5389: TRANS 2000: Lock claimed. Processing...
+5401: TRANS 2000: Committing transaction 2000.
+5402: TRANS 2000: Unlocked resource 0 at server 2
+5403: TRANS 2000: Unlocked resource 9 at server 1
+5403: TRANS 2000: Transaction 2000 committed.
+5404: Transaction 2000 ended.
+5455: End of input file reached, no more transactions will be started.
+---------
+output_test_case_H_server_3.txt
+==================================================================
+0: Test case H started.
+31: Server 3 was notified of the arrival of server 4
+1302: Server 3 started.
+3254: Server 3 started its transactions.
+3321: Transaction 3000 arrived.
+3322: TRANS 3000: Starting transaction 3000.
+3322: TRANS 3000: Trying to claim lock of resource 0 at server 3
+3323: TRANS 3000: Lock claimed. Processing...
+3824: TRANS 3000: Trying to claim lock of resource 9 at server 1
+5335: TRANS 3000: Lock claimed. Processing...
+5347: TRANS 3000: Committing transaction 3000.
+5348: TRANS 3000: Unlocked resource 0 at server 3
+5351: TRANS 3000: Unlocked resource 9 at server 1
+5351: TRANS 3000: Transaction 3000 committed.
+5351: Transaction 3000 ended.
+5419: Transaction 3001 arrived.
+5419: TRANS 3001: Starting transaction 3001.
+5419: TRANS 3001: Trying to claim lock of resource 4 at server 4
+5420: TRANS 3001: Lock claimed. Processing...
+6122: TRANS 3001: Trying to claim lock of resource 7 at server 2
+8705: TRANS 3001: Lock claimed. Processing...
+8723: TRANS 3001: Committing transaction 3001.
+8725: TRANS 3001: Unlocked resource 4 at server 4
+8728: TRANS 3001: Unlocked resource 7 at server 2
+8728: TRANS 3001: Transaction 3001 committed.
+8729: Transaction 3001 ended.
+8731: End of input file reached, no more transactions will be started.
+---------
+output_test_case_H_server_4.txt
+==================================================================
+1: Test case H started.
+1459: Server 4 started.
+3224: Server 4 started its transactions.
+3283: Transaction 4000 arrived.
+3284: TRANS 4000: Starting transaction 4000.
+3284: TRANS 4000: Trying to claim lock of resource 9 at server 1
+3286: TRANS 4000: Lock claimed. Processing...
+5288: TRANS 4000: Committing transaction 4000.
+5290: TRANS 4000: Unlocked resource 9 at server 1
+5290: TRANS 4000: Transaction 4000 committed.
+5290: Transaction 4000 ended.
+5365: Transaction 4001 arrived.
+5365: TRANS 4001: Starting transaction 4001.
+5366: TRANS 4001: Trying to claim lock of resource 7 at server 2
+5367: TRANS 4001: Lock claimed. Processing...
+5669: TRANS 4001: Trying to claim lock of resource 4 at server 4
+8671: TRANS 4001: Aborting transaction 4001.
+8673: TRANS 4001: Unlocked resource 7 at server 2
+8674: TRANS 4001: Transaction 4001 aborted.
+8674: Transaction 4001 ended.
+8681: End of input file reached, no more transactions will be started.
+---------
+output_test_case_I_server_1.txt
+==================================================================
+0: Test case I started.
+40: Server 1 was notified of the arrival of server 2
+56: Server 1 was notified of the arrival of server 3
+117: Server 1 was notified of the arrival of server 4
+1337: Server 1 started.
+2940: Server 1 started its transactions.
+3027: Transaction 1000 arrived.
+3028: TRANS 1000: Starting transaction 1000.
+3029: TRANS 1000: Trying to claim lock of resource 0 at server 4
+3030: TRANS 1000: Lock claimed. Processing...
+3532: TRANS 1000: Trying to claim lock of resource 9 at server 1
+5049: TRANS 1000: Lock claimed. Processing...
+5061: TRANS 1000: Committing transaction 1000.
+5064: TRANS 1000: Unlocked resource 0 at server 4
+5065: TRANS 1000: Unlocked resource 9 at server 1
+5065: TRANS 1000: Transaction 1000 committed.
+5065: Transaction 1000 ended.
+5119: Transaction 1001 arrived.
+5119: TRANS 1001: Starting transaction 1001.
+5119: TRANS 1001: Trying to claim lock of resource 9 at server 4
+5123: TRANS 1001: Lock claimed. Processing...
+5135: TRANS 1001: Trying to claim lock of resource 1 at server 1
+5135: TRANS 1001: Lock claimed. Processing...
+6886: TRANS 1001: Trying to claim lock of resource 2 at server 1
+6886: TRANS 1001: Lock claimed. Processing...
+7888: TRANS 1001: Trying to claim lock of resource 3 at server 1
+7889: TRANS 1001: Lock claimed. Processing...
+8890: TRANS 1001: Trying to claim lock of resource 4 at server 1
+8890: TRANS 1001: Lock claimed. Processing...
+9892: TRANS 1001: Trying to claim lock of resource 5 at server 1
+9892: TRANS 1001: Lock claimed. Processing...
+10894: TRANS 1001: Trying to claim lock of resource 6 at server 1
+10894: TRANS 1001: Lock claimed. Processing...
+11896: TRANS 1001: Trying to claim lock of resource 7 at server 1
+11896: TRANS 1001: Lock claimed. Processing...
+12898: TRANS 1001: Trying to claim lock of resource 8 at server 1
+12898: TRANS 1001: Lock claimed. Processing...
+13900: TRANS 1001: Trying to claim lock of resource 9 at server 1
+13900: TRANS 1001: Lock claimed. Processing...
+14901: TRANS 1001: Trying to claim lock of resource 0 at server 1
+17154: TRANS 1001: Lock claimed. Processing...
+18156: TRANS 1001: Committing transaction 1001.
+18157: TRANS 1001: Unlocked resource 9 at server 4
+18157: TRANS 1001: Unlocked resource 1 at server 1
+18158: TRANS 1001: Unlocked resource 2 at server 1
+18158: TRANS 1001: Unlocked resource 3 at server 1
+18159: TRANS 1001: Unlocked resource 4 at server 1
+18159: TRANS 1001: Unlocked resource 5 at server 1
+18159: TRANS 1001: Unlocked resource 6 at server 1
+18160: TRANS 1001: Unlocked resource 7 at server 1
+18160: TRANS 1001: Unlocked resource 8 at server 1
+18160: TRANS 1001: Unlocked resource 9 at server 1
+18160: TRANS 1001: Unlocked resource 0 at server 1
+18160: TRANS 1001: Transaction 1001 committed.
+18160: Transaction 1001 ended.
+18167: End of input file reached, no more transactions will be started.
+---------
+output_test_case_I_server_2.txt
+==================================================================
+1: Test case I started.
+21: Server 2 was notified of the arrival of server 3
+82: Server 2 was notified of the arrival of server 4
+1382: Server 2 started.
+2901: Server 2 started its transactions.
+3003: Transaction 2000 arrived.
+3003: TRANS 2000: Starting transaction 2000.
+3004: TRANS 2000: Trying to claim lock of resource 9 at server 1
+3005: TRANS 2000: Lock claimed. Processing...
+5007: TRANS 2000: Committing transaction 2000.
+5012: TRANS 2000: Unlocked resource 9 at server 1
+5013: TRANS 2000: Transaction 2000 committed.
+5013: Transaction 2000 ended.
+5078: Transaction 2001 arrived.
+5079: TRANS 2001: Starting transaction 2001.
+5079: TRANS 2001: Trying to claim lock of resource 0 at server 1
+5083: TRANS 2001: Lock claimed. Processing...
+5095: TRANS 2001: Trying to claim lock of resource 0 at server 2
+5095: TRANS 2001: Lock claimed. Processing...
+6096: TRANS 2001: Trying to claim lock of resource 1 at server 2
+6097: TRANS 2001: Lock claimed. Processing...
+7098: TRANS 2001: Trying to claim lock of resource 2 at server 2
+7099: TRANS 2001: Lock claimed. Processing...
+8100: TRANS 2001: Trying to claim lock of resource 3 at server 2
+8101: TRANS 2001: Lock claimed. Processing...
+9102: TRANS 2001: Trying to claim lock of resource 4 at server 2
+9102: TRANS 2001: Lock claimed. Processing...
+10104: TRANS 2001: Trying to claim lock of resource 5 at server 2
+10104: TRANS 2001: Lock claimed. Processing...
+11105: TRANS 2001: Trying to claim lock of resource 6 at server 2
+11105: TRANS 2001: Lock claimed. Processing...
+12107: TRANS 2001: Trying to claim lock of resource 7 at server 2
+12107: TRANS 2001: Lock claimed. Processing...
+13109: TRANS 2001: Trying to claim lock of resource 8 at server 2
+13109: TRANS 2001: Lock claimed. Processing...
+14111: TRANS 2001: Trying to claim lock of resource 9 at server 2
+17112: TRANS 2001: Aborting transaction 2001.
+17114: TRANS 2001: Unlocked resource 0 at server 1
+17114: TRANS 2001: Unlocked resource 0 at server 2
+17114: TRANS 2001: Unlocked resource 1 at server 2
+17115: TRANS 2001: Unlocked resource 2 at server 2
+17115: TRANS 2001: Unlocked resource 3 at server 2
+17115: TRANS 2001: Unlocked resource 4 at server 2
+17115: TRANS 2001: Unlocked resource 5 at server 2
+17116: TRANS 2001: Unlocked resource 6 at server 2
+17116: TRANS 2001: Unlocked resource 7 at server 2
+17116: TRANS 2001: Unlocked resource 8 at server 2
+17116: TRANS 2001: Transaction 2001 aborted.
+17116: Transaction 2001 ended.
+17120: End of input file reached, no more transactions will be started.
+---------
+output_test_case_I_server_3.txt
+==================================================================
+1: Test case I started.
+60: Server 3 was notified of the arrival of server 4
+1474: Server 3 started.
+2870: Server 3 started its transactions.
+2901: Transaction 3000 arrived.
+2902: TRANS 3000: Starting transaction 3000.
+2903: TRANS 3000: Trying to claim lock of resource 0 at server 2
+2905: TRANS 3000: Lock claimed. Processing...
+3407: TRANS 3000: Trying to claim lock of resource 9 at server 1
+4992: TRANS 3000: Lock claimed. Processing...
+5007: TRANS 3000: Committing transaction 3000.
+5017: TRANS 3000: Unlocked resource 0 at server 2
+5019: TRANS 3000: Unlocked resource 9 at server 1
+5020: TRANS 3000: Transaction 3000 committed.
+5020: Transaction 3000 ended.
+5083: Transaction 3001 arrived.
+5084: TRANS 3001: Starting transaction 3001.
+5084: TRANS 3001: Trying to claim lock of resource 9 at server 2
+5085: TRANS 3001: Lock claimed. Processing...
+5096: TRANS 3001: Trying to claim lock of resource 0 at server 3
+5096: TRANS 3001: Lock claimed. Processing...
+6348: TRANS 3001: Trying to claim lock of resource 1 at server 3
+6349: TRANS 3001: Lock claimed. Processing...
+7350: TRANS 3001: Trying to claim lock of resource 2 at server 3
+7351: TRANS 3001: Lock claimed. Processing...
+8353: TRANS 3001: Trying to claim lock of resource 3 at server 3
+8353: TRANS 3001: Lock claimed. Processing...
+9354: TRANS 3001: Trying to claim lock of resource 4 at server 3
+9354: TRANS 3001: Lock claimed. Processing...
+10356: TRANS 3001: Trying to claim lock of resource 5 at server 3
+10357: TRANS 3001: Lock claimed. Processing...
+11359: TRANS 3001: Trying to claim lock of resource 6 at server 3
+11359: TRANS 3001: Lock claimed. Processing...
+12360: TRANS 3001: Trying to claim lock of resource 7 at server 3
+12361: TRANS 3001: Lock claimed. Processing...
+13363: TRANS 3001: Trying to claim lock of resource 8 at server 3
+13363: TRANS 3001: Lock claimed. Processing...
+14365: TRANS 3001: Trying to claim lock of resource 9 at server 3
+17366: TRANS 3001: Aborting transaction 3001.
+17367: TRANS 3001: Unlocked resource 9 at server 2
+17367: TRANS 3001: Unlocked resource 0 at server 3
+17367: TRANS 3001: Unlocked resource 1 at server 3
+17367: TRANS 3001: Unlocked resource 2 at server 3
+17367: TRANS 3001: Unlocked resource 3 at server 3
+17368: TRANS 3001: Unlocked resource 4 at server 3
+17368: TRANS 3001: Unlocked resource 5 at server 3
+17368: TRANS 3001: Unlocked resource 6 at server 3
+17368: TRANS 3001: Unlocked resource 7 at server 3
+17368: TRANS 3001: Unlocked resource 8 at server 3
+17368: TRANS 3001: Transaction 3001 aborted.
+17368: Transaction 3001 ended.
+17370: End of input file reached, no more transactions will be started.
+---------
+output_test_case_I_server_4.txt
+==================================================================
+1: Test case I started.
+1433: Server 4 started.
+2810: Server 4 started its transactions.
+2879: Transaction 4000 arrived.
+2881: TRANS 4000: Starting transaction 4000.
+2882: TRANS 4000: Trying to claim lock of resource 0 at server 3
+2884: TRANS 4000: Lock claimed. Processing...
+3386: TRANS 4000: Trying to claim lock of resource 9 at server 1
+4958: TRANS 4000: Lock claimed. Processing...
+4975: TRANS 4000: Committing transaction 4000.
+4978: TRANS 4000: Unlocked resource 0 at server 3
+4981: TRANS 4000: Unlocked resource 9 at server 1
+4981: TRANS 4000: Transaction 4000 committed.
+4982: Transaction 4000 ended.
+5036: Transaction 4001 arrived.
+5036: TRANS 4001: Starting transaction 4001.
+5036: TRANS 4001: Trying to claim lock of resource 9 at server 3
+5037: TRANS 4001: Lock claimed. Processing...
+5049: TRANS 4001: Trying to claim lock of resource 0 at server 4
+5049: TRANS 4001: Lock claimed. Processing...
+6550: TRANS 4001: Trying to claim lock of resource 1 at server 4
+6550: TRANS 4001: Lock claimed. Processing...
+7552: TRANS 4001: Trying to claim lock of resource 2 at server 4
+7552: TRANS 4001: Lock claimed. Processing...
+8554: TRANS 4001: Trying to claim lock of resource 3 at server 4
+8554: TRANS 4001: Lock claimed. Processing...
+9555: TRANS 4001: Trying to claim lock of resource 4 at server 4
+9556: TRANS 4001: Lock claimed. Processing...
+10557: TRANS 4001: Trying to claim lock of resource 5 at server 4
+10557: TRANS 4001: Lock claimed. Processing...
+11558: TRANS 4001: Trying to claim lock of resource 6 at server 4
+11559: TRANS 4001: Lock claimed. Processing...
+12560: TRANS 4001: Trying to claim lock of resource 7 at server 4
+12560: TRANS 4001: Lock claimed. Processing...
+13562: TRANS 4001: Trying to claim lock of resource 8 at server 4
+13562: TRANS 4001: Lock claimed. Processing...
+14564: TRANS 4001: Trying to claim lock of resource 9 at server 4
+17566: TRANS 4001: Aborting transaction 4001.
+17567: TRANS 4001: Unlocked resource 9 at server 3
+17567: TRANS 4001: Unlocked resource 0 at server 4
+17568: TRANS 4001: Unlocked resource 1 at server 4
+17568: TRANS 4001: Unlocked resource 2 at server 4
+17568: TRANS 4001: Unlocked resource 3 at server 4
+17568: TRANS 4001: Unlocked resource 4 at server 4
+17569: TRANS 4001: Unlocked resource 5 at server 4
+17569: TRANS 4001: Unlocked resource 6 at server 4
+17569: TRANS 4001: Unlocked resource 7 at server 4
+17569: TRANS 4001: Unlocked resource 8 at server 4
+17570: TRANS 4001: Transaction 4001 aborted.
+17570: Transaction 4001 ended.
+17572: End of input file reached, no more transactions will be started.

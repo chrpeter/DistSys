@@ -1,0 +1,51 @@
+==================================================================
+1: Test case I started.
+21: Server 2 was notified of the arrival of server 3
+82: Server 2 was notified of the arrival of server 4
+1382: Server 2 started.
+2901: Server 2 started its transactions.
+3003: Transaction 2000 arrived.
+3003: TRANS 2000: Starting transaction 2000.
+3004: TRANS 2000: Trying to claim lock of resource 9 at server 1
+3005: TRANS 2000: Lock claimed. Processing...
+5007: TRANS 2000: Committing transaction 2000.
+5012: TRANS 2000: Unlocked resource 9 at server 1
+5013: TRANS 2000: Transaction 2000 committed.
+5013: Transaction 2000 ended.
+5078: Transaction 2001 arrived.
+5079: TRANS 2001: Starting transaction 2001.
+5079: TRANS 2001: Trying to claim lock of resource 0 at server 1
+5083: TRANS 2001: Lock claimed. Processing...
+5095: TRANS 2001: Trying to claim lock of resource 0 at server 2
+5095: TRANS 2001: Lock claimed. Processing...
+6096: TRANS 2001: Trying to claim lock of resource 1 at server 2
+6097: TRANS 2001: Lock claimed. Processing...
+7098: TRANS 2001: Trying to claim lock of resource 2 at server 2
+7099: TRANS 2001: Lock claimed. Processing...
+8100: TRANS 2001: Trying to claim lock of resource 3 at server 2
+8101: TRANS 2001: Lock claimed. Processing...
+9102: TRANS 2001: Trying to claim lock of resource 4 at server 2
+9102: TRANS 2001: Lock claimed. Processing...
+10104: TRANS 2001: Trying to claim lock of resource 5 at server 2
+10104: TRANS 2001: Lock claimed. Processing...
+11105: TRANS 2001: Trying to claim lock of resource 6 at server 2
+11105: TRANS 2001: Lock claimed. Processing...
+12107: TRANS 2001: Trying to claim lock of resource 7 at server 2
+12107: TRANS 2001: Lock claimed. Processing...
+13109: TRANS 2001: Trying to claim lock of resource 8 at server 2
+13109: TRANS 2001: Lock claimed. Processing...
+14111: TRANS 2001: Trying to claim lock of resource 9 at server 2
+17112: TRANS 2001: Aborting transaction 2001.
+17114: TRANS 2001: Unlocked resource 0 at server 1
+17114: TRANS 2001: Unlocked resource 0 at server 2
+17114: TRANS 2001: Unlocked resource 1 at server 2
+17115: TRANS 2001: Unlocked resource 2 at server 2
+17115: TRANS 2001: Unlocked resource 3 at server 2
+17115: TRANS 2001: Unlocked resource 4 at server 2
+17115: TRANS 2001: Unlocked resource 5 at server 2
+17116: TRANS 2001: Unlocked resource 6 at server 2
+17116: TRANS 2001: Unlocked resource 7 at server 2
+17116: TRANS 2001: Unlocked resource 8 at server 2
+17116: TRANS 2001: Transaction 2001 aborted.
+17116: Transaction 2001 ended.
+17120: End of input file reached, no more transactions will be started.

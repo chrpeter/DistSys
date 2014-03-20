@@ -1,0 +1,50 @@
+==================================================================
+0: Test case B started.
+1431: Server 4 started.
+3256: Server 4 started its transactions.
+3354: Transaction 4000 arrived.
+3355: TRANS 4000: Starting transaction 4000.
+3355: TRANS 4000: Trying to claim lock of resource 0 at server 4
+3356: TRANS 4000: Lock claimed. Processing...
+3857: TRANS 4000: Trying to claim lock of resource 9 at server 1
+7304: TRANS 4000: Aborting transaction 4000.
+7304: TRANS 4000: Unlocked resource 0 at server 4
+7307: TRANS 4000: Transaction 4000 aborted.
+7308: Transaction 4000 ended.
+7366: Transaction 4001 arrived.
+7367: TRANS 4001: Starting transaction 4001.
+7367: TRANS 4001: Trying to claim lock of resource 0 at server 4
+7368: TRANS 4001: Lock claimed. Processing...
+7381: TRANS 4001: Trying to claim lock of resource 1 at server 4
+7382: TRANS 4001: Lock claimed. Processing...
+7394: TRANS 4001: Trying to claim lock of resource 2 at server 4
+7394: TRANS 4001: Lock claimed. Processing...
+7407: TRANS 4001: Trying to claim lock of resource 3 at server 4
+7408: TRANS 4001: Lock claimed. Processing...
+7419: TRANS 4001: Trying to claim lock of resource 4 at server 4
+7423: TRANS 4001: Lock claimed. Processing...
+7434: TRANS 4001: Trying to claim lock of resource 5 at server 4
+7434: TRANS 4001: Lock claimed. Processing...
+7445: TRANS 4001: Trying to claim lock of resource 6 at server 4
+7446: TRANS 4001: Lock claimed. Processing...
+7462: TRANS 4001: Trying to claim lock of resource 7 at server 4
+7463: TRANS 4001: Lock claimed. Processing...
+7476: TRANS 4001: Trying to claim lock of resource 8 at server 4
+7477: TRANS 4001: Lock claimed. Processing...
+7488: TRANS 4001: Trying to claim lock of resource 9 at server 4
+7489: TRANS 4001: Lock claimed. Processing...
+8490: TRANS 4001: Trying to claim lock of resource 5 at server 2
+8560: TRANS 4001: Aborting transaction 4001.
+8560: TRANS 4001: Unlocked resource 0 at server 4
+8560: TRANS 4001: Unlocked resource 1 at server 4
+8560: TRANS 4001: Unlocked resource 2 at server 4
+8560: TRANS 4001: Unlocked resource 3 at server 4
+8561: TRANS 4001: Unlocked resource 4 at server 4
+8561: TRANS 4001: Unlocked resource 5 at server 4
+8561: TRANS 4001: Unlocked resource 6 at server 4
+8562: TRANS 4001: Unlocked resource 7 at server 4
+8562: TRANS 4001: Unlocked resource 8 at server 4
+8562: TRANS 4001: Unlocked resource 9 at server 4
+8563: TRANS 4001: Transaction 4001 aborted.
+8563: Transaction 4001 ended.
+8574: End of input file reached, no more transactions will be started.

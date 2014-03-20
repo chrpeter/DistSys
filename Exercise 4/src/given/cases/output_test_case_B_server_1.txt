@@ -1,0 +1,53 @@
+==================================================================
+1: Test case B started.
+34: Server 1 was notified of the arrival of server 2
+64: Server 1 was notified of the arrival of server 3
+161: Server 1 was notified of the arrival of server 4
+1301: Server 1 started.
+3425: Server 1 started its transactions.
+3528: Transaction 1000 arrived.
+3529: TRANS 1000: Starting transaction 1000.
+3529: TRANS 1000: Trying to claim lock of resource 0 at server 3
+3530: TRANS 1000: Lock claimed. Processing...
+4032: TRANS 1000: Trying to claim lock of resource 9 at server 1
+7475: TRANS 1000: Aborting transaction 1000.
+7482: TRANS 1000: Unlocked resource 0 at server 3
+7483: TRANS 1000: Transaction 1000 aborted.
+7483: Transaction 1000 ended.
+7583: Transaction 1001 arrived.
+7584: TRANS 1001: Starting transaction 1001.
+7585: TRANS 1001: Trying to claim lock of resource 0 at server 3
+7586: TRANS 1001: Lock claimed. Processing...
+7596: TRANS 1001: Trying to claim lock of resource 1 at server 3
+7597: TRANS 1001: Lock claimed. Processing...
+7608: TRANS 1001: Trying to claim lock of resource 2 at server 3
+7608: TRANS 1001: Lock claimed. Processing...
+7620: TRANS 1001: Trying to claim lock of resource 3 at server 3
+7622: TRANS 1001: Lock claimed. Processing...
+7632: TRANS 1001: Trying to claim lock of resource 4 at server 3
+7633: TRANS 1001: Lock claimed. Processing...
+7645: TRANS 1001: Trying to claim lock of resource 5 at server 3
+7646: TRANS 1001: Lock claimed. Processing...
+7657: TRANS 1001: Trying to claim lock of resource 6 at server 3
+7658: TRANS 1001: Lock claimed. Processing...
+7670: TRANS 1001: Trying to claim lock of resource 7 at server 3
+7672: TRANS 1001: Lock claimed. Processing...
+7693: TRANS 1001: Trying to claim lock of resource 8 at server 3
+7695: TRANS 1001: Lock claimed. Processing...
+7706: TRANS 1001: Trying to claim lock of resource 9 at server 3
+7710: TRANS 1001: Lock claimed. Processing...
+8712: TRANS 1001: Trying to claim lock of resource 5 at server 1
+8722: TRANS 1001: Aborting transaction 1001.
+8723: TRANS 1001: Unlocked resource 0 at server 3
+8724: TRANS 1001: Unlocked resource 1 at server 3
+8724: TRANS 1001: Unlocked resource 2 at server 3
+8725: TRANS 1001: Unlocked resource 3 at server 3
+8725: TRANS 1001: Unlocked resource 4 at server 3
+8726: TRANS 1001: Unlocked resource 5 at server 3
+8728: TRANS 1001: Unlocked resource 6 at server 3
+8728: TRANS 1001: Unlocked resource 7 at server 3
+8729: TRANS 1001: Unlocked resource 8 at server 3
+8729: TRANS 1001: Unlocked resource 9 at server 3
+8730: TRANS 1001: Transaction 1001 aborted.
+8730: Transaction 1001 ended.
+8741: End of input file reached, no more transactions will be started.

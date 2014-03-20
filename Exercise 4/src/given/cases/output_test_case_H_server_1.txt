@@ -1,0 +1,19 @@
+==================================================================
+0: Test case H started.
+47: Server 1 was notified of the arrival of server 2
+61: Server 1 was notified of the arrival of server 3
+106: Server 1 was notified of the arrival of server 4
+1305: Server 1 started.
+3340: Server 1 started its transactions.
+3448: Transaction 1000 arrived.
+3449: TRANS 1000: Starting transaction 1000.
+3450: TRANS 1000: Trying to claim lock of resource 0 at server 4
+3453: TRANS 1000: Lock claimed. Processing...
+3955: TRANS 1000: Trying to claim lock of resource 9 at server 1
+5409: TRANS 1000: Lock claimed. Processing...
+5421: TRANS 1000: Committing transaction 1000.
+5422: TRANS 1000: Unlocked resource 0 at server 4
+5422: TRANS 1000: Unlocked resource 9 at server 1
+5422: TRANS 1000: Transaction 1000 committed.
+5422: Transaction 1000 ended.
+5433: End of input file reached, no more transactions will be started.

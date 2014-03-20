@@ -1,0 +1,53 @@
+==================================================================
+1: Test case I started.
+60: Server 3 was notified of the arrival of server 4
+1474: Server 3 started.
+2870: Server 3 started its transactions.
+2901: Transaction 3000 arrived.
+2902: TRANS 3000: Starting transaction 3000.
+2903: TRANS 3000: Trying to claim lock of resource 0 at server 2
+2905: TRANS 3000: Lock claimed. Processing...
+3407: TRANS 3000: Trying to claim lock of resource 9 at server 1
+4992: TRANS 3000: Lock claimed. Processing...
+5007: TRANS 3000: Committing transaction 3000.
+5017: TRANS 3000: Unlocked resource 0 at server 2
+5019: TRANS 3000: Unlocked resource 9 at server 1
+5020: TRANS 3000: Transaction 3000 committed.
+5020: Transaction 3000 ended.
+5083: Transaction 3001 arrived.
+5084: TRANS 3001: Starting transaction 3001.
+5084: TRANS 3001: Trying to claim lock of resource 9 at server 2
+5085: TRANS 3001: Lock claimed. Processing...
+5096: TRANS 3001: Trying to claim lock of resource 0 at server 3
+5096: TRANS 3001: Lock claimed. Processing...
+6348: TRANS 3001: Trying to claim lock of resource 1 at server 3
+6349: TRANS 3001: Lock claimed. Processing...
+7350: TRANS 3001: Trying to claim lock of resource 2 at server 3
+7351: TRANS 3001: Lock claimed. Processing...
+8353: TRANS 3001: Trying to claim lock of resource 3 at server 3
+8353: TRANS 3001: Lock claimed. Processing...
+9354: TRANS 3001: Trying to claim lock of resource 4 at server 3
+9354: TRANS 3001: Lock claimed. Processing...
+10356: TRANS 3001: Trying to claim lock of resource 5 at server 3
+10357: TRANS 3001: Lock claimed. Processing...
+11359: TRANS 3001: Trying to claim lock of resource 6 at server 3
+11359: TRANS 3001: Lock claimed. Processing...
+12360: TRANS 3001: Trying to claim lock of resource 7 at server 3
+12361: TRANS 3001: Lock claimed. Processing...
+13363: TRANS 3001: Trying to claim lock of resource 8 at server 3
+13363: TRANS 3001: Lock claimed. Processing...
+14365: TRANS 3001: Trying to claim lock of resource 9 at server 3
+17366: TRANS 3001: Aborting transaction 3001.
+17367: TRANS 3001: Unlocked resource 9 at server 2
+17367: TRANS 3001: Unlocked resource 0 at server 3
+17367: TRANS 3001: Unlocked resource 1 at server 3
+17367: TRANS 3001: Unlocked resource 2 at server 3
+17367: TRANS 3001: Unlocked resource 3 at server 3
+17368: TRANS 3001: Unlocked resource 4 at server 3
+17368: TRANS 3001: Unlocked resource 5 at server 3
+17368: TRANS 3001: Unlocked resource 6 at server 3
+17368: TRANS 3001: Unlocked resource 7 at server 3
+17368: TRANS 3001: Unlocked resource 8 at server 3
+17368: TRANS 3001: Transaction 3001 aborted.
+17368: Transaction 3001 ended.
+17370: End of input file reached, no more transactions will be started.

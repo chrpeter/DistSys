@@ -1,0 +1,23 @@
+==================================================================
+3: Test case E started.
+46: Server 1 was notified of the arrival of server 2
+64: Server 1 was notified of the arrival of server 3
+106: Server 1 was notified of the arrival of server 4
+1313: Server 1 started.
+3798: Server 1 started its transactions.
+3853: Transaction 1000 arrived.
+3854: TRANS 1000: Starting transaction 1000.
+3856: TRANS 1000: Trying to claim lock of resource 0 at server 3
+3858: TRANS 1000: Lock claimed. Processing...
+4360: TRANS 1000: Trying to claim lock of resource 0 at server 1
+7893: TRANS 1000: Aborting transaction 1000.
+7898: TRANS 1000: Unlocked resource 0 at server 3
+7899: TRANS 1000: Transaction 1000 aborted.
+7899: Transaction 1000 ended.
+8453: Transaction 1001 arrived.
+8454: TRANS 1001: Starting transaction 1001.
+8454: TRANS 1001: Trying to claim lock of resource 0 at server 2
+9471: TRANS 1001: Aborting transaction 1001.
+9472: TRANS 1001: Transaction 1001 aborted.
+9472: Transaction 1001 ended.
+9483: End of input file reached, no more transactions will be started.

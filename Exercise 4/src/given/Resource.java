@@ -1,4 +1,3 @@
-package given;
 
 import java.util.ArrayList;
 
@@ -35,18 +34,13 @@ class Resource
 			System.err.println("Error: Transaction " + transactionId + " tried to lock a resource it already has locked!");
 			return false;
 		}
-		boolean started = false;
 		long timeout_time = Globals.TIMEOUT_INTERVAL + System.currentTimeMillis();
 		while (lockOwner != NOT_LOCKED) {
 			try {
 				if (Globals.PROBING_ENABLED) {
 					Server server = serverimpl.getServer(ServerImpl.getTransactionOwner(lockOwner));
-					
-					ProbeMessage probeMessage = new ProbeMessage(transactionId, new ArrayList<Integer>(),server, resourceId);
+					ProbeMessage probeMessage = new ProbeMessage(transactionId, new ArrayList<Integer>(), server, resourceId);
 					probeMessage.start();
-					started = false;
-
-
 					try {
 						wait();
 					} catch (InterruptedException e) {
@@ -60,7 +54,7 @@ class Resource
 				//If timeout
 				else {
 					System.out.println("jaja");
-					wait(timeout_time-System.currentTimeMillis());
+					wait(timeout_time - System.currentTimeMillis());
 				}
 				if(System.currentTimeMillis() >= timeout_time){
 					return false;
@@ -133,5 +127,9 @@ class Resource
 	}
 	synchronized void doAbort(Transaction trans){
 		notifyAll();
+	}
+	synchronized void notifyShiet(Transaction t){
+		notifyAll();
+
 	}
 }
